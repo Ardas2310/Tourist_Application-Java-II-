@@ -1,0 +1,1078 @@
+{
+  "html_attributions": [],
+  "next_page_token": "AcYSjRj5IRhdqUGmgknqVaPf8Rmt_-sdI88Wb1A_rS-h4bxUOUr6lw4vF8bz1ETbAFTXAKzA6widrjs0yu4VANo8vTbrSXhjC8Ni4zHy48ogZ7cMBRMitNlA9ctwvVstDBmNoWUaFDDYI4W5TyMxq6JYdvYEbfqcEAnIZn3QAyC_6KcKQpm5bu33NaK7-K91KbFsncbcd-7yZKkofw94SkXyA8eVWj1QQHQADW_WcJaEeVZ_adCRx5FJvSO7r3yEpIWHCKzdcOlCftxU5iX4828umpEOQim4yN8w1dJuf0T8SzkFyqpinRExXvq3HyWklaWoa2eq3AkHNjQmv3GzZo41ipD0rJyrfHcEAKGCA0sWGjxz5PKsPonRqpr2QSJEjMAnP_IcPJTVGMJoSqjKVFNPyoZrdzDcGZu61x4NH-A2d8y3aHxDx0IM",
+  "results": [
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.0891953,
+          "lng": 23.5469737
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.0905448802915,
+            "lng": 23.5482779302915
+          },
+          "southwest": {
+            "lat": 41.0878469197085,
+            "lng": 23.54557996970849
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Μπλε Γιακάς Ράδιο + Μαγαζί",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115382456679600934770\">Μπλε Γιακάς Ράδιο + Μαγαζί</a>"
+          ],
+          "photo_reference": "AcYSjRj0BqIRKZ9P6vhKYVG0_kdQ3W1r5MAprluL3dSxW7MUr3Y2jzNahBhwDj3B4YS5Mb4isf9KAm0sRY5ceh3_c_ENAFiwWIIUoP2lUK61Vz6Pk9XEL-6Z99moKEDhSJs54abXf8V6hi2juMnJNFn6_o4YTya73com9CRuPc3gzHgFF-OF",
+          "width": 2992
+        }
+      ],
+      "place_id": "ChIJGXx-G41xqRQRr6TPQ6pf5lo",
+      "plus_code": {
+        "compound_code": "3GQW+MQ Serres, Greece",
+        "global_code": "8GH53GQW+MQ"
+      },
+      "rating": 4.7,
+      "reference": "ChIJGXx-G41xqRQRr6TPQ6pf5lo",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 143,
+      "vicinity": "Pavlou Mela 5, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.0894929,
+          "lng": 23.5476178
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.0908853802915,
+            "lng": 23.54892858029151
+          },
+          "southwest": {
+            "lat": 41.0881874197085,
+            "lng": 23.5462306197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "i caffettieri",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 943,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115683679072644502589\">i caffettieri</a>"
+          ],
+          "photo_reference": "AcYSjRivdJ8SRa0VRNeMJkLnuc63OVMAMugLSr92jSNb-GCSRsOMErYX7AU6Cnc6_uqf6eB_pXCbx3hr2QiKEUj5nqQaYWW-t4JOZXaJU81AYRw6qH4ZuYW_Ix7TaJEZVR491IfGHvTvO6Ig2_hs-uBlMSzpgt2etN3dJIzRYsHBjBkV8Irh",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJi6ecPI1xqRQRVLe4JNuPZXc",
+      "plus_code": {
+        "compound_code": "3GQX+Q2 Serres, Greece",
+        "global_code": "8GH53GQX+Q2"
+      },
+      "price_level": 1,
+      "rating": 4.7,
+      "reference": "ChIJi6ecPI1xqRQRVLe4JNuPZXc",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 159,
+      "vicinity": "Panagi Tsaldari 24, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.09001540000001,
+          "lng": 23.5484103
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.0913303802915,
+            "lng": 23.54977888029151
+          },
+          "southwest": {
+            "lat": 41.08863241970851,
+            "lng": 23.5470809197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "voice espresso",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 810,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101398870861648366304\">Voice Speciality Espresso Bar</a>"
+          ],
+          "photo_reference": "AcYSjRin3sSjjHGX3C0TfR8cel70thMxI7lhLh1OVcx-VqD6nEq1kQTsZRJoiQXw9vrAUnDzw6T1Lzrkf1eGJ-9HCPynKi2m2ogp0ZcZ3hv47j-x_yj6rKPyL2cYTqIuRI8tTwEG8s48cfLDISx-egLGGfTKDuxucB5kn-qO7pmsH6CzcQ5W",
+          "width": 1080
+        }
+      ],
+      "place_id": "ChIJRSLgSI1xqRQRS8QFRcWYS_8",
+      "plus_code": {
+        "compound_code": "3GRX+29 Serres, Greece",
+        "global_code": "8GH53GRX+29"
+      },
+      "price_level": 1,
+      "rating": 4.7,
+      "reference": "ChIJRSLgSI1xqRQRS8QFRcWYS_8",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 186,
+      "vicinity": "Ermou 36, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.0903108,
+          "lng": 23.5481928
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.0915177802915,
+            "lng": 23.5497899302915
+          },
+          "southwest": {
+            "lat": 41.0888198197085,
+            "lng": 23.5470919697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Hayat Roof",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 489,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117797357241907716728\">Christos Panagiotakis</a>"
+          ],
+          "photo_reference": "AcYSjRjF4BxY4iIRJL134_5BASIIPH0BwCGjcMtvMrh8iixP_DmmUW66lpSCMQocz64eoItfl8pVYhsH1hRUqqb9EHoHIWfahNOa84dailfmUTVmHxUhd5V3oqr8jfeerdt1_baND4HF3oB71spVZHAEepH4iyfmbTpRMPBtLBg5KpcakhUQ",
+          "width": 489
+        }
+      ],
+      "place_id": "ChIJlU1gjKukoRQR0amZBIYa8vE",
+      "plus_code": {
+        "compound_code": "3GRX+47 Serres, Greece",
+        "global_code": "8GH53GRX+47"
+      },
+      "price_level": 2,
+      "rating": 4.4,
+      "reference": "ChIJlU1gjKukoRQR0amZBIYa8vE",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 277,
+      "vicinity": "Kountouriotou 12, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.0884863,
+          "lng": 23.5489252
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.0897302802915,
+            "lng": 23.5500953802915
+          },
+          "southwest": {
+            "lat": 41.0870323197085,
+            "lng": 23.5473974197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Coffee Island",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105768514064769440244\">Dimitra Malliarou</a>"
+          ],
+          "photo_reference": "AcYSjRglUghSachUH_Y7-7J194Y_F-Gbe0Fd6vGJndJGEqSfea0_TRWWqygLyUwFEbSG2itEB5RvYWpdzLx1Jzzc8DKNdP0YELsNrkf6tJl9hblcosmas7CLrint6k0RPdbq5l2sfVBfNA2XerUfs7g0lx-EE3CS8mNM1Va1b7mXgKKIglZt",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJj0ZQSY1xqRQRvVbQ5L1OuiI",
+      "plus_code": {
+        "compound_code": "3GQX+9H Serres, Greece",
+        "global_code": "8GH53GQX+9H"
+      },
+      "price_level": 1,
+      "rating": 4.3,
+      "reference": "ChIJj0ZQSY1xqRQRvVbQ5L1OuiI",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 311,
+      "vicinity": "Konstantinou Karamanli 27, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.0891277,
+          "lng": 23.5491961
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.09030713029151,
+            "lng": 23.5507020802915
+          },
+          "southwest": {
+            "lat": 41.08760916970851,
+            "lng": 23.54800411970849
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Volta Bar",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101666441278020484443\">M. K.</a>"
+          ],
+          "photo_reference": "AcYSjRhQgZoRuEDKapm7gJW6GOsx4DmmPqQ4UdRasLebarLBb9qlNvdBFoXryDU7i4_xCdA_rNxQOKQ1f0JL1Y0ASk-kJxzmCCukRh-z95zxonEW6XqspBPOOwUqz4E4PYfZ6hpn0t00ql6sVLbptLhHYneyWry0pjN9-Wlfk2V6qOFZ7Usd",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJz2ixMo1xqRQRlYvpev7L2oc",
+      "plus_code": {
+        "compound_code": "3GQX+MM Serres, Greece",
+        "global_code": "8GH53GQX+MM"
+      },
+      "price_level": 2,
+      "rating": 4.4,
+      "reference": "ChIJz2ixMo1xqRQRlYvpev7L2oc",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1917,
+      "vicinity": "Konstantinou Karamanli 21, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.08655,
+          "lng": 23.546453
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.08785698029151,
+            "lng": 23.5478482302915
+          },
+          "southwest": {
+            "lat": 41.08515901970851,
+            "lng": 23.5451502697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Kennedy Espresso Bar",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3036,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113639292649311337014\">Eirini Tsekitsidou</a>"
+          ],
+          "photo_reference": "AcYSjRhylnWG--rls1-BS6yo_YMlMt-J18sgYSnaQqmvqJJday4MeQvHL_p3n7kLjHneXzG1xBN3bVTEXBR3cOdZOaataDkUMFqWj5lowa9d4awPVL15xiXeFbLDKSgCUQ9RbBqyABXwiaFUT3lX_Pfo9L8DhRIyjmg2b2o_fzitYBgoW_TZ",
+          "width": 4048
+        }
+      ],
+      "place_id": "ChIJVQvKfYtxqRQRJFOYWwt6FSk",
+      "plus_code": {
+        "compound_code": "3GPW+JH Serres, Greece",
+        "global_code": "8GH53GPW+JH"
+      },
+      "price_level": 2,
+      "rating": 4.4,
+      "reference": "ChIJVQvKfYtxqRQRJFOYWwt6FSk",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 473,
+      "vicinity": "Merarchias 44, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.0907527,
+          "lng": 23.5483592
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.09210168029149,
+            "lng": 23.54970818029151
+          },
+          "southwest": {
+            "lat": 41.0894037197085,
+            "lng": 23.5470102197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Mikel Coffee",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112020459056958130415\">stella papa</a>"
+          ],
+          "photo_reference": "AcYSjRg4z5ie8lkPMoTOzNSuBxu5O22Gn25U7Zh2DwXpPtMpJpuethSto2Lxi5XKiZ7f64K2iy-7Ch3PHgY--j02FfCmH7eouklwYvqgImC29-ZJ0P7t3b1H-ogKjHJMAW4Skwk-OtrJ5zNSiK5vjNHNLEPLvNQgrE08mWCyRdSM_tk_O0if",
+          "width": 1800
+        }
+      ],
+      "place_id": "ChIJI33bqZJxqRQR0T2kFUCJxsQ",
+      "plus_code": {
+        "compound_code": "3GRX+88 Serres, Greece",
+        "global_code": "8GH53GRX+88"
+      },
+      "price_level": 2,
+      "rating": 4.3,
+      "reference": "ChIJI33bqZJxqRQR0T2kFUCJxsQ",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 675,
+      "vicinity": "Vasiliou 9, Serres"
+    },
+    {
+      "business_status": "CLOSED_TEMPORARILY",
+      "geometry": {
+        "location": {
+          "lat": 41.0903883,
+          "lng": 23.5489496
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.0916403802915,
+            "lng": 23.5503881802915
+          },
+          "southwest": {
+            "lat": 41.08894241970851,
+            "lng": 23.5476902197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "New York Cafe",
+      "permanently_closed": true,
+      "photos": [
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114494346710444211242\">Savvas Tsalgatidis</a>"
+          ],
+          "photo_reference": "AcYSjRiUuF2zOZh13nUWU4Fn6xemMuJhmB5mHfFnbBSz2ho-FPPdk5wvEnE4nxv-IKDdSmYsfDUfAlHGth_1Uuso526uKJ5brAZp8H0l7wjf4utwaW8No7ekEZakSROQV9Q7odddzoa2tEEKZsdofccCbVY0JCbGOfD3sIVWbvrxdJnD7RPN",
+          "width": 2252
+        }
+      ],
+      "place_id": "ChIJNykeU41xqRQRJQyQjMKrfWc",
+      "plus_code": {
+        "compound_code": "3GRX+5H Serres, Greece",
+        "global_code": "8GH53GRX+5H"
+      },
+      "price_level": 2,
+      "rating": 4.4,
+      "reference": "ChIJNykeU41xqRQRJQyQjMKrfWc",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 995,
+      "vicinity": "Selefkou 3, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.0907705,
+          "lng": 23.5489725
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.0922875302915,
+            "lng": 23.5503331802915
+          },
+          "southwest": {
+            "lat": 41.0895895697085,
+            "lng": 23.5476352197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Cafe Bar 19",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 960,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111335918559497746631\">Cafe Bar 19</a>"
+          ],
+          "photo_reference": "AcYSjRi-LpAPpLaGeOsNYb-9li9yzJeUzQR0mT1E50JFTExCWaqSbx67DbIs3xCWlrtW-q5--yTzLEoMZmuce4Xu9UznG6QBPebCXtTJXdX68GgnBAqeuysuMQTBx4-LCs8ggHw7-PjtdhYxcqoVKZ0ca1Rl2xiJF54R0cFhf_pDAQ3sDd35",
+          "width": 720
+        }
+      ],
+      "place_id": "ChIJiaHTVI1xqRQRNBlHy2qQvz4",
+      "plus_code": {
+        "compound_code": "3GRX+8H Serres, Greece",
+        "global_code": "8GH53GRX+8H"
+      },
+      "price_level": 2,
+      "rating": 4.6,
+      "reference": "ChIJiaHTVI1xqRQRNBlHy2qQvz4",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 91,
+      "vicinity": "Selefkou 9, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.0904658,
+          "lng": 23.5496188
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.0917255302915,
+            "lng": 23.5509996302915
+          },
+          "southwest": {
+            "lat": 41.0890275697085,
+            "lng": 23.5483016697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "JuiceBox Natural Bites",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100133492800461257654\">JuiceBox</a>"
+          ],
+          "photo_reference": "AcYSjRhsIIgsSU_VAsNsVwghkH_r3ZA64Wjs2TC3VfhOSBCH3PmG7p8QPSkspVYja4pQ1J6HUuj_VHYqRVzDjgWWloQhqpxEA9wwOx9etm8aSITRvrhq7FrGMVAbFSDx_gyEKb8EETFvaCbWlO-MN1IpLFKWUUeXdUoJ4bILZa4N1E7lrOAI",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJezh9qPJxqRQRPh18taFwdNI",
+      "plus_code": {
+        "compound_code": "3GRX+5R Serres, Greece",
+        "global_code": "8GH53GRX+5R"
+      },
+      "price_level": 2,
+      "rating": 4.6,
+      "reference": "ChIJezh9qPJxqRQRPh18taFwdNI",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 452,
+      "vicinity": "Konstantinou Karamanli 2, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.0906824,
+          "lng": 23.5499212
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.09203138029149,
+            "lng": 23.5512701802915
+          },
+          "southwest": {
+            "lat": 41.0893334197085,
+            "lng": 23.5485722197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "Kouzina Bar",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 315,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109987806081142013983\">Kouzina Bar</a>"
+          ],
+          "photo_reference": "AcYSjRgu3TJx2ft9i9nSAz21f1Xg6wTeLAHKC-Cptsyq3EJc9rRB14Tp9LIjcLbfawk-v_ec15vqU5ZaZSCqqapU5NvvIKC4gU149sogMmOcHVLmzhLFPgNzffnqsbwM_rzRQlO2ctPNLWw1JuM8zlftFuHxn6iMGloxAJsDj9qmGqQDreUP",
+          "width": 851
+        }
+      ],
+      "place_id": "ChIJz1F9WO1xqRQR7O4iGy3AGeU",
+      "plus_code": {
+        "compound_code": "3GRX+7X Serres, Greece",
+        "global_code": "8GH53GRX+7X"
+      },
+      "price_level": 2,
+      "rating": 4.5,
+      "reference": "ChIJz1F9WO1xqRQR7O4iGy3AGeU",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "bar",
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 636,
+      "vicinity": "Κωνσταντίνου Καραμανλή, Πλατεία Ελευθερίας 1, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.0870344,
+          "lng": 23.5411804
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.0883946802915,
+            "lng": 23.5425683302915
+          },
+          "southwest": {
+            "lat": 41.0856967197085,
+            "lng": 23.5398703697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "goal cafe",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1512,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109620631237404851914\">GOAL CAFE SPORTS CAFE</a>"
+          ],
+          "photo_reference": "AcYSjRjV9V6GuuMCGyA__4Tf4ViFIPMu1lxzdVPM30aVOBzhVy-BoHDnBJ1MXy8rtwaqjiBeH5dYx1DiJGVhiDLdtKNJSgdRhSgwwYS7eV48qEmHypIw0dEd_QUjn75job4h8zqTqxB4PH-TBIWSi6Jk991wIoMngGbeOL7msEaEhKfYkJGS",
+          "width": 2688
+        }
+      ],
+      "place_id": "ChIJcS_DMIlxqRQR7BP0olzHFM4",
+      "plus_code": {
+        "compound_code": "3GPR+RF Serres, Greece",
+        "global_code": "8GH53GPR+RF"
+      },
+      "rating": 4.5,
+      "reference": "ChIJcS_DMIlxqRQR7BP0olzHFM4",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 168,
+      "vicinity": "8is Maiou 1821 23, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.083883,
+          "lng": 23.543936
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.08524738029151,
+            "lng": 23.5452491802915
+          },
+          "southwest": {
+            "lat": 41.08254941970851,
+            "lng": 23.5425512197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+      "name": "MELIOS OIL",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 809,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104476419802108225139\">MELIOS OIL</a>"
+          ],
+          "photo_reference": "AcYSjRho9hu-4rKBJKbT0VPMB3qGQ1KVgm3wRleU2CwJUjG4lqDNTmOaA6F2ZZSOuNYKrBBvL4kYTS2w9cPQkTRcsIIlWBZcpDGEtYHEL1i-RPqoP1VngaR99XR6Q-QP5JHuVnBlztldW_YMSY61WKHAyQr2aK876L5o-15lKuLBHPRsDm83",
+          "width": 1440
+        }
+      ],
+      "place_id": "ChIJydafPIpxqRQRFMTXYmEaIYE",
+      "plus_code": {
+        "compound_code": "3GMV+HH Serres, Greece",
+        "global_code": "8GH53GMV+HH"
+      },
+      "rating": 4.8,
+      "reference": "ChIJydafPIpxqRQRFMTXYmEaIYE",
+      "scope": "GOOGLE",
+      "types": [
+        "gas_station",
+        "car_wash",
+        "cafe",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 223,
+      "vicinity": "Konstantinou Karamanli 77, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.08995709999999,
+          "lng": 23.553265
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.09135553029149,
+            "lng": 23.5545985302915
+          },
+          "southwest": {
+            "lat": 41.0886575697085,
+            "lng": 23.5519005697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Xryso",
+      "photos": [
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109215881086283338932\">Nikos Moraitis</a>"
+          ],
+          "photo_reference": "AcYSjRguncoGwq7vKf3YOaRc0ujalGSI_ulK9l-FiuV8_ZGvs_ucnQ6pXfHfwU9wvKlLLJnTwTWL6pwNlGRxOKZMFu0sEOmOoE6OQv2EQp8isM79tAj_8O8xVpT2GItkSoEHVEMaZXnLB4mRB6bQcTnTTFtcXXoFDCnzuIaqXj24vzQ9ri1A",
+          "width": 2250
+        }
+      ],
+      "place_id": "ChIJtW8RePJxqRQR3bCtw4zIUMg",
+      "plus_code": {
+        "compound_code": "3HQ3+X8 Serres, Greece",
+        "global_code": "8GH53HQ3+X8"
+      },
+      "rating": 4.1,
+      "reference": "ChIJtW8RePJxqRQR3bCtw4zIUMg",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 99,
+      "vicinity": "Dionisiou Solomou 22, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.0921808,
+          "lng": 23.5529441
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.0935533802915,
+            "lng": 23.5543960302915
+          },
+          "southwest": {
+            "lat": 41.0908554197085,
+            "lng": 23.5516980697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Today's Delicious Stores",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3670,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117109147186957589025\">Today&#39;s Delicious Stores</a>"
+          ],
+          "photo_reference": "AcYSjRiGwpJILrd3vOTANVwk2HIFQ163uLRDTDGe5ks8fxU3UPGZwpZijijnULo8oghxiNTpMXi0tRkG9tBrSr-tjGQC5CBv_EbqqjG_wKM6jEYL02RvX_Bf1ikzRr-zyU0neVVxCg0s4cI3ajh-n9lNBae63ddwUHeh_2ZEYYe1C7OTCn-G",
+          "width": 5520
+        }
+      ],
+      "place_id": "ChIJe3ySse1xqRQRlXnXMSshC68",
+      "plus_code": {
+        "compound_code": "3HR3+V5 Serres, Greece",
+        "global_code": "8GH53HR3+V5"
+      },
+      "price_level": 1,
+      "rating": 3.7,
+      "reference": "ChIJe3ySse1xqRQRlXnXMSshC68",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "convenience_store",
+        "bakery",
+        "meal_takeaway",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 83,
+      "vicinity": "Ethnikis Antistasis 19, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.0901542,
+          "lng": 23.5541083
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.0915371302915,
+            "lng": 23.5554442802915
+          },
+          "southwest": {
+            "lat": 41.0888391697085,
+            "lng": 23.5527463197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "Το σπιτικό",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 1365,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113585814132548099212\">Το σπιτικό</a>"
+          ],
+          "photo_reference": "AcYSjRjpgN-o6Xjw5CerK3cM1IIvVDOMl9VUoQEyJcfB-m9FoshaKj2Eemsgfae5AXkq1nOkRwJzVdlcBi2spn8zn2ImKM_VOW5ulQA0ezuMHNkaGeNbvYUYw6KNhQlJX2AuZZeB0APfoFjY3KcgLf468LgI2rqyxbSk6qjtR6OgtrTyH-z5",
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJ2XND8e1xqRQRL5dhHxeXNAQ",
+      "plus_code": {
+        "compound_code": "3HR3+3J Serres, Greece",
+        "global_code": "8GH53HR3+3J"
+      },
+      "rating": 4.2,
+      "reference": "ChIJ2XND8e1xqRQRL5dhHxeXNAQ",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 52,
+      "vicinity": "Megalou Alexandrou 10, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.0912939,
+          "lng": 23.5568702
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.0926456802915,
+            "lng": 23.5581948802915
+          },
+          "southwest": {
+            "lat": 41.0899477197085,
+            "lng": 23.5554969197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "The Coffee Store 2",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 601,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105651761303163772201\">The Coffee Store 2</a>"
+          ],
+          "photo_reference": "AcYSjRhjKcZmGWfboxaZqX17o-9D_dGbvpU2KGyEpOPJ4DzTMRn6WcJHsD9_i3gNlVtRwTlRad1YsfGPHe6JVPsTGf8vrEkS-xxpfUqWc-rK0X3EYl69t-Yw8U-23-PsJTYtF8RkHAO882AWAuX9CeQEAVhqGb08K9IFmLTgDb1_Nh5lzdxg",
+          "width": 1066
+        }
+      ],
+      "place_id": "ChIJvTtDQe5xqRQRSquqqzpzAvg",
+      "plus_code": {
+        "compound_code": "3HR4+GP Serres, Greece",
+        "global_code": "8GH53HR4+GP"
+      },
+      "rating": 4.5,
+      "reference": "ChIJvTtDQe5xqRQRSquqqzpzAvg",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 92,
+      "vicinity": "Argirou 1, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.09735999999999,
+          "lng": 23.5511289
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.0986627302915,
+            "lng": 23.5526231302915
+          },
+          "southwest": {
+            "lat": 41.0959647697085,
+            "lng": 23.5499251697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+      "name": "Cityζεν WINE · BAR · RESTAURANT",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 440,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113295681084727103336\">Cityζεν WINE · BAR · RESTAURANT</a>"
+          ],
+          "photo_reference": "AcYSjRhU2weYYqdBSQFnKuLCXvsrOW_6xBaA-XQ8lEGZm2UM0vm0bZWKu2Ac8QNqTchny8b8MVNacRUENglf4b6ynAmmSKidVr1tor1CDbiq6VlGQfD9ur04Ld-jD_173tq5yujVHJq8rqhUAUUUGL16kV9cB2s2Uykt47ZbWpmSHaKc34Pd",
+          "width": 785
+        }
+      ],
+      "place_id": "ChIJqX4lHetxqRQRkfsCf9U0mrE",
+      "plus_code": {
+        "compound_code": "3HW2+WF Serres, Greece",
+        "global_code": "8GH53HW2+WF"
+      },
+      "price_level": 2,
+      "rating": 4.5,
+      "reference": "ChIJqX4lHetxqRQRkfsCf9U0mrE",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "cafe",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 2535,
+      "vicinity": "Τέρμα, Exochon, Serres"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 41.0867669,
+          "lng": 23.5340994
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.0880632802915,
+            "lng": 23.5354521302915
+          },
+          "southwest": {
+            "lat": 41.0853653197085,
+            "lng": 23.53275416970849
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+      "name": "The Coffee Store",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108816064367433925687\">The Coffee Store</a>"
+          ],
+          "photo_reference": "AcYSjRgNTB92DWxY_wUIazqVZlYfbEFJNHW8gKpFflD-P7v7EnbX3A59EOh4m8lmFfkLxwg77lJRc4yv9CAnvq0zCAOyowhidutv0sLl1AkDKoHzU9xHnkoijuJ7C83yP1eD8GJQu9-d6xwqg4DZ2E_veP6-S2jAMXXRaGMHOJ9uYbzNOV5X",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJ4YKhAIdxqRQRqJpBdiovBa0",
+      "plus_code": {
+        "compound_code": "3GPM+PJ Serres, Greece",
+        "global_code": "8GH53GPM+PJ"
+      },
+      "price_level": 1,
+      "rating": 4.6,
+      "reference": "ChIJ4YKhAIdxqRQRqJpBdiovBa0",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 181,
+      "vicinity": "Venizelou 156-158, Serres"
+    }
+  ],
+  "status": "OK"
+}

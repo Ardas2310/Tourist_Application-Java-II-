@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.fxmlLoader
+{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 20, 0.5, 0.0, 0.0);
+
+}
+#mainPane
+{
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+
+}
+#welcomeBackLabel
+{
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 20px;
+}
+#welcomeImage
+{
+    -fx-background-color: #acacac;
+    -fx-foreground-color: #acacac;
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+}
+#categoryLabel
+{
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 100px;
+}
+#categoriesLabel
+{
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 40px;
+}
+#shadowLabel{
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 100px;
+
+}
+#shadowFindLabel{
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 100px;
+}
+#descriptionLabel
+{
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 900;
+    -fx-font-size: 15px;
+}
+#tinyNameLabel
+{
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 900;
+    -fx-font-size: 15px;
+}
+
+#appLabel
+{
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 800;
+    -fx-font-size: 40px;
+
+}
+#welcomePane
+{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 20, 0.5, 0.0, 0.0);
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+    -fx-background-color: #fafafa;
+    -fx-foreground-color: #fafafa;
+}
+
+#searchPane
+{
+    -fx-background-color: #e5e5e4;
+    -fx-foreground-color: #e5e5e4;
+    -fx-background-radius: 10 10 10 10;
+}
+
+#searchTextBox
+{
+    -fx-font-size: 15;
+    -fx-padding: 1,1,1,1;
+    -fx-border-width: 2;
+    -fx-border-radius: 1;
+    -fx-border: gone;
+    -fx-background-color: transparent;
+    -fx-text-fill: #8e8e93;
+}
+
+#recPanel1
+{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0.5, 0.0, 0.0);
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: white;
+    -fx-foreground-color: white;
+}
+#recImagePanel
+{
+    -fx-border-image-width: 10 10 10 10;
+}
+#recName1
+{
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 800;
+    -fx-font-size: 18px;
+
+}
+#recRate1
+{
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 600;
+    -fx-font-size: 15px;
+    -fx-text-fill: #0ed598;
+}
+#recType1
+{
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 15px;
+}
+#bulletLabel
+{
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 15px;
+}
+#recLabel
+{
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 40px;
+}
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+    -fx-foreground-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #dedede;
+    -fx-background-radius: 5em;
+}

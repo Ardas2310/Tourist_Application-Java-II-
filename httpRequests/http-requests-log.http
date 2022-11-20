@@ -1,0 +1,6 @@
+GET https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904,23.546338&radius=2000&type=cafe&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8
+
+<> 2022-10-26T205211.200.json
+
+###
+

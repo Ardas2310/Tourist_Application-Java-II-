@@ -1,0 +1,9 @@
+//ChIJGXx-G41xqRQRr6TPQ6pf5lo
+
+GET https://maps.googleapis.com/maps/api/place/nearbysearch/json?placeid=ChIJGXx-G41xqRQRr6TPQ6pf5lo&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8
+
+{%
+    client.test("Request executed successfully", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}
