@@ -13,26 +13,28 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
+import java.util.List;
+
 import static java.lang.String.valueOf;
 
 
 public class Api {
     public Api()
     {
-        ArrayList<String> requests = new ArrayList<String>();
+        List requests = new ArrayList();
 
         requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=cafe&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
-        //requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=restaurant&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
-        //requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=park&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
-        //requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=museum&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
-        //requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=shoe_store&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
-        //requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=clothing_store&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
-        //requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=church&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
-        //requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=bar&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
+        requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=restaurant&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
+        requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=park&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
+        requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=museum&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
+        requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=shoe_store&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
+        requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=clothing_store&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
+        requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=church&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
+        requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=bar&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
 
-        for (int i = 0; i < requests.size(); i++) {
+        for (int i = 0; i < 8; i++) {
             HttpClient client = HttpClient.newHttpClient();
-            HttpRequest request = HttpRequest.newBuilder().uri(URI.create(requests.get(i))).build();
+            HttpRequest request = HttpRequest.newBuilder().uri(URI.create((String) requests.get(i))).build();
             client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
                     .thenApply(HttpResponse::body)
                     //.thenAccept(System.out::println)
@@ -50,16 +52,14 @@ public class Api {
         //Recommended Tables
         String[] shopName = new String[20];
         Double[] shopRate = new Double[20];
-        String[] shopOpening = new String[20];
+        Boolean[] shopOpening = new Boolean[20];
         String[] shopType = new String[20];
 
 
         //Initialize Shops
         Recommended recShops = new Recommended();
         Cafe cafe = new Cafe();
-
-
-        delShopsFromDatabace();
+        int cafeCounter = 0;
 
         int shopID = 0;
         for (int i = 0; i < jsonArray.length(); i++) {
@@ -72,52 +72,58 @@ public class Api {
             if (business_status.equals("OPERATIONAL")) {
 
                 String name = (String) jsonObject1.get("name");
-                //System.out.println("Name: " + name);
+                System.out.println("Name: " + name);
 
-                JSONObject open_now = null;
-                String open_close = false + "";
+                Boolean open_now;
                 try {
-                    open_now = jsonObject1.getJSONObject("opening_hours");
-                } catch (Exception e) {
-                    open_close = "Not Available";
-                }
+                    JSONObject opening_hours = (JSONObject) jsonObject1.get("opening_hours");
 
-                //System.out.println(" " + open_now);
-                //System.out.println(" " + open_close);
+                    open_now = opening_hours.getBoolean("open_now");
+                } catch (Exception e) {
+                    open_now = false;
+                }
+                System.out.println(" " + open_now);
+
 
                 business_status = (String) jsonObject1.get("business_status");
-                //System.out.println("Buissness status:" + business_status);
+                System.out.println("Business status:" + business_status);
 
-                double rating = ((Number)jsonObject1.get("rating")).doubleValue();
-                //System.out.println("Rating:" + rating);
+                double rating;
+                try {
+                    rating = ((Number) jsonObject1.get("rating")).doubleValue();
+                } catch (Exception e) {
+                    rating = 0;
+                }
+                System.out.println("Rating:" + rating);
 
                 String vicinity = (String) jsonObject1.get("vicinity");
-                //System.out.println("Vicinity: " + vicinity);
+                System.out.println("Vicinity: " + vicinity);
 
                 JSONObject geometry_check = (JSONObject) jsonObject1.get("geometry");
                 JSONObject location = geometry_check.getJSONObject("location");
                 float longtitude = location.getFloat("lat");
                 float latitude = location.getFloat("lng");
                 String geometry = valueOf(longtitude)+"  "+ valueOf(latitude);
-                //System.out.println("Geometry: " + geometry);
+                System.out.println("Geometry: " + geometry);
 
                 String type = check_type.getString(0)+" , "+check_type.getString(1)+" , "+check_type.getString(2);
-                //System.out.println("Type: " + type);
+                System.out.println("Type: " + type);
 
                 shopID++;
 
                 shopName[i]= name;
                 shopRate[i] = rating;
-                shopOpening[i] = String.valueOf(open_now);
+                shopOpening[i] = open_now;
                 shopType[i] = check_type.getString(0);
 
-                //if(check_type.getString(0).equals("cafe"))
-                //{
-                //    Cafe.shopCafeName[i] = name;
-                //    Cafe.shopCafeRate[i] = rating;
-                //    Cafe.shopCafeOpening[i] = String.valueOf(open_now);
-                //    Cafe.shopCafeType[i] = check_type.getString(0);
-                //}
+                if(check_type.getString(0).equals("cafe"))
+                {
+                    Cafe.cafeCounter =cafeCounter++;
+                    Cafe.cafeName[i] = name;
+                    Cafe.cafeRate[i] = rating;
+                    Cafe.cafeStatus[i] = open_now;
+                    Cafe.cafeType[i] = check_type.getString(0);
+                }
 
                 addShopToDatabase(shopID, name, valueOf(open_now)  , business_status, rating, vicinity,type,geometry, check_type);
 
@@ -127,15 +133,9 @@ public class Api {
             recShops.GenerateShops(shopName,shopRate,shopOpening,shopType);
             //cafe.GenerateShops(shopCafeName,shopCafeRate,shopCafeOpening,shopCafeType);
         }
-
-        //for (int i = 0; i < shopName.length; i++)
-        //{
-        //    System.out.println(shopName[i]);
-        //}
-
     }
 
-    public static Shop delShopsFromDatabace(){
+    public static Shop delShopsFromDatabase(){
         Shop shop = null;
         final String DB_URL = "jdbc:mysql://localhost/testing?serverTimezone=UTC";
         final String USERNAME = "root";
@@ -144,93 +144,26 @@ public class Api {
             Connection conn2 = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
             Statement stmt2 = conn2.createStatement();
             String sql2 = "DELETE FROM bar;";
-            PreparedStatement preparedStatement2 = conn2.prepareStatement(sql2);
-            preparedStatement2.executeUpdate();
-            System.out.println("bars Deleted");
-            stmt2.close();
-            conn2.close();
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-        try {
-            Connection conn2 = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
-            Statement stmt2 = conn2.createStatement();
-            String sql2 = "DELETE FROM cafe;";
-            PreparedStatement preparedStatement2 = conn2.prepareStatement(sql2);
-            preparedStatement2.executeUpdate();
-            System.out.println("cafes Deleted");
-            stmt2.close();
-            conn2.close();
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-        try {
-            Connection conn2 = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
-            Statement stmt2 = conn2.createStatement();
-            String sql2 = "DELETE FROM church;";
-            PreparedStatement preparedStatement2 = conn2.prepareStatement(sql2);
-            preparedStatement2.executeUpdate();
-            System.out.println("churches Deleted");
-            stmt2.close();
-            conn2.close();
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-        try {
-            Connection conn2 = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
-            Statement stmt2 = conn2.createStatement();
-            String sql2 = "DELETE FROM clothing_store;";
-            PreparedStatement preparedStatement2 = conn2.prepareStatement(sql2);
-            preparedStatement2.executeUpdate();
-            System.out.println("clothing_stores Deleted");
-            stmt2.close();
-            conn2.close();
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-        try {
-            Connection conn2 = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
-            Statement stmt2 = conn2.createStatement();
-            String sql2 = "DELETE FROM museum;";
-            PreparedStatement preparedStatement2 = conn2.prepareStatement(sql2);
-            preparedStatement2.executeUpdate();
-            System.out.println("museums Deleted");
-            stmt2.close();
-            conn2.close();
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-        try {
-            Connection conn2 = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
-            Statement stmt2 = conn2.createStatement();
-            String sql2 = "DELETE FROM park;";
-            PreparedStatement preparedStatement2 = conn2.prepareStatement(sql2);
-            preparedStatement2.executeUpdate();
-            System.out.println("parks Deleted");
-            stmt2.close();
-            conn2.close();
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-        try {
-            Connection conn2 = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
-            Statement stmt2 = conn2.createStatement();
-            String sql2 = "DELETE FROM restaurant;";
-            PreparedStatement preparedStatement2 = conn2.prepareStatement(sql2);
-            preparedStatement2.executeUpdate();
-            System.out.println("restaurants Deleted");
-            stmt2.close();
-            conn2.close();
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-        try {
-            Connection conn2 = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
-            Statement stmt2 = conn2.createStatement();
-            String sql2 = "DELETE FROM shoe_store;";
-            PreparedStatement preparedStatement2 = conn2.prepareStatement(sql2);
-            preparedStatement2.executeUpdate();
-            System.out.println("shoe_stores Deleted");
+            stmt2.execute(sql2);
+            sql2 = "DELETE FROM shoe_store;";
+            stmt2.execute(sql2);
+            sql2 = "DELETE FROM cafe;";
+            stmt2.execute(sql2);
+            sql2 = "DELETE FROM church;";
+            stmt2.execute(sql2);
+            sql2 = "DELETE FROM clothing_store;";
+            stmt2.execute(sql2);
+            sql2 = "DELETE FROM park;";
+            stmt2.execute(sql2);
+            sql2 = "DELETE FROM restaurant;";
+            stmt2.execute(sql2);
+            sql2 = "DELETE FROM shoe_store;";
+            stmt2.execute(sql2);
+            sql2 = "DELETE FROM others;";
+            stmt2.execute(sql2);
+            sql2 = "DELETE FROM museum;";
+            stmt2.execute(sql2);
+            System.out.println("Shop Database Deleted");
             stmt2.close();
             conn2.close();
         }catch(Exception e){

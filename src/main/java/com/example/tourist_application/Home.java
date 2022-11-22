@@ -12,6 +12,7 @@ import javafx.stage.StageStyle;
 public class Home extends Application {
 
     public static void main(String[] args) {
+        Api.delShopsFromDatabase();
         new Api();
         launch(args);
 
@@ -29,7 +30,6 @@ public class Home extends Application {
         stage.initStyle(StageStyle.UNDECORATED);
         scene.setFill(Color.TRANSPARENT);
         stage.initStyle(StageStyle.TRANSPARENT);
-
         stage.show();
 
     }

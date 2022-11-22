@@ -2,13 +2,14 @@ package categories;
 
 public class Cafe implements Category {
 
-    public static String[] shopCafeName = new String[50];
-    public static Double[] shopCafeRate = new Double[50];
-    public static String[] shopCafeOpening = new String[50];
-    public static String[] shopCafeType = new String[50];
+    public static  int cafeCounter;
+    public static   String[] cafeName = new String[20];
+    public static   Double[] cafeRate = new Double[20];
+    public static  String[] cafeType = new String[20];
+    public static  Boolean[] cafeStatus = new Boolean[20];
 
     @Override
-    public void GenerateShops(String[] shopName, Double[] shopRate, String[] shopOpening, String[] shopType) {
+    public void GenerateShops(String[] shopName, Double[] shopRate, Boolean[] shopOpening, String[] shopType) {
 
     }
 }

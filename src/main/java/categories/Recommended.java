@@ -1,72 +1,97 @@
 package categories;
 
-
-import com.example.tourist_application.Home;
 import com.example.tourist_application.HomeController;
+
 import java.util.Random;
 
 
 public class Recommended extends HomeController implements Category
 {
     Random random = new Random();
-    public  String shop1;
-    public   String shopName1;
-    public  String shopType1;
-    public  String shopRate1;
+    public  static String[] shop = new String[5];
+    public static   String[] name = new String[5];
+    public static  String[] type = new String[5];
+    public static String[] rate = new String[5];
+    public static  String[] status = new String[5];
 
     @Override
-    public void GenerateShops(String[] shopName, Double[] shopRate, String[] shopOpening, String[] shopType) {
-        //<editor-fold defaultstate="collapsed" desc=" Recommend Shop 1 ">
-        shop1 = String.valueOf(random.nextInt(shopName.length));
-        shopName1 = String.valueOf(shopName[Integer.parseInt(shop1)]);
-        shopRate1 = String.valueOf(String.valueOf(shopRate[Integer.parseInt(shop1)]));
-        shopType1 = String.valueOf(shopType[Integer.parseInt(shop1)]);
+    public void GenerateShops(String[] shopName, Double[] shopRate, Boolean[] shopOpening, String[] shopType)
+    {
+        //<editor-fold default-state="collapsed" desc=" Recommended Shop 1 ">
+        shop[0] = String.valueOf(random.nextInt(shopName.length));
+        name[0] = String.valueOf(shopName[Integer.parseInt( shop[0])]);
+        rate[0] = String.valueOf(String.valueOf(shopRate[Integer.parseInt( shop[0])]));
+        type[0] = String.valueOf(shopType[Integer.parseInt( shop[0])]);
+        if(String.valueOf(shopOpening[Integer.parseInt( shop[0])]).equals("true"))
+        {
+            status[0] = "Open";
+        }
+        else
+        {
+            status[0] = "Close";
+        }
+
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc=" Recommended Shop 2 ">
+        shop[1] = String.valueOf(random.nextInt(shopName.length));
+        name[1] = String.valueOf(shopName[Integer.parseInt( shop[1])]);
+        rate[1] = String.valueOf(String.valueOf(shopRate[Integer.parseInt( shop[1])]));
+        type[1] = String.valueOf(shopType[Integer.parseInt( shop[1])]);
+        if(String.valueOf(shopOpening[Integer.parseInt( shop[1])]).equals("true"))
+        {
+            status[1] = "Open";
+        }
+        else
+        {
+            status[1] = "Close";
+        }
+
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc=" Recommended Shop 3 ">
+        shop[2] = String.valueOf(random.nextInt(shopName.length));
+        name[2] = String.valueOf(shopName[Integer.parseInt( shop[2])]);
+        rate[2] = String.valueOf(String.valueOf(shopRate[Integer.parseInt( shop[2])]));
+        type[2] = String.valueOf(shopType[Integer.parseInt( shop[2])]);
+        if(String.valueOf(shopOpening[Integer.parseInt( shop[2])]).equals("true"))
+        {
+            status[2] = "Open";
+        }
+        else
+        {
+            status[2] = "Close";
+        }
+
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc=" Recommended Shop 4 ">
+        shop[3] = String.valueOf(random.nextInt(shopName.length));
+        name[3] = String.valueOf(shopName[Integer.parseInt( shop[3])]);
+        rate[3] = String.valueOf(String.valueOf(shopRate[Integer.parseInt( shop[3])]));
+        type[3] = String.valueOf(shopType[Integer.parseInt( shop[3])]);
+        if(String.valueOf(shopOpening[Integer.parseInt( shop[3])]).equals("true"))
+        {
+            status[3] = "Open";
+        }
+        else
+        {
+            status[3] = "Close";
+        }
+
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc=" Recommended Shop 5 ">
+        shop[4] = String.valueOf(random.nextInt(shopName.length));
+        name[4] = String.valueOf(shopName[Integer.parseInt( shop[4])]);
+        rate[4] = String.valueOf(String.valueOf(shopRate[Integer.parseInt( shop[4])]));
+        type[4] = String.valueOf(shopType[Integer.parseInt( shop[4])]);
+        if(String.valueOf(shopOpening[Integer.parseInt( shop[4])]).equals("true"))
+        {
+            status[4] = "Open";
+        }
+        else
+        {
+            status[4] = "Close";
+        }
+
         //</editor-fold>
     }
-
-    public String getShop1() {
-        return shop1;
-    }
-
-    public  void setShop1(String shop1) {
-        shop1 = shop1;
-    }
-
-    public  String getShopName1() {
-        return shopName1;
-    }
-
-    public  void setShopName1(String shopName1) {
-        shopName1 = shopName1;
-    }
-
-    public  String getShopType1() {
-        return shopType1;
-    }
-
-    public  void setShopType1(String shopType1) {
-        shopType1 = shopType1;
-    }
-
-    public  String getShopRate1() {
-        return shopRate1;
-    }
-
-    public  void setShopRate1(String shopRate1) {
-        shopRate1 = shopRate1;
-    }
-
-    /*HomeForm.recRating1.setText(String.valueOf(shopRate[Integer.parseInt(shop1)]));
-    HomeForm.typeRec1.setText(String.valueOf(shopType[Integer.parseInt(shop1)]));
-        if(String.valueOf(shopOpening[Integer.parseInt(shop1)]).equals("{\"open_now\":true}"))
-    {
-        HomeForm.openRecLabel1.setVisible(true);
-        HomeForm.closeRecLabel1.setVisible(false);
-    }
-        else
-    {
-        HomeForm.openRecLabel1.setVisible(false);
-        HomeForm.closeRecLabel1.setVisible(true);
-    }*/
 
 }

@@ -1,0 +1,7 @@
+.primary-color {
+    -fx-background-color: #FFFFFF;
+}
+
+.round-border {
+    -fx-background-radius: 100;
+}
