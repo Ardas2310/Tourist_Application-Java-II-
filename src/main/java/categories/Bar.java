@@ -11,29 +11,30 @@ import java.net.http.HttpResponse;
 
 import static java.lang.String.valueOf;
 
-public class Cafe{
-
-    public Cafe()
+public class Bar
+{
+    public Bar()
     {
         HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder().uri(URI.create("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=cafe&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8")).build();
+        HttpRequest request = HttpRequest.newBuilder().uri(URI.create("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=bar&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8")).build();
         client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
                 .thenApply(HttpResponse::body)
                 //.thenAccept(System.out::println)
-                .thenAccept(Cafe::parseCafe)
+                .thenAccept(Bar::parseBar)
                 .join();
     }
-    public static  int cafeCounter;
-    public static   String[] cafeName = new String[20];
-    public static   Double[] cafeRate = new Double[20];
-    public static  String[] cafeType = new String[20];
-    public static  Boolean[] cafeStatus = new Boolean[20];
 
-    public static void parseCafe(String responseBody) {
+    public static  int barCounter;
+    public static   String[] barName = new String[20];
+    public static   Double[] barRate = new Double[20];
+    public static  String[] barType = new String[20];
+    public static  Boolean[] barStatus = new Boolean[20];
+
+    public static void parseBar(String responseBody) {
         JSONObject jsonObject = new JSONObject(responseBody);
         JSONArray jsonArray = jsonObject.getJSONArray("results");
 
-        int numOfCafe = 0;
+        int numOfBar = 0;
         int shopID = 0;
 
         for (int i = 0; i < jsonArray.length(); i++) {
@@ -85,17 +86,25 @@ public class Cafe{
 
                 shopID++;
 
-                numOfCafe++;
-                cafeName[i]= name;
-                cafeRate[i] = rating;
-                cafeStatus[i] = open_now;
-                cafeType[i] = check_type.getString(0);
+                numOfBar++;
+                barName[i]= name;
+                barRate[i] = rating;
+                barStatus[i] = open_now;
+                barType[i] = check_type.getString(0);
 
                 Api.addShopToDatabase(shopID, name, valueOf(open_now)  , business_status, rating, vicinity,type,geometry, check_type);
 
             }
         }
 
-                cafeCounter = numOfCafe;
+        barCounter = numOfBar;
+
+
+        for(int i =0 ; i<barName.length;i++)
+        {
+            System.out.println(barName[i]);
+        }
     }
 }
+
+

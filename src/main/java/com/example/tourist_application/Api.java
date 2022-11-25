@@ -1,59 +1,50 @@
 package com.example.tourist_application;
-
 import categories.*;
 
 import org.json.JSONArray;
-import org.json.JSONObject;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.util.ArrayList;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
-import java.util.List;
-
-import static java.lang.String.valueOf;
 
 
 public class Api {
+
     public Api()
     {
-        List requests = new ArrayList();
+        Cafe cafe = new Cafe();
+        Bar bar = new Bar();
+        // done requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=cafe&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
+        //requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=restaurant&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
+        //requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=park&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
+        //requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=museum&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
+        //requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=shoe_store&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
+        //requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=clothing_store&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
+        //requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=church&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
+        // done requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=bar&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
 
-        requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=cafe&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
-        requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=restaurant&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
-        requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=park&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
-        requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=museum&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
-        requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=shoe_store&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
-        requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=clothing_store&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
-        requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=church&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
-        requests.add("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=bar&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8");
-
-        for (int i = 0; i < 8; i++) {
-            HttpClient client = HttpClient.newHttpClient();
-            HttpRequest request = HttpRequest.newBuilder().uri(URI.create((String) requests.get(i))).build();
-            client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
-                    .thenApply(HttpResponse::body)
-                    //.thenAccept(System.out::println)
-                    .thenAccept(Api::parse)
-                    .join();
-        }
+        //for (int i = 0; i < 8; i++) {
+        //    HttpClient client = HttpClient.newHttpClient();
+        //    HttpRequest request = HttpRequest.newBuilder().uri(URI.create((String) requests.get(i))).build();
+        //    client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
+        //            .thenApply(HttpResponse::body)
+        //            //.thenAccept(System.out::println)
+        //            .thenAccept(Api::parse)
+        //            .join();
+        //}
     }
 
 
-    public static void parse(String responseBody) {
+    /*public static void parse(String responseBody) {
 
         JSONObject jsonObject = new JSONObject(responseBody);
         JSONArray jsonArray = jsonObject.getJSONArray("results");
 
         //Recommended Tables
-        String[] shopName = new String[20];
-        Double[] shopRate = new Double[20];
-        Boolean[] shopOpening = new Boolean[20];
-        String[] shopType = new String[20];
+        String[] shopName = new String[130];
+        Double[] shopRate = new Double[130];
+        Boolean[] shopOpening = new Boolean[130];
+        String[] shopType = new String[130];
 
 
         //Initialize Shops
@@ -133,7 +124,7 @@ public class Api {
             recShops.GenerateShops(shopName,shopRate,shopOpening,shopType);
             //cafe.GenerateShops(shopCafeName,shopCafeRate,shopCafeOpening,shopCafeType);
         }
-    }
+    }*/
 
     public static Shop delShopsFromDatabase(){
         Shop shop = null;

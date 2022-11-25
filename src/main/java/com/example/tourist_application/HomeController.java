@@ -1,8 +1,8 @@
 package com.example.tourist_application;
 
 import animatefx.animation.*;
+import categories.Bar;
 import categories.Cafe;
-import categories.Recommended;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -14,7 +14,6 @@ import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import java.net.URL;
-import java.util.List;
 import java.util.ResourceBundle;
 
 public class HomeController implements Initializable {
@@ -23,7 +22,6 @@ public class HomeController implements Initializable {
     private Stage stage;
     private boolean isLightMode = true;
     private double yOffset = 0;
-    private List<Recommended> recommendedList;
 
     //<editor-fold default-state="collapsed" desc=" Initialize Objects ">
     @FXML
@@ -205,6 +203,7 @@ public class HomeController implements Initializable {
         //</editor-fold>
 
 
+        //<editor-fold default-state="collapsed" desc=" Animations ">
         appLabel.setOpacity(0.0);
         welcomeImage.setOpacity(0.0);
         descriptionLabel.setOpacity(0.0);
@@ -215,47 +214,46 @@ public class HomeController implements Initializable {
         categoryLabel.setOpacity(0.0);
         registerButton.setOpacity(0.0);
 
-        //<editor-fold default-state="collapsed" desc=" Animations ">
-        new ZoomIn(appLabel).setDelay(Duration.seconds(2)).play();
-        new ZoomIn(registerButton).setDelay(Duration.seconds(2)).play();
-        new ZoomIn(welcomeImage).setDelay(Duration.seconds(2)).play();
-        new ZoomIn(descriptionLabel).setDelay(Duration.seconds(2)).play();
-        new ZoomIn(registerLabel).setDelay(Duration.seconds(2)).play();
-        new ZoomIn(shadowFindLabel).setDelay(Duration.seconds(2)).play();
-        new ZoomIn(shadowLabel).setDelay(Duration.seconds(2)).play();
-        new ZoomIn(tinyNameLabel).setDelay(Duration.seconds(2)).play();
-        new ZoomIn(categoryLabel).setDelay(Duration.seconds(2)).play();
+        new ZoomIn(appLabel).setDelay(Duration.seconds(2.5)).play();
+        new ZoomIn(registerButton).setDelay(Duration.seconds(2.5)).play();
+        new ZoomIn(welcomeImage).setDelay(Duration.seconds(2.5)).play();
+        new ZoomIn(descriptionLabel).setDelay(Duration.seconds(2.5)).play();
+        new ZoomIn(registerLabel).setDelay(Duration.seconds(2.5)).play();
+        new ZoomIn(shadowFindLabel).setDelay(Duration.seconds(2.5)).play();
+        new ZoomIn(shadowLabel).setDelay(Duration.seconds(2.5)).play();
+        new ZoomIn(tinyNameLabel).setDelay(Duration.seconds(2.5)).play();
+        new ZoomIn(categoryLabel).setDelay(Duration.seconds(2.5)).play();
         //</editor-fold
 
         //<editor-fold default-state="collapsed" desc="Recommended Shop 1">
-        recName1.setText(Recommended.name[0]);
-        recType1.setText(Recommended.type[0]);
-        recRate1.setText(Recommended.rate[0]);
-        recStatus1.setText(Recommended.status[0]);
+        recName1.setText(Cafe.cafeName[14]);
+        recType1.setText(Cafe.cafeType[14]);
+        recRate1.setText(String.valueOf(Cafe.cafeRate[14]));
+        recStatus1.setText(String.valueOf(Cafe.cafeStatus[14]));
         //</editor-fold>
         //<editor-fold default-state="collapsed" desc="Recommended Shop 2">
-        recName2.setText(Recommended.name[1]);
-        recType2.setText(Recommended.type[1]);
-        recRate2.setText(Recommended.rate[1]);
-        recStatus2.setText(Recommended.status[1]);
+        recName2.setText(Bar.barName[6]);
+        recType2.setText(Bar.barType[6]);
+        recRate2.setText(String.valueOf(Bar.barRate[6]));
+        recStatus2.setText(String.valueOf(Bar.barStatus[6]));
         //</editor-fold>
         //<editor-fold default-state="collapsed" desc="Recommended Shop 2">
-        recName3.setText(Recommended.name[2]);
-        recType3.setText(Recommended.type[2]);
-        recRate3.setText(Recommended.rate[2]);
-        recStatus3.setText(Recommended.status[2]);
+        recName3.setText(Cafe.cafeName[12]);
+        recType3.setText(Cafe.cafeType[12]);
+        recRate3.setText(String.valueOf(Cafe.cafeRate[12]));
+        recStatus3.setText(String.valueOf(Cafe.cafeStatus[12]));
         //</editor-fold>
         //<editor-fold default-state="collapsed" desc="Recommended Shop 2">
-        recName4.setText(Recommended.name[3]);
-        recType4.setText(Recommended.type[3]);
-        recRate4.setText(Recommended.rate[3]);
-        recStatus4.setText(Recommended.status[3]);
+        recName4.setText(Cafe.cafeName[5]);
+        recType4.setText(Cafe.cafeType[5]);
+        recRate4.setText(String.valueOf(Cafe.cafeRate[5]));
+        recStatus4.setText(String.valueOf(Cafe.cafeStatus[5]));
         //</editor-fold>
         //<editor-fold default-state="collapsed" desc="Recommended Shop 2">
-        recName5.setText(Recommended.name[4]);
-        recType5.setText(Recommended.type[4]);
-        recRate5.setText(Recommended.rate[4]);
-        recStatus5.setText(Recommended.status[4]);
+        recName5.setText(Cafe.cafeName[4]);
+        recType5.setText(Cafe.cafeType[4]);
+        recRate5.setText(String.valueOf(Cafe.cafeRate[4]));
+        recStatus5.setText(String.valueOf(Cafe.cafeStatus[4]));
         //</editor-fold>
     }
 
