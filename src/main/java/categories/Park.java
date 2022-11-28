@@ -1,6 +1,5 @@
 package categories;
 
-
 import com.example.tourist_application.Shop;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -16,29 +15,30 @@ import java.sql.Statement;
 
 import static java.lang.String.valueOf;
 
-public class Cafe{
+public class Park {
 
-    public Cafe()
+    public Park()
     {
         HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder().uri(URI.create("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=cafe&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8")).build();
+        HttpRequest request = HttpRequest.newBuilder().uri(URI.create("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=park&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8")).build();
         client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
                 .thenApply(HttpResponse::body)
                 //.thenAccept(System.out::println)
-                .thenAccept(Cafe::parseCafe)
+                .thenAccept(Park::parsePark)
                 .join();
     }
-    public static  int cafeCounter;
-    public static   String[] cafeName = new String[20];
-    public static   Double[] cafeRate = new Double[20];
-    public static  String[] cafeType = new String[20];
-    public static  Boolean[] cafeStatus = new Boolean[20];
 
-    public static void parseCafe(String responseBody) {
+    public static  int parkCounter;
+    public static   String[] parkName = new String[20];
+    public static   Double[] parkRate = new Double[20];
+    public static  String[] parkType = new String[20];
+    public static  Boolean[] parkStatus = new Boolean[20];
+
+    public static void parsePark(String responseBody) {
         JSONObject jsonObject = new JSONObject(responseBody);
         JSONArray jsonArray = jsonObject.getJSONArray("results");
 
-        int numOfCafe = 0;
+        int numOfParks = 0;
         int shopID = 0;
 
         for (int i = 0; i < jsonArray.length(); i++) {
@@ -90,23 +90,23 @@ public class Cafe{
 
                 shopID++;
 
-                numOfCafe++;
-                cafeName[i]= name;
-                cafeRate[i] = rating;
-                cafeStatus[i] = open_now;
-                cafeType[i] = check_type.getString(0);
+                numOfParks++;
+                parkName[i]= name;
+                parkRate[i] = rating;
+                parkStatus[i] = open_now;
+                parkType[i] = check_type.getString(0);
 
-                addCafeToDatabase(shopID, name, valueOf(open_now)  , business_status, rating, vicinity,type,geometry, check_type);
+                addParkToDatabase(shopID, name, valueOf(open_now)  , business_status, rating, vicinity,type,geometry, check_type);
 
             }
         }
 
-                cafeCounter = numOfCafe;
+        parkCounter= numOfParks;
     }
 
-    public static Shop addCafeToDatabase(Integer shopID, String name, String open_now , String business_status, double rating, String vicinity, String type, String geometry, JSONArray check_type )
+    public static Shop addParkToDatabase(Integer shopID, String name, String open_now , String business_status, double rating, String vicinity, String type, String geometry, JSONArray check_type )
     {
-        Shop cafe = null;
+        Shop park = null;
 
         final String DB_URL = "jdbc:mysql://localhost/testing?serverTimezone=UTC";
         final String USERNAME = "root";
@@ -117,7 +117,7 @@ public class Cafe{
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
 
             Statement stmt = conn.createStatement();
-            String sql = "INSERT INTO cafe (ID, name, open_now, business_status, rating, vicinity, type,geometry) " +
+            String sql = "INSERT INTO park (ID, name, open_now, business_status, rating, vicinity, type,geometry) " +
                     "VALUES (?, ?, ?, ?, ?, ?,?,?)";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setInt(1, shopID);
@@ -132,15 +132,15 @@ public class Cafe{
             //Inserting rows into the table
             int addedRows = preparedStatement.executeUpdate();
             if (addedRows > 0) {
-                cafe = new Shop();
-                cafe.ID = shopID;
-                cafe.name = name;
-                cafe.open_now = open_now;
-                cafe.business_status = business_status;
-                cafe.rating = (float) rating;
-                cafe.vicinity = vicinity;
-                cafe.check_type = type;
-                cafe.geometry = geometry;
+                park = new Shop();
+                park.ID = shopID;
+                park.name = name;
+                park.open_now = open_now;
+                park.business_status = business_status;
+                park.rating = (float) rating;
+                park.vicinity = vicinity;
+                park.check_type = type;
+                park.geometry = geometry;
 
             }
 
@@ -152,6 +152,6 @@ public class Cafe{
             e.printStackTrace();
 
         }
-        return cafe;
+        return park;
     }
 }

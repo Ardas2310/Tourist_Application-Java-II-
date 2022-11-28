@@ -13,8 +13,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1370.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http:
-//javafx.com/fxml/1" fx:controller="com.example.tourist_application.HomeController">
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1370.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tourist_application.HomeController">
    <top>
       <Pane fx:id="topPane" onMouseClicked="#handleClickAction" onMouseDragged="#handleMovementAction" prefHeight="70.0" prefWidth="1360.0" BorderPane.alignment="CENTER">
          <children>
@@ -325,7 +324,10 @@
                            <children>
                               <Pane fx:id="cafePane1" layoutX="14.0" layoutY="14.0" prefHeight="297.0" prefWidth="908.0">
                                  <children>
-                                    <Label fx:id="cafeName1" layoutX="29.0" layoutY="183.0" prefHeight="23.0" prefWidth="164.0" text="cafeName1" />
+                                    <Label fx:id="cafeName1" layoutX="29.0" layoutY="119.0" prefHeight="103.0" prefWidth="297.0" text="cafeName1">
+                                       <graphic>
+                                          <Button fx:id="favButton1" mnemonicParsing="false" onAction="#addToFavourites" text="favButton1" />
+                                       </graphic></Label>
                                     <Label fx:id="cafeType1" layoutX="40.0" layoutY="207.0" text="cafeType1" />
                                     <Label fx:id="cafeBullet1" layoutX="27.0" layoutY="207.0" text="•" />
                                     <Label fx:id="cafeRate1" layoutX="835.0" layoutY="185.0" text="cafeRate1" />

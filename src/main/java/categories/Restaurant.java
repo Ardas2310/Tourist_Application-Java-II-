@@ -16,29 +16,30 @@ import java.sql.Statement;
 
 import static java.lang.String.valueOf;
 
-public class Cafe{
+public class Restaurant {
 
-    public Cafe()
+    public Restaurant()
     {
         HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder().uri(URI.create("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=cafe&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8")).build();
+        HttpRequest request = HttpRequest.newBuilder().uri(URI.create("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.088904%2C23.546338&radius=2000&type=restaurant&key=AIzaSyDK4M6soWgedHy4r6Cf_mLd1lyn2WbRpB8")).build();
         client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
                 .thenApply(HttpResponse::body)
                 //.thenAccept(System.out::println)
-                .thenAccept(Cafe::parseCafe)
+                .thenAccept(Restaurant::parseRestaurant)
                 .join();
     }
-    public static  int cafeCounter;
-    public static   String[] cafeName = new String[20];
-    public static   Double[] cafeRate = new Double[20];
-    public static  String[] cafeType = new String[20];
-    public static  Boolean[] cafeStatus = new Boolean[20];
 
-    public static void parseCafe(String responseBody) {
+    public static  int restaurantCounter;
+    public static   String[] restaurantName = new String[20];
+    public static   Double[] restaurantRate = new Double[20];
+    public static  String[] restaurantType = new String[20];
+    public static  Boolean[] restaurantStatus = new Boolean[20];
+
+    public static void parseRestaurant(String responseBody) {
         JSONObject jsonObject = new JSONObject(responseBody);
         JSONArray jsonArray = jsonObject.getJSONArray("results");
 
-        int numOfCafe = 0;
+        int numOfRes = 0;
         int shopID = 0;
 
         for (int i = 0; i < jsonArray.length(); i++) {
@@ -90,23 +91,23 @@ public class Cafe{
 
                 shopID++;
 
-                numOfCafe++;
-                cafeName[i]= name;
-                cafeRate[i] = rating;
-                cafeStatus[i] = open_now;
-                cafeType[i] = check_type.getString(0);
+                numOfRes++;
+                restaurantName[i]= name;
+                restaurantRate[i] = rating;
+                restaurantStatus[i] = open_now;
+                restaurantType[i] = check_type.getString(0);
 
-                addCafeToDatabase(shopID, name, valueOf(open_now)  , business_status, rating, vicinity,type,geometry, check_type);
+                addRestaurantToDatabase(shopID, name, valueOf(open_now)  , business_status, rating, vicinity,type,geometry, check_type);
 
             }
         }
 
-                cafeCounter = numOfCafe;
+        restaurantCounter = numOfRes;
     }
 
-    public static Shop addCafeToDatabase(Integer shopID, String name, String open_now , String business_status, double rating, String vicinity, String type, String geometry, JSONArray check_type )
+    public static Shop addRestaurantToDatabase(Integer shopID, String name, String open_now , String business_status, double rating, String vicinity, String type, String geometry, JSONArray check_type )
     {
-        Shop cafe = null;
+        Shop restaurant = null;
 
         final String DB_URL = "jdbc:mysql://localhost/testing?serverTimezone=UTC";
         final String USERNAME = "root";
@@ -117,7 +118,7 @@ public class Cafe{
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
 
             Statement stmt = conn.createStatement();
-            String sql = "INSERT INTO cafe (ID, name, open_now, business_status, rating, vicinity, type,geometry) " +
+            String sql = "INSERT INTO restaurant (ID, name, open_now, business_status, rating, vicinity, type,geometry) " +
                     "VALUES (?, ?, ?, ?, ?, ?,?,?)";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setInt(1, shopID);
@@ -132,15 +133,15 @@ public class Cafe{
             //Inserting rows into the table
             int addedRows = preparedStatement.executeUpdate();
             if (addedRows > 0) {
-                cafe = new Shop();
-                cafe.ID = shopID;
-                cafe.name = name;
-                cafe.open_now = open_now;
-                cafe.business_status = business_status;
-                cafe.rating = (float) rating;
-                cafe.vicinity = vicinity;
-                cafe.check_type = type;
-                cafe.geometry = geometry;
+                restaurant = new Shop();
+                restaurant.ID = shopID;
+                restaurant.name = name;
+                restaurant.open_now = open_now;
+                restaurant.business_status = business_status;
+                restaurant.rating = (float) rating;
+                restaurant.vicinity = vicinity;
+                restaurant.check_type = type;
+                restaurant.geometry = geometry;
 
             }
 
@@ -152,6 +153,6 @@ public class Cafe{
             e.printStackTrace();
 
         }
-        return cafe;
+        return restaurant;
     }
 }

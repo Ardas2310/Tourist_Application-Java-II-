@@ -1,6 +1,7 @@
 package categories;
 
-import com.example.tourist_application.Api;
+
+import com.example.tourist_application.Shop;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -8,6 +9,10 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.Statement;
 
 import static java.lang.String.valueOf;
 
@@ -92,18 +97,64 @@ public class Bar
                 barStatus[i] = open_now;
                 barType[i] = check_type.getString(0);
 
-                Api.addShopToDatabase(shopID, name, valueOf(open_now)  , business_status, rating, vicinity,type,geometry, check_type);
+                addBarToDatabase(shopID, name, valueOf(open_now)  , business_status, rating, vicinity,type,geometry, check_type);
 
             }
         }
 
         barCounter = numOfBar;
+    }
 
 
-        for(int i =0 ; i<barName.length;i++)
-        {
-            System.out.println(barName[i]);
+    public static Shop addBarToDatabase(Integer shopID, String name, String open_now , String business_status, double rating, String vicinity, String type, String geometry, JSONArray check_type )
+    {
+        Shop bar = null;
+
+        final String DB_URL = "jdbc:mysql://localhost/testing?serverTimezone=UTC";
+        final String USERNAME = "root";
+        final String PASSWORD = "";
+
+        try {
+
+            Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
+
+            Statement stmt = conn.createStatement();
+            String sql = "INSERT INTO bar (ID, name, open_now, business_status, rating, vicinity, type,geometry) " +
+                    "VALUES (?, ?, ?, ?, ?, ?,?,?)";
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setInt(1, shopID);
+            preparedStatement.setString(2, name);
+            preparedStatement.setString(3, open_now);
+            preparedStatement.setString(4, business_status);
+            preparedStatement.setDouble(5, rating);
+            preparedStatement.setString(6, vicinity);
+            preparedStatement.setString(7, type);
+            preparedStatement.setString(8, geometry);
+            preparedStatement.executeUpdate();
+            //Inserting rows into the table
+            int addedRows = preparedStatement.executeUpdate();
+            if (addedRows > 0) {
+                bar = new Shop();
+                bar.ID = shopID;
+                bar.name = name;
+                bar.open_now = open_now;
+                bar.business_status = business_status;
+                bar.rating = (float) rating;
+                bar.vicinity = vicinity;
+                bar.check_type = type;
+                bar.geometry = geometry;
+
+            }
+
+            stmt.close();
+            conn.close();
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+
         }
+        return bar;
     }
 }
 

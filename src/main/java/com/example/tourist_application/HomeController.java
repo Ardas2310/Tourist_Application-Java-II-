@@ -1,12 +1,11 @@
 package com.example.tourist_application;
 
 import animatefx.animation.*;
-import categories.Bar;
-import categories.Cafe;
+import categories.*;
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -18,14 +17,10 @@ import java.util.ResourceBundle;
 
 public class HomeController implements Initializable {
     private double xOffset = 0;
-    private Scene scene;
-    private Stage stage;
     private boolean isLightMode = true;
     private double yOffset = 0;
 
     //<editor-fold default-state="collapsed" desc=" Initialize Objects ">
-    @FXML
-    private ImageView closeApplication;
     @FXML
     private Label cafeStatus1;
     @FXML
@@ -105,6 +100,8 @@ public class HomeController implements Initializable {
     @FXML
     private Label recStatus4;
     @FXML
+    private Button favButton1;
+    @FXML
     private Label recStatus5;
     @FXML
     private Button registerButton;
@@ -135,6 +132,15 @@ public class HomeController implements Initializable {
 
     //<editor-fold default-state="collapsed" desc=" Events ">
     @FXML
+    protected void addToFavourites(ActionEvent event)
+    {
+       //String shopName = getText;
+
+        //System.out.println(shopName);
+
+        //Api.addFavouriteToDb(shopName);
+    }
+    @FXML
     protected void coffeeCategoryClose(MouseEvent event){
 
         cafeScrollPane.setVisible(false);
@@ -149,17 +155,6 @@ public class HomeController implements Initializable {
         cafeScrollPane.setOpacity(0.0);
         new FadeIn(cafeScrollPane).play();
 
-    }
-   @FXML
-    public void changeMode(MouseEvent event)
-    {
-        isLightMode = !isLightMode;
-        if(isLightMode) {
-            setLightMode();
-        }
-        else {
-            setDarkMode();
-        }
     }
     @FXML
     protected void handleCloseAction(MouseEvent event)
@@ -194,14 +189,8 @@ public class HomeController implements Initializable {
         //Cafe Initializer
         cafeScrollPane.setVisible(false);
         resultsCafe.setText(String.valueOf(Cafe.cafeCounter) + " results" );
-
-        //<editor-fold default-state="collapsed" desc="Cafe 1">
-        cafeName1.setText(Cafe.cafeName[0]);
-        cafeType1.setText(Cafe.cafeType[0]);
-        cafeRate1.setText(String.valueOf(Cafe.cafeRate[0]));
-        cafeStatus1.setText(String.valueOf(Cafe.cafeStatus[0]));
-        //</editor-fold>
-
+        GenerateCafe();
+        GenerateRecommended();
 
         //<editor-fold default-state="collapsed" desc=" Animations ">
         appLabel.setOpacity(0.0);
@@ -224,12 +213,25 @@ public class HomeController implements Initializable {
         new ZoomIn(tinyNameLabel).setDelay(Duration.seconds(2.5)).play();
         new ZoomIn(categoryLabel).setDelay(Duration.seconds(2.5)).play();
         //</editor-fold
+    }
 
+    public void GenerateCafe()
+    {
+        //<editor-fold default-state="collapsed" desc="Cafe 1">
+        cafeName1.setText(Cafe.cafeName[0]);
+        cafeType1.setText(Cafe.cafeType[0]);
+        cafeRate1.setText(String.valueOf(Cafe.cafeRate[0]));
+        cafeStatus1.setText(String.valueOf(Cafe.cafeStatus[0]));
+        //</editor-fold>
+    }
+
+    public void GenerateRecommended()
+    {
         //<editor-fold default-state="collapsed" desc="Recommended Shop 1">
-        recName1.setText(Cafe.cafeName[14]);
-        recType1.setText(Cafe.cafeType[14]);
-        recRate1.setText(String.valueOf(Cafe.cafeRate[14]));
-        recStatus1.setText(String.valueOf(Cafe.cafeStatus[14]));
+        recName1.setText(Church.churchName[2]);
+        recType1.setText(Church.churchType[2]);
+        recRate1.setText(String.valueOf(Church.churchRate[2]));
+        recStatus1.setText(String.valueOf(Church.churchStatus[2]));
         //</editor-fold>
         //<editor-fold default-state="collapsed" desc="Recommended Shop 2">
         recName2.setText(Bar.barName[6]);
@@ -238,33 +240,23 @@ public class HomeController implements Initializable {
         recStatus2.setText(String.valueOf(Bar.barStatus[6]));
         //</editor-fold>
         //<editor-fold default-state="collapsed" desc="Recommended Shop 2">
-        recName3.setText(Cafe.cafeName[12]);
-        recType3.setText(Cafe.cafeType[12]);
-        recRate3.setText(String.valueOf(Cafe.cafeRate[12]));
-        recStatus3.setText(String.valueOf(Cafe.cafeStatus[12]));
+        recName3.setText(Museum.museumName[2]);
+        recType3.setText(Museum.museumType[2]);
+        recRate3.setText(String.valueOf(Museum.museumRate[2]));
+        recStatus3.setText(String.valueOf(Museum.museumStatus[2]));
         //</editor-fold>
         //<editor-fold default-state="collapsed" desc="Recommended Shop 2">
-        recName4.setText(Cafe.cafeName[5]);
-        recType4.setText(Cafe.cafeType[5]);
-        recRate4.setText(String.valueOf(Cafe.cafeRate[5]));
-        recStatus4.setText(String.valueOf(Cafe.cafeStatus[5]));
+        recName4.setText(Restaurant.restaurantName[1]);
+        recType4.setText(Restaurant.restaurantType[1]);
+        recRate4.setText(String.valueOf(Restaurant.restaurantRate[1]));
+        recStatus4.setText(String.valueOf(Restaurant.restaurantStatus[1]));
         //</editor-fold>
         //<editor-fold default-state="collapsed" desc="Recommended Shop 2">
-        recName5.setText(Cafe.cafeName[4]);
-        recType5.setText(Cafe.cafeType[4]);
-        recRate5.setText(String.valueOf(Cafe.cafeRate[4]));
-        recStatus5.setText(String.valueOf(Cafe.cafeStatus[4]));
+        recName5.setText(Park.parkName[10]);
+        recType5.setText(Park.parkType[10]);
+        recRate5.setText(String.valueOf(Park.parkRate[10]));
+        recStatus5.setText(String.valueOf(Park.parkStatus[10]));
         //</editor-fold>
-    }
-
-    private void setLightMode() {
-        mainPane.getStylesheets().remove("nightMode.css");
-        mainPane.getStylesheets().add("lightMode.css");
-    }
-
-    private void setDarkMode() {
-        mainPane.getStylesheets().remove("lightMode.css");
-        mainPane.getStylesheets().add("nightMode.css");
     }
 }
 
