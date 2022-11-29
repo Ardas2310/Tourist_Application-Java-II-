@@ -9,7 +9,7 @@ public class Register {
 
     public static  User user;
 
-    private User addUserToDatabase(Integer id,String name, String email, String phone, String address, String password , String favourites) {
+    public static User addUserToDatabase(Integer id,String name, String email, String phone, String address, String password , String favourites) {
         User user = null;
 
 

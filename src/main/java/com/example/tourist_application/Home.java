@@ -1,5 +1,6 @@
 package com.example.tourist_application;
 
+import animatefx.animation.ZoomIn;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -31,6 +32,5 @@ public class Home extends Application {
         scene.setFill(Color.TRANSPARENT);
         stage.initStyle(StageStyle.TRANSPARENT);
         stage.show();
-
     }
 }

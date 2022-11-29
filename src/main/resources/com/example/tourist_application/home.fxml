@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
 
 <BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1370.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tourist_application.HomeController">
    <top>
@@ -295,7 +296,7 @@
                               <Label fx:id="tinyNameLabel" layoutX="82.0" layoutY="264.0" prefHeight="19.0" prefWidth="34.0" text="FindIt " textFill="#36c4fe" />
                               <Label fx:id="categoryLabel" layoutX="238.0" layoutY="152.0" prefHeight="67.0" prefWidth="250.0" text="Label" textFill="#2c2c2c" />
                               <Label fx:id="registerLabel" layoutX="81.0" layoutY="353.0" prefHeight="183.0" prefWidth="315.0" text="FindIt users have more privileges than guests &#10;as they can rate,  save their favourite &#10;destinations and they also have &#10;recommended destinations for &#10;their tastes... &#10;&#10;So what are you waiting for, register&#10;for the best experience" />
-                              <Button fx:id="registerButton" layoutX="81.0" layoutY="602.0" mnemonicParsing="false" text="Register">
+                              <Button fx:id="registerButton" layoutX="81.0" layoutY="602.0" mnemonicParsing="false" onAction="#loadRegisterForm" text="Register">
                                  <cursor>
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
@@ -347,6 +348,7 @@
                            </children>
                         </Pane>
                         <Label fx:id="resultsCafe" layoutX="53.0" layoutY="322.0" prefHeight="45.0" prefWidth="325.0" text="Results" />
+                        <WebView fx:id="map" layoutX="53.0" layoutY="724.0" prefHeight="325.0" prefWidth="550.0" />
                      </children>
                   </AnchorPane>
               </content>

@@ -5,11 +5,18 @@ import categories.*;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import java.net.URL;
@@ -19,10 +26,15 @@ public class HomeController implements Initializable {
     private double xOffset = 0;
     private boolean isLightMode = true;
     private double yOffset = 0;
+    private Scene scene;
+    private  Parent root;
+    private Stage stage;
 
     //<editor-fold default-state="collapsed" desc=" Initialize Objects ">
     @FXML
     private Label cafeStatus1;
+    @FXML
+    private WebView map;
     @FXML
     private Label cafeName1;
     @FXML
@@ -132,6 +144,19 @@ public class HomeController implements Initializable {
 
     //<editor-fold default-state="collapsed" desc=" Events ">
     @FXML
+    protected void loadRegisterForm(ActionEvent event) throws Exception
+    {
+        Parent root = FXMLLoader.load(getClass().getResource("register.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        scene.setFill(Color.TRANSPARENT);
+        stage.setScene(scene);
+
+        //stage.initStyle(StageStyle.TRANSPARENT);
+        stage.show();
+        new ZoomIn(root).play();
+    }
+    @FXML
     protected void addToFavourites(ActionEvent event)
     {
        //String shopName = getText;
@@ -223,6 +248,10 @@ public class HomeController implements Initializable {
         cafeRate1.setText(String.valueOf(Cafe.cafeRate[0]));
         cafeStatus1.setText(String.valueOf(Cafe.cafeStatus[0]));
         //</editor-fold>
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://restaurantguru.com/Mple-Giakas-Radio-Magazi-Serres#modal_map";
+        web.load(urlweb);
     }
 
     public void GenerateRecommended()

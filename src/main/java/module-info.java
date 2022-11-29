@@ -1,6 +1,7 @@
 module com.example.tourist_application {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.web;
     requires AnimateFX;
     requires org.json;
     requires java.net.http;
