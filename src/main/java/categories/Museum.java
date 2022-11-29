@@ -117,7 +117,7 @@ public class Museum {
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
 
             Statement stmt = conn.createStatement();
-            String sql = "INSERT INTO musuem (ID, name, open_now, business_status, rating, vicinity, type,geometry) " +
+            String sql = "INSERT INTO museum (ID, name, open_now, business_status, rating, vicinity, type,geometry) " +
                     "VALUES (?, ?, ?, ?, ?, ?,?,?)";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setInt(1, shopID);

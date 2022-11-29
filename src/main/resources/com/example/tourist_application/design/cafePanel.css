@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+#closeCafeButton {
+    -fx-background-color: #d9cab3;
+    -fx-background-radius: 6 6 6 6;
+    -fx-border-radius: 6 6 6 6;
+}
+#closeCafeLabel {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 20px;
+    -fx-text-fill: #736c61;
+}
+#xCafeLabel {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 20px;
+    -fx-text-fill: #736c61;
+}
+#resultsCafe {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 25px;
+    -fx-text-fill: #736c61;
+}
+
+#cafePane1 {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0.5, 0.0, 0.0);
+    -fx-background-radius: 8 8 8 8;
+    -fx-border-radius: 8 8 8 8;
+}
+#cafeName1 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 800;
+    -fx-font-size: 18px;
+}
+#cafeType1 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 15px;
+}
+#cafeRate1 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 600;
+    -fx-font-size: 15px;
+    -fx-text-fill: #0ed598;
+}
+#cafeStatus1 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 15px;
+}
+#cafeImage1 {
+    -fx-background-color: transparent;
+    -fx-foreground-color: transparent;
+}
+
+#cafePane2 {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0.5, 0.0, 0.0);
+    -fx-background-radius: 8 8 8 8;
+    -fx-border-radius: 8 8 8 8;
+}
+#cafeName2 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 800;
+    -fx-font-size: 18px;
+}
+#cafeType2 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 15px;
+}
+#cafeRate2 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 600;
+    -fx-font-size: 15px;
+    -fx-text-fill: #0ed598;
+}
+#cafeStatus2 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 15px;
+}
+#cafeImage2 {
+    -fx-background-color: transparent;
+    -fx-foreground-color: transparent;
+}
+
+#cafePane3 {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0.5, 0.0, 0.0);
+    -fx-background-radius: 8 8 8 8;
+    -fx-border-radius: 8 8 8 8;
+}
+#cafeName3 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 800;
+    -fx-font-size: 18px;
+}
+#cafeType3 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 15px;
+}
+#cafeRate3 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 600;
+    -fx-font-size: 15px;
+    -fx-text-fill: #0ed598;
+}
+#cafeStatus3 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 15px;
+}
+#cafeImage3 {
+    -fx-background-color: transparent;
+    -fx-foreground-color: transparent;
+}
