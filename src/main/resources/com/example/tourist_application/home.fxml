@@ -300,42 +300,6 @@
                   </AnchorPane>
               </content>
             </ScrollPane>
-            <ScrollPane fx:id="profilePane" prefHeight="960.0" prefWidth="1290.0">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2000.0" prefWidth="1298.0">
-                     <children>
-                        <WebView fx:id="map" layoutX="-450.0" layoutY="-8.0" prefHeight="457.0" prefWidth="2000.0" />
-                        <Pane fx:id="mainProfilePane" layoutX="72.0" layoutY="357.0" prefHeight="1000.0" prefWidth="1115.0">
-                           <children>
-                              <ImageView fx:id="profileImage" fitHeight="200.0" fitWidth="200.0" layoutX="44.0" layoutY="-68.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label fx:id="nameProfileLabel" layoutX="267.0" layoutY="32.0" prefHeight="26.0" prefWidth="408.0" text="nameProfileLabel" />
-                              <Label fx:id="bulletProfileLabel" layoutX="267.0" layoutY="58.0" text="•" />
-                              <Label fx:id="typeProfileLabel" layoutX="281.0" layoutY="58.0" prefHeight="21.0" prefWidth="430.0" text="typeProfileLabel" />
-                              <Label fx:id="galleryLabel" layoutX="44.0" layoutY="276.0" text="Gallery" />
-                              <ImageView fx:id="closeProfile" fitHeight="40.0" fitWidth="40.0" layoutX="1041.0" layoutY="20.0" onMouseClicked="#closeProfilePane" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@gui/closeProfileIcon.png" />
-                                 </image>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </ImageView>
-                           </children>
-                        </Pane>
-                        <ImageView fx:id="openProfileImage" fitHeight="300.0" fitWidth="300.0" layoutX="81.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@gui/openLabelBig.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="closeProfileImage" fitHeight="300.0" fitWidth="300.0" layoutX="81.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@gui/closeLabelBig.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
-              </content>
-            </ScrollPane>
             <ScrollPane fx:id="cafeScrollPane" prefHeight="960.0" prefWidth="1290.0">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2000.0" prefWidth="1298.0">
@@ -453,6 +417,42 @@
                            </children>
                         </Pane>
                         <Label fx:id="resultsCafe" layoutX="45.0" layoutY="305.0" prefHeight="45.0" prefWidth="320.0" text="Results" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <ScrollPane fx:id="profilePane" prefHeight="960.0" prefWidth="1290.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2000.0" prefWidth="1298.0">
+                     <children>
+                        <WebView fx:id="map" layoutX="-450.0" layoutY="-8.0" prefHeight="457.0" prefWidth="2000.0" />
+                        <Pane fx:id="mainProfilePane" layoutX="72.0" layoutY="357.0" prefHeight="1000.0" prefWidth="1115.0">
+                           <children>
+                              <ImageView fx:id="profileImage" fitHeight="200.0" fitWidth="200.0" layoutX="44.0" layoutY="-68.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label fx:id="nameProfileLabel" layoutX="267.0" layoutY="32.0" prefHeight="26.0" prefWidth="408.0" text="nameProfileLabel" />
+                              <Label fx:id="bulletProfileLabel" layoutX="267.0" layoutY="58.0" text="•" />
+                              <Label fx:id="typeProfileLabel" layoutX="281.0" layoutY="58.0" prefHeight="21.0" prefWidth="430.0" text="typeProfileLabel" />
+                              <Label fx:id="galleryLabel" layoutX="44.0" layoutY="276.0" text="Gallery" />
+                              <ImageView fx:id="closeProfile" fitHeight="40.0" fitWidth="40.0" layoutX="1041.0" layoutY="20.0" onMouseClicked="#closeProfilePane" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@gui/closeProfileIcon.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <ImageView fx:id="openProfileImage" fitHeight="300.0" fitWidth="300.0" layoutX="81.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@gui/openLabelBig.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="closeProfileImage" fitHeight="300.0" fitWidth="300.0" layoutX="81.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@gui/closeLabelBig.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </AnchorPane>
               </content>
