@@ -1,29 +1,31 @@
+* {
+    -fx-primary-color: #007acc;
+    -fx-secondary-color: #4B6EAF;
+    -fx-grey-color: #b9b9b9;
 
-#registerPanel {
-    -fx-background-radius: 18 18 18 18;
-    -fx-border-radius: 18 18 18 18;
+    -fx-focus-color: -fx-secondary-color;
 }
-.text-field
-{
-    -fx-font-size: 15;
-    -fx-padding: 1,1,1,1;
-    -fx-border-width: 2;
-    -fx-border-radius: 1;
-    -fx-border: gone;
-    -fx-background-color: transparent;
-    -fx-text-fill: #8e8e93;
+
+
+.text-field {
+    -fx-accent: -fx-primary-color;
+    -fx-background-color: -fx-grey-color, white;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 0;
+}
+.text-field:focused {
+    -fx-background-color: -fx-primary-color, white;
 }
 
 .label
 {
     -fx-font-family: 'Barlow Condensed', sans-serif;
     -fx-font-weight: 900;
-    -fx-font-size: 15px;
+    -fx-font-size: 18px;
     -fx-text-fill: #252525;
 }
 
-#registerButton
-{
+#registerButton {
     -fx-background-radius: 18 18 18 18;
     -fx-background-color: #29abe2;
     -fx-border: none;
@@ -33,4 +35,20 @@
     -fx-text-decoration: none;
     -fx-display: inline-block;
     -fx-font-size: 16px;
+}
+#appLabel {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 800;
+    -fx-font-size: 40px;
+
+}
+#registerPanel {
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+}
+#loginLabel
+{
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 15px;
 }

@@ -6,7 +6,7 @@ public class Login {
 
     public static User user;
 
-    public User getAuthenticatedUser(String name, String password){
+    public static User getAuthenticatedUser(String name, String password){
 
         User user = null;
 

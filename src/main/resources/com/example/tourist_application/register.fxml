@@ -1,74 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="registerPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1370.0" stylesheets="@design/register.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tourist_application.Register">
+<BorderPane fx:id="registerPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1370.0" stylesheets="@design/register.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tourist_application.RegisterController">
     <center>
         <AnchorPane prefHeight="200.0" prefWidth="1150.0" BorderPane.alignment="CENTER">
             <children>
-                <Label alignment="CENTER" layoutY="69.0" prefHeight="60.0" prefWidth="342.0" text="Welcome Adventurer" textAlignment="CENTER" textFill="#294ada" underline="true">
-                    <font>
-                        <Font name="Berlin Sans FB Demi Bold" size="30.0" />
-                    </font>
-                </Label>
-                <Label layoutX="115.0" layoutY="118.0" text="ENROL TO THE APP NOW!" textFill="#c2babb">
-                    <font>
-                        <Font name="Berlin Sans FB" size="20.0" />
-                    </font>
-                </Label>
-                <Label layoutX="60.0" layoutY="200.0" prefHeight="50.0" prefWidth="150.0" text="Username" textFill="#c2babb">
+            <ImageView fitHeight="700.0" fitWidth="700.0" layoutX="2.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@gui/register/registerFrame.png" />
+               </image>
+            </ImageView>
+                <Label layoutX="53.0" layoutY="146.0" prefHeight="50.0" prefWidth="74.0" text="Username" textFill="#c2babb">
                     <font>
                         <Font name="Berlin Sans FB Demi Bold" size="20.0" />
                     </font>
                 </Label>
-                <TextField fx:id="usernameTf" layoutX="50.0" layoutY="250.0" prefHeight="30.0" prefWidth="555.0" />
-                <Label layoutX="60.0" layoutY="300.0" prefHeight="50.0" prefWidth="150.0" text="Email" textFill="#c2babb">
+                <TextField fx:id="usernameTf" layoutX="53.0" layoutY="190.0" prefHeight="30.0" prefWidth="550.0" />
+                <Label layoutX="52.0" layoutY="226.0" prefHeight="50.0" prefWidth="150.0" text="Email" textFill="#c2babb">
                     <font>
                         <Font name="Berlin Sans FB Demi Bold" size="20.0" />
                     </font>
                 </Label>
-                <TextField fx:id="EmailTF" layoutX="50.0" layoutY="350.0" prefHeight="30.0" prefWidth="611.0" />
-                <Label layoutX="60.0" layoutY="400.0" prefHeight="50.0" prefWidth="150.0" text="Mobile Phone" textFill="#c2babb">
+                <TextField fx:id="EmailTF" layoutX="53.0" layoutY="264.0" prefHeight="30.0" prefWidth="550.0" />
+                <Label layoutX="52.0" layoutY="291.0" prefHeight="50.0" prefWidth="150.0" text="Mobile Phone" textFill="#c2babb">
                     <font>
                         <Font name="Berlin Sans FB Demi Bold" size="20.0" />
                     </font>
                 </Label>
-                <TextField layoutX="50.0" layoutY="450.0" prefHeight="30.0" prefWidth="300.0" />
-                <Label layoutX="366.0" layoutY="399.0" prefHeight="50.0" prefWidth="150.0" text="Address" textFill="#c2babb">
+                <TextField fx:id="mobileTf" layoutX="52.0" layoutY="329.0" prefHeight="30.0" prefWidth="300.0" />
+                <Label layoutX="363.0" layoutY="291.0" prefHeight="50.0" prefWidth="150.0" text="Address" textFill="#c2babb">
                     <font>
                         <Font name="Berlin Sans FB Demi Bold" size="20.0" />
                     </font>
                 </Label>
-                <TextField layoutX="360.0" layoutY="450.0" prefHeight="30.0" prefWidth="294.0" />
-                <Label layoutX="60.0" layoutY="500.0" prefHeight="50.0" prefWidth="150.0" text="Password" textFill="#c2babb">
+                <TextField fx:id="adressTf" layoutX="361.0" layoutY="329.0" prefHeight="30.0" prefWidth="240.0" />
+                <Label layoutX="52.0" layoutY="357.0" prefHeight="50.0" prefWidth="150.0" text="Password" textFill="#c2babb">
                     <font>
                         <Font name="Berlin Sans FB Demi Bold" size="20.0" />
                     </font>
                 </Label>
-                <TextField layoutX="50.0" layoutY="550.0" prefHeight="30.0" prefWidth="524.0" />
-                <Button fx:id="registerButton" alignment="CENTER" layoutX="180.0" layoutY="640.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="200.0" text="Register" textAlignment="CENTER" textFill="#1a00ff">
+                <Button fx:id="registerButton" alignment="CENTER" layoutX="257.0" layoutY="455.0" mnemonicParsing="false" onAction="#userRegister" prefHeight="30.0" prefWidth="133.0" text="Register" textAlignment="CENTER" textFill="#1a00ff">
                     <font>
                         <Font name="Berlin Sans FB Demi Bold" size="18.0" />
                     </font></Button>
-                <Label layoutX="180.0" layoutY="720.0" prefHeight="30.0" prefWidth="140.0" text="Already a member?" textFill="#c2babb">
+                <Label fx:id="loginLabel" layoutX="241.0" layoutY="517.0" prefHeight="30.0" prefWidth="140.0" text="Already a member?" textFill="#c2babb">
                     <font>
                         <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                     </font></Label>
-                <Button layoutX="330.0" layoutY="720.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" text="Login" textFill="#1a00ff" />
+                <Button fx:id="loginButton" layoutX="356.0" layoutY="517.0" mnemonicParsing="false" onAction="#loadLoginForm" prefHeight="30.0" prefWidth="50.0" text="Login" textFill="#1a00ff" />
             <ImageView fitHeight="150.0" fitWidth="845.0" layoutX="481.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fitHeight="703.0" fitWidth="622.0" layoutX="685.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="registerImage" fitHeight="703.0" fitWidth="622.0" layoutX="685.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@gui/register.png" />
                </image>
             </ImageView>
+            <PasswordField fx:id="passwordPf" layoutX="53.0" layoutY="395.0" prefHeight="23.0" prefWidth="550.0" />
             </children>
         </AnchorPane>
     </center>
+   <top>
+      <Pane fx:id="registerTopPane" prefHeight="53.0" prefWidth="1370.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="appLabel" layoutX="50.0" prefHeight="58.0" prefWidth="139.0" text="FindIt." textFill="#2c2c2c">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="closeApplication" fitHeight="20.0" fitWidth="20.0" layoutX="1336.0" layoutY="13.0" onMouseClicked="#handleCloseAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@gui/closeIcon.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="minimizeApp" fitHeight="20.0" fitWidth="20.0" layoutX="1282.0" layoutY="13.0" onMouseClicked="#handleMinimizeAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@gui/minimizeIcon.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="1309.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@gui/maximizeIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
 </BorderPane>

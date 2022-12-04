@@ -1,0 +1,39 @@
+#welcomebg
+{
+    -fx-background-color: white;
+}
+
+#welcomeToLabel
+{
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 15px;
+}
+
+#registerButton {
+    -fx-background-radius: 8 8 8 8;
+    -fx-background-color: #fece2c;
+    -fx-border: none;
+    -fx-text-fill: white;
+    -fx-padding: 15px 32px;
+    -fx-text-align: center;
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 800;
+    -fx-text-fill: #231f20;
+    -fx-text-decoration: none;
+    -fx-display: inline-block;
+    -fx-font-size: 19px;
+}
+
+#guestButton
+{
+
+    -fx-background-color: Transparent;
+    -fx-border: none;
+    -fx-overflow: hidden;
+    -fx-text-fill: #525252;
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 500;
+    -fx-font-size: 15px;
+
+}

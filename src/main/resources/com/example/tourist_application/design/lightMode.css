@@ -5,3 +5,12 @@
 .round-border {
     -fx-background-radius: 100;
 }
+
+
+#welcomebg,#homeACPain{
+    -fx-background-color: white;
+}
+
+#descriptionLabel,#categoryLabel,#welcomeToLabel,#appLabel,#registerLabel,#categoriesLabel,#recLabel{
+    -fx-text-fill: #202124;
+}

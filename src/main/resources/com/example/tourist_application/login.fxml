@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" stylesheets="@design/login.css" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1370.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="loginPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1370.0" stylesheets="@design/login.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tourist_application.LoginController">
     <center>
-        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <AnchorPane fx:id="loginAp" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <children>
-                <TextField fx:id="username" layoutX="871.0" layoutY="281.0" prefHeight="25.0" prefWidth="392.0" />
-                <TextField fx:id="password" layoutX="872.0" layoutY="356.0" prefHeight="25.0" prefWidth="391.0" />
-                <Button fx:id="loginButton" layoutX="995.0" layoutY="430.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" text="Login" />
+                <TextField fx:id="usernameTf" layoutX="871.0" layoutY="281.0" prefHeight="25.0" prefWidth="392.0" />
+                <Button fx:id="loginButton" layoutX="995.0" layoutY="430.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="40.0" prefWidth="120.0" text="Login">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
                 <Label fx:id="labelDonthave" layoutX="914.0" layoutY="529.0" prefHeight="17.0" prefWidth="134.0" text="Don't have an account ?" />
                 <Label fx:id="loginLabel" layoutX="1029.0" layoutY="201.0" prefHeight="35.0" prefWidth="85.0" text="Log In">
                     <font>
@@ -24,6 +27,7 @@
                 </Label>
                 <Button fx:id="createOne" layoutX="1071.0" layoutY="525.0" mnemonicParsing="false" text="Create One" />
                 <ImageView fitHeight="766.0" fitWidth="514.0" layoutX="60.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true" />
+            <PasswordField fx:id="passwordPf" layoutX="871.0" layoutY="360.0" prefHeight="25.0" prefWidth="403.0" />
             </children>
         </AnchorPane>
     </center>

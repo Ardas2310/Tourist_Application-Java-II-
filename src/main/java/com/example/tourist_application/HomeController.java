@@ -1,8 +1,9 @@
 package com.example.tourist_application;
 
-
 import animatefx.animation.*;
 import categories.*;
+import javafx.animation.ScaleTransition;
+import javafx.animation.TranslateTransition;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -14,6 +15,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
@@ -22,9 +24,11 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import java.net.URL;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class HomeController implements Initializable {
+    String[] options = {"Kouzina", "goal cafe ", "melios oil ", "xryso ", "Today's Delicious stores ", "to spitiko ", "the coffee store 2 " , "cityzen " , "the coffee store"};
     private double xOffset = 0;
     private boolean isLightMode = true;
     private double yOffset = 0;
@@ -36,6 +40,18 @@ public class HomeController implements Initializable {
     //<editor-fold default-state="collapsed" desc=" Initialize Objects ">
     @FXML
     private Pane cafePane1;
+    @FXML
+    private Pane findItPane;
+    @FXML
+    private VBox searchVbox;
+    @FXML
+    private ImageView modeButton;
+    @FXML
+    private Label categoriesLabel;
+    @FXML
+    private Pane welcomeMainPane;
+    @FXML
+    private Label welcomeToLabel;
     @FXML
     private ImageView favouriteCafe1;
     @FXML
@@ -183,11 +199,35 @@ public class HomeController implements Initializable {
     @FXML
     private Label descriptionLabel;
     @FXML
+    private ImageView titleBarImage;
+    @FXML
     private Pane recommendedPane;
+    @FXML
+    private ImageView lampImage;
     @FXML
     private AnchorPane welcomePane;
     @FXML
     private AnchorPane mainCategoryPane;
+    @FXML
+    private ImageView parksCategory;
+    @FXML
+    private ImageView nightCategory;
+    @FXML
+    private ImageView circleImage1;
+    @FXML
+    private ImageView modelImage;
+    @FXML
+    private ImageView musuemsCategory;
+    @FXML
+    private ImageView churchCategory;
+    @FXML
+    private AnchorPane recPanel2;
+    @FXML
+    private AnchorPane recPanel3;
+    @FXML
+    private AnchorPane recPanel4;
+    @FXML
+    private AnchorPane recPanel5;
 
     //</editor-fold>
 
@@ -263,7 +303,6 @@ public class HomeController implements Initializable {
         web.load(urlweb);
 
 
-
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
         new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
@@ -304,7 +343,6 @@ public class HomeController implements Initializable {
         web.load(urlweb);
 
 
-
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
         new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
@@ -321,7 +359,79 @@ public class HomeController implements Initializable {
 
     //</editor-fold>
 
+    @FXML
+    protected void  enteredCategoryAnimation(MouseEvent event){
+
+        //double x = 0.1;
+        //double y = 0.1;
+
+        //ScaleTransition scaleTransition = new ScaleTransition();
+        //scaleTransition.setNode(foodCategory);
+        //scaleTransition.setDuration(Duration.millis(300));
+        //scaleTransition.setByX(x);
+        //scaleTransition.setByY(y);
+        //scaleTransition.setAutoReverse(true);
+        //scaleTransition.play();
+    }
+    @FXML
+    protected void  exitedCategoryAnimation(MouseEvent event){
+
+    }
+
+    @FXML
+    protected void dropDownSearchList(ActionEvent event)
+    {
+        //populateDropDownMenu(searchTextBox.getText(), options);
+    }
+
     //<editor-fold default-state="collapsed" desc=" Other ">
+    @FXML
+    protected void guestEnterEvent(ActionEvent event)
+    {
+        //welcomeMainPane.setVisible(false);
+        new BounceOut(modelImage).setDelay(Duration.seconds(0.5)).play();
+        new BounceOut(lampImage).setDelay(Duration.seconds(0.7)).play();
+        new BounceOut(circleImage1).setDelay(Duration.seconds(0.7)).play();
+        new ZoomOut(welcomeMainPane).setDelay(Duration.seconds(1)).play();
+        homeScrollPane.setVisible(true);
+        appLabel.setVisible(true);
+        searchPane.setVisible(true);
+
+        categoriesLabel.setOpacity(0.0);
+        foodCategory.setOpacity(0.0);
+        parksCategory.setOpacity(0.0);
+        coffeeCategory.setOpacity(0.0);
+        nightCategory.setOpacity(0.0);
+        musuemsCategory.setOpacity(0.0);
+        churchCategory.setOpacity(0.0);
+        appLabel.setOpacity(0.0);
+        searchPane.setOpacity(0.0);
+
+        recLabel.setOpacity(0.0);
+        recPanel1.setOpacity(0.0);
+        recPanel2.setOpacity(0.0);
+        recPanel3.setOpacity(0.0);
+        recPanel4.setOpacity(0.0);
+        recPanel5.setOpacity(0.0);
+
+        new ZoomIn(categoriesLabel).play();
+        new ZoomIn(recLabel).play();
+        new ZoomIn(appLabel).play();
+        new ZoomIn(searchPane).play();
+
+        new ZoomIn(foodCategory).setDelay(Duration.seconds(1)).play();
+        new ZoomIn(coffeeCategory).setDelay(Duration.seconds(1.5)).play();
+        new ZoomIn(parksCategory).setDelay(Duration.seconds(2)).play();
+        new ZoomIn(nightCategory).setDelay(Duration.seconds(2.5)).play();
+        new ZoomIn(musuemsCategory).setDelay(Duration.seconds(3)).play();
+        new ZoomIn(churchCategory).setDelay(Duration.seconds(3.5)).play();
+
+        new ZoomIn(recPanel1).setDelay(Duration.seconds(1)).play();
+        new ZoomIn(recPanel2).setDelay(Duration.seconds(1.5)).play();
+        new ZoomIn(recPanel3).setDelay(Duration.seconds(2)).play();
+        new ZoomIn(recPanel4).setDelay(Duration.seconds(2.5)).play();
+        new ZoomIn(recPanel5).setDelay(Duration.seconds(3)).play();
+    }
     @FXML
     protected void closeProfilePane(MouseEvent event)
     {
@@ -392,15 +502,30 @@ public class HomeController implements Initializable {
     }
     //</editor-fold>
 
+    @FXML
+    public void changeMode(MouseEvent event) {
+        isLightMode = !isLightMode;
+        if(isLightMode) {
+            setLightMode();
+        }
+        else {
+            setDarkMode();
+        }
+    }
+
+
+
     //</editor-fold>
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle)
     {
-        //Welcome Animation
-        categoryLabel.setText(cat[0]);
-
+        //Welcome Panel
+        appLabel.setVisible(false);
+        searchPane.setVisible(false);
+        homeScrollPane.setVisible(false);
         profilePane.setVisible(false);
+
         //Status
         openProfileImage.setVisible(false);
         closeProfileImage.setVisible(false);
@@ -429,6 +554,12 @@ public class HomeController implements Initializable {
         tinyNameLabel.setOpacity(0.0);
         categoryLabel.setOpacity(0.0);
         registerButton.setOpacity(0.0);
+        welcomeToLabel.setOpacity(0.0);
+        modelImage.setOpacity(0.0);
+        lampImage.setOpacity(0.0);
+        circleImage1.setOpacity(0.0);
+        titleBarImage.setOpacity(0.0);
+
 
         new ZoomIn(appLabel).setDelay(Duration.seconds(3)).play();
         new ZoomIn(registerButton).setDelay(Duration.seconds(3)).play();
@@ -440,7 +571,45 @@ public class HomeController implements Initializable {
         new ZoomIn(tinyNameLabel).setDelay(Duration.seconds(3)).play();
         new ZoomIn(categoryLabel).setDelay(Duration.seconds(3)).play();
         new ZoomIn(tinyNameLabel).setDelay(Duration.seconds(3)).play();
+        new ZoomIn(welcomeToLabel).setDelay(Duration.seconds(3)).play();
+        new ZoomIn(modelImage).setDelay(Duration.seconds(3.5)).play();
+        new ZoomIn(lampImage).setDelay(Duration.seconds(3.5)).play();
+        new ZoomIn(circleImage1).setDelay(Duration.seconds(3.5)).play();
+        new ZoomIn(titleBarImage).setDelay(Duration.seconds(3.5)).play();
+
+
+        ////Image Animation
+        TranslateTransition modelTranslate = new TranslateTransition();
+        modelTranslate.setNode(modelImage);
+        modelTranslate.setDuration(Duration.millis(1000));
+        modelTranslate.setCycleCount(TranslateTransition.INDEFINITE);
+        modelTranslate.setByY(20);
+        modelTranslate.setAutoReverse(true);
+        modelTranslate.play();
+
+        TranslateTransition lampTranslate = new TranslateTransition();
+        lampTranslate.setNode(lampImage);
+        lampTranslate.setDuration(Duration.millis(1000));
+        lampTranslate.setCycleCount(TranslateTransition.INDEFINITE);
+        lampTranslate.setByY(20);
+        lampTranslate.setAutoReverse(true);
+        lampTranslate.play();
+
+        TranslateTransition circleTranslate = new TranslateTransition();
+        circleTranslate.setNode(circleImage1);
+        circleTranslate.setDuration(Duration.millis(1000));
+        circleTranslate.setCycleCount(TranslateTransition.INDEFINITE);
+        circleTranslate.setByY(20);
+        circleTranslate.setAutoReverse(true);
+        circleTranslate.play();
         //</editor-fold
+
+        searchTextBox.textProperty().addListener((observable, oldValue, newValue) -> {
+            if(newValue.equals("")){
+                searchVbox.getChildren().clear();
+            }
+            populateDropDownMenu(newValue, options);
+        });
     }
 
     public void GenerateCafe()
@@ -526,6 +695,38 @@ public class HomeController implements Initializable {
         recRate5.setText(String.valueOf(Park.parkRate[10]));
         recStatus5.setText(String.valueOf(Park.parkStatus[10]));
         //</editor-fold>
+    }
+
+    private void setLightMode() {
+        modeButton.setOpacity(0.0);
+        new RotateIn(modeButton).play();
+        modeButton.setImage(new Image(getClass().getResourceAsStream("gui/light.png")));
+        mainPane.getStylesheets().remove(Objects.requireNonNull(getClass().getResource("design/nightMode.css")).toExternalForm());
+        mainPane.getStylesheets().add(Objects.requireNonNull(getClass().getResource("design/lightMode.css")).toExternalForm());
+
+    }
+
+    private void setDarkMode() {
+        modeButton.setOpacity(0.0);
+        new RotateIn(modeButton).play();
+        modeButton.setImage(new Image(getClass().getResourceAsStream("gui/night.png")));
+        modeButton.setFitWidth(30);
+        modeButton.setFitWidth(30);
+        mainPane.getStylesheets().remove(Objects.requireNonNull(getClass().getResource("design/lightMode.css")).toExternalForm());
+        mainPane.getStylesheets().add(Objects.requireNonNull(getClass().getResource("design/nightMode.css")).toExternalForm());
+
+    }
+
+    public VBox populateDropDownMenu(String text, String[] options){
+        for(String option : options)
+        {
+            if(!text.replace(" ", "").isEmpty() && option.toUpperCase().contains(text.toUpperCase())){
+                Label label = new Label(option);
+                searchVbox.getChildren().add(label);
+            }
+        }
+        return  searchVbox;
+
     }
 }
 
