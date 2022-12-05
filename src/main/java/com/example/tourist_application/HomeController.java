@@ -2,7 +2,6 @@ package com.example.tourist_application;
 
 import animatefx.animation.*;
 import categories.*;
-import javafx.animation.ScaleTransition;
 import javafx.animation.TranslateTransition;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -15,7 +14,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
@@ -608,7 +606,8 @@ public class HomeController implements Initializable {
             if(newValue.equals("")){
                 searchVbox.getChildren().clear();
             }
-            populateDropDownMenu(newValue, options);
+            searchVbox.getChildren().clear();
+            populateDropDownMenu(searchTextBox.getText(), options);
         });
     }
 

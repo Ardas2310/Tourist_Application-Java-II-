@@ -1,5 +1,5 @@
 .primary-color {
-    -fx-background-color: #FFFFFF;
+    -fx-background-color: #f9f4ec;
 }
 
 .round-border {
@@ -8,7 +8,7 @@
 
 
 #welcomebg,#homeACPain{
-    -fx-background-color: white;
+    -fx-background-color: #f9f4ec;
 }
 
 #descriptionLabel,#categoryLabel,#welcomeToLabel,#appLabel,#registerLabel,#categoriesLabel,#recLabel{

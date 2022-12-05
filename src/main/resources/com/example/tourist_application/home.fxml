@@ -236,7 +236,7 @@
               <content>
                 <AnchorPane fx:id="homeACPain" minHeight="0.0" minWidth="0.0" prefHeight="2000.0" prefWidth="1298.0">
                      <children>
-                        <Pane fx:id="recommendedPane" layoutY="450.0" prefHeight="358.0" prefWidth="1150.0">
+                        <Pane fx:id="recommendedPane" layoutX="10.0" layoutY="410.0" prefHeight="358.0" prefWidth="1150.0">
                            <children>
                               <AnchorPane fx:id="recPanel1" layoutX="40.0" layoutY="80.0" prefHeight="259.0" prefWidth="200.0">
                                  <children>
@@ -380,7 +380,7 @@
                               </AnchorPane>
                            </children>
                         </Pane>
-                        <AnchorPane fx:id="mainCategoryPane" layoutY="100.0" prefHeight="336.0" prefWidth="1290.0">
+                        <AnchorPane fx:id="mainCategoryPane" layoutX="5.0" layoutY="60.0" prefHeight="336.0" prefWidth="1290.0">
                            <children>
                               <Label fx:id="categoriesLabel" layoutX="40.0" layoutY="24.0" text="Discover" textFill="#2c2c2c">
                                  <font>
@@ -437,6 +437,8 @@
                               </ImageView>
                            </children>
                         </AnchorPane>
+                        <Label fx:id="welcomeLabel" layoutX="44.0" layoutY="14.0" prefHeight="26.0" prefWidth="38.0" text="Hello" />
+                        <Label fx:id="userLabel" layoutX="44.0" layoutY="35.0" text="User" />
                      </children>
                   </AnchorPane>
               </content>

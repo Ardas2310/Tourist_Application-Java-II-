@@ -1,32 +1,69 @@
-#loginPanel
+#loginPanel,#loginTopPane
 {
     -fx-background-radius: 18 18 18 18;
     -fx-border-radius: 18 18 18 18;
+    -fx-background-color:  #f9f4ec;
 }
 #loginAp
 {
-    -fx-background-radius: 18 18 18 18;
-    -fx-border-radius: 18 18 18 18;
+    -fx-background-color:  #f9f4ec;
 }
 #loginButton
 {
-    -fx-background-radius: 18 18 18 18;
-    -fx-background-color: #29abe2;
+
+    -fx-background-radius: 8 8 8 8;
+    -fx-background-color: #fece2c;
     -fx-border: none;
-    -fx-text-fill: white;
+    -fx-text-fill: #231f20;
     -fx-padding: 15px 32px;
     -fx-text-align: center;
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 800;
     -fx-text-decoration: none;
     -fx-display: inline-block;
-    -fx-font-size: 16px;
+    -fx-font-size: 19px;
+}
+
+#labelDonthave {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 15px;
+}
+
+#createOne
+{
+    -fx-background-color: Transparent;
+    -fx-border: none;
+    -fx-overflow: hidden;
+    -fx-text-fill: #525252;
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 800;
+    -fx-font-size: 15px;
+}
+
+#loginLabel
+{
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 120px;
+    -fx-text-fill: #252525;
 
 }
 
-.loginLabel
-{
-    -fx-font-family: 'Barlow Condensed', sans-serif;
-    -fx-font-weight: 900;
-    -fx-font-size: 15px;
-    -fx-text-fill: #252525;
 
+.text-field {
+
+    -fx-background-color: #f9f4ec;
+
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-size: 20px;
+    -fx-font-weight: 700;
+
+    -fx-border-color: #202124 ;
+    -fx-border-width: 5px ;
+
+
+}
+.text-field:focused {
+    -fx-background-color: #fece2c;
 }

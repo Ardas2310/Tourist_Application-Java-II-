@@ -13,5 +13,5 @@
 }
 
 #descriptionLabel,#categoryLabel,#welcomeToLabel,#appLabel,#registerLabel,#categoriesLabel,#recLabel{
-    -fx-text-fill: white;
+    -fx-text-fill: #f9f4ec;
 }

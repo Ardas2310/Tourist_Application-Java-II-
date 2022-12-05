@@ -11,8 +11,8 @@ import javafx.stage.StageStyle;
 public class Home extends Application {
 
     public static void main(String[] args) {
-        //Api.delShopsFromDatabase();
-        //new Api();
+        Api.delShopsFromDatabase();
+        new Api();
         launch(args);
 
     }

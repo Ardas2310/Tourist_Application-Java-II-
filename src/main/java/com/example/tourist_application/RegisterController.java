@@ -71,9 +71,10 @@ public class RegisterController implements Initializable {
         scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);
         stage.setScene(scene);
-        stage.initStyle(StageStyle.UNDECORATED);
-        stage.initStyle(StageStyle.TRANSPARENT);
+
+        //stage.initStyle(StageStyle.TRANSPARENT);
         stage.show();
+        new ZoomIn(root).play();
     }
     @FXML
     protected void handleCloseAction(MouseEvent event)
