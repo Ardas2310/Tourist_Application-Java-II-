@@ -39,6 +39,18 @@ public class HomeController implements Initializable {
     @FXML
     private Pane cafePane1;
     @FXML
+    private ImageView recOpenStatus3;
+    @FXML
+    private ImageView recCloseStatus3;
+    @FXML
+    private ImageView recOpenStatus4;
+    @FXML
+    private ImageView recCloseStatus4;
+    @FXML
+    private ImageView recOpenStatus5;
+    @FXML
+    private ImageView recCloseStatus5;
+    @FXML
     private Pane findItPane;
     @FXML
     private VBox searchVbox;
@@ -198,6 +210,14 @@ public class HomeController implements Initializable {
     private Label descriptionLabel;
     @FXML
     private ImageView titleBarImage;
+    @FXML
+    private ImageView recOpenStatus1;
+    @FXML
+    private ImageView recCloseStatus1;
+    @FXML
+    private ImageView recOpenStatus2;
+    @FXML
+    private ImageView recCloseStatus2;
     @FXML
     private Pane recommendedPane;
     @FXML
@@ -412,6 +432,17 @@ public class HomeController implements Initializable {
         recPanel4.setOpacity(0.0);
         recPanel5.setOpacity(0.0);
 
+        recOpenStatus1.setOpacity(0.0);
+        recCloseStatus1.setOpacity(0.0);
+        recOpenStatus2.setOpacity(0.0);
+        recCloseStatus2.setOpacity(0.0);
+        recOpenStatus3.setOpacity(0.0);
+        recCloseStatus3.setOpacity(0.0);
+        recOpenStatus4.setOpacity(0.0);
+        recCloseStatus4.setOpacity(0.0);
+        recOpenStatus5.setOpacity(0.0);
+        recCloseStatus5.setOpacity(0.0);
+
         new ZoomIn(categoriesLabel).play();
         new ZoomIn(recLabel).play();
         new ZoomIn(appLabel).play();
@@ -429,6 +460,8 @@ public class HomeController implements Initializable {
         new ZoomIn(recPanel3).setDelay(Duration.seconds(2)).play();
         new ZoomIn(recPanel4).setDelay(Duration.seconds(2.5)).play();
         new ZoomIn(recPanel5).setDelay(Duration.seconds(3)).play();
+
+        GenerateRecommended();
     }
     @FXML
     protected void closeProfilePane(MouseEvent event)
@@ -540,8 +573,6 @@ public class HomeController implements Initializable {
         cafeScrollPane.setVisible(false);
         resultsCafe.setText(String.valueOf(Cafe.cafeCounter) + " results" );
 
-        GenerateRecommended();
-
         //<editor-fold default-state="collapsed" desc=" Animations ">
         appLabel.setOpacity(0.0);
         welcomeImage.setOpacity(0.0);
@@ -559,6 +590,7 @@ public class HomeController implements Initializable {
         titleBarImage.setOpacity(0.0);
 
 
+
         new ZoomIn(appLabel).setDelay(Duration.seconds(3)).play();
         new ZoomIn(registerButton).setDelay(Duration.seconds(3)).play();
         new ZoomIn(welcomeImage).setDelay(Duration.seconds(3)).play();
@@ -574,6 +606,8 @@ public class HomeController implements Initializable {
         new ZoomIn(lampImage).setDelay(Duration.seconds(3.5)).play();
         new ZoomIn(circleImage1).setDelay(Duration.seconds(3.5)).play();
         new ZoomIn(titleBarImage).setDelay(Duration.seconds(3.5)).play();
+
+
 
 
         ////Image Animation
@@ -669,30 +703,81 @@ public class HomeController implements Initializable {
         recType1.setText(Church.churchType[2]);
         recRate1.setText(String.valueOf(Church.churchRate[2]));
         recStatus1.setText(String.valueOf(Church.churchStatus[2]));
+        if(String.valueOf(Church.churchStatus[2]).equals("true"))
+        {
+            recOpenStatus1.setVisible(true);
+            new FadeInLeft(recOpenStatus1).setDelay(Duration.seconds(3.2)).play();
+        }
+        else
+        {
+            recCloseStatus1.setVisible(true);
+            new FadeInLeft(recCloseStatus1).setDelay(Duration.seconds(3.2)).play();
+        }
         //</editor-fold>
         //<editor-fold default-state="collapsed" desc="Recommended Shop 2">
         recName2.setText(Bar.barName[6]);
         recType2.setText(Bar.barType[6]);
         recRate2.setText(String.valueOf(Bar.barRate[6]));
         recStatus2.setText(String.valueOf(Bar.barStatus[6]));
+        if(String.valueOf(Bar.barStatus[6]).equals("true"))
+        {
+            recOpenStatus1.setVisible(true);
+            new FadeInLeft(recOpenStatus2).setDelay(Duration.seconds(3.2)).play();
+        }
+        else
+        {
+            recCloseStatus1.setVisible(true);
+            new FadeInLeft(recCloseStatus2).setDelay(Duration.seconds(3.2)).play();
+        }
         //</editor-fold>
-        //<editor-fold default-state="collapsed" desc="Recommended Shop 2">
+        //<editor-fold default-state="collapsed" desc="Recommended Shop 3">
         recName3.setText(Museum.museumName[2]);
         recType3.setText(Museum.museumType[2]);
         recRate3.setText(String.valueOf(Museum.museumRate[2]));
         recStatus3.setText(String.valueOf(Museum.museumStatus[2]));
+        if(String.valueOf(Museum.museumStatus[2]).equals("true"))
+        {
+            recOpenStatus1.setVisible(true);
+            new FadeInLeft(recOpenStatus3).setDelay(Duration.seconds(3.2)).play();
+        }
+        else
+        {
+            recCloseStatus1.setVisible(true);
+            new FadeInLeft(recCloseStatus3).setDelay(Duration.seconds(3.2)).play();
+        }
         //</editor-fold>
-        //<editor-fold default-state="collapsed" desc="Recommended Shop 2">
+        //<editor-fold default-state="collapsed" desc="Recommended Shop 4">
         recName4.setText(Restaurant.restaurantName[1]);
         recType4.setText(Restaurant.restaurantType[1]);
         recRate4.setText(String.valueOf(Restaurant.restaurantRate[1]));
         recStatus4.setText(String.valueOf(Restaurant.restaurantStatus[1]));
+        if(String.valueOf(Restaurant.restaurantStatus[1]).equals("true"))
+        {
+            recOpenStatus1.setVisible(true);
+            new FadeInLeft(recOpenStatus4).setDelay(Duration.seconds(3.2)).play();
+        }
+        else
+        {
+            recCloseStatus1.setVisible(true);
+            new FadeInLeft(recCloseStatus4).setDelay(Duration.seconds(3.2)).play();
+        }
+
         //</editor-fold>
-        //<editor-fold default-state="collapsed" desc="Recommended Shop 2">
+        //<editor-fold default-state="collapsed" desc="Recommended Shop 5">
         recName5.setText(Park.parkName[10]);
         recType5.setText(Park.parkType[10]);
         recRate5.setText(String.valueOf(Park.parkRate[10]));
         recStatus5.setText(String.valueOf(Park.parkStatus[10]));
+        if(String.valueOf(Park.parkStatus[10]).equals("true"))
+        {
+            recOpenStatus1.setVisible(true);
+            new FadeInLeft(recOpenStatus5).setDelay(Duration.seconds(3.2)).play();
+        }
+        else
+        {
+            recCloseStatus1.setVisible(true);
+            new FadeInLeft(recCloseStatus5).setDelay(Duration.seconds(3.2)).play();
+        }
         //</editor-fold>
     }
 

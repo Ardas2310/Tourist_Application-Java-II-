@@ -232,6 +232,68 @@
                   </AnchorPane>
               </content>
             </ScrollPane>
+            <VBox fx:id="searchVbox" layoutX="150.0" prefHeight="126.0" prefWidth="399.0" />
+            <Pane fx:id="welcomeMainPane" prefHeight="960.0" prefWidth="1290.0">
+               <children>
+                  <AnchorPane fx:id="welcomebg" prefHeight="947.0" prefWidth="1274.0">
+                     <children>
+                        <ImageView fx:id="welcomeImage" fitHeight="869.0" fitWidth="796.0" layoutX="256.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@gui/welcome/window.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="descriptionLabel" layoutX="694.0" layoutY="299.0" prefHeight="30.0" prefWidth="284.0" text="provides the best servises for the best experience." />
+                        <Label fx:id="shadowFindLabel" layoutX="654.0" layoutY="188.0" prefHeight="146.0" prefWidth="161.0" text="Find">
+                           <font>
+                              <Font name="Yu Gothic Bold" size="60.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shadowLabel" layoutX="658.0" layoutY="197.0" prefHeight="130.0" prefWidth="161.0" text="Find" textFill="#fece2c">
+                           <font>
+                              <Font name="Yu Gothic Bold" size="60.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tinyNameLabel" layoutX="658.0" layoutY="306.0" prefHeight="19.0" prefWidth="34.0" text="FindIt " textFill="#fece2c" />
+                        <Label fx:id="categoryLabel" layoutX="815.0" layoutY="196.0" prefHeight="130.0" prefWidth="58.0" text="It" textFill="#2c2c2c" />
+                        <Label fx:id="registerLabel" layoutX="657.0" layoutY="346.0" prefHeight="183.0" prefWidth="315.0" text="FindIt users have more privileges than guests &#10;as they can rate,  save their favourite &#10;destinations and they also have &#10;recommended destinations for &#10;their tastes... &#10;&#10;So what are you waiting for, register&#10;for the best experience" />
+                        <Label fx:id="welcomeToLabel" layoutX="662.0" layoutY="199.0" text="W  E  L  C  O  M  E   T  O  " />
+                        <Button fx:id="guestButton" layoutX="729.0" layoutY="662.0" mnemonicParsing="false" onAction="#guestEnterEvent" text="Continue as a guest">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="registerButton" layoutX="724.0" layoutY="555.0" mnemonicParsing="false" onAction="#loadRegisterForm" prefHeight="56.0" prefWidth="125.0" text="Register">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <ImageView fx:id="circleImage1" fitHeight="111.0" fitWidth="112.0" layoutX="320.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@gui/welcome/circle.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="modelImage" fitHeight="731.0" fitWidth="556.0" layoutX="42.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@gui/welcome/person.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="lampImage" fitHeight="132.0" fitWidth="101.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@gui/welcome/lamp.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="titleBarImage" fitHeight="20.0" fitWidth="129.0" layoutX="844.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@gui/welcome/buttons.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="orLabel" layoutX="781.0" layoutY="631.0" text="or" />
+                        <Line endX="-25.0" layoutX="796.0" layoutY="642.0" opacity="0.26" startX="-172.0" stroke="#202124" />
+                        <Line endX="41.0" layoutX="907.0" layoutY="641.0" opacity="0.26" startX="-100.0" stroke="#202124" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
             <ScrollPane fx:id="homeScrollPane" prefHeight="960.0" prefWidth="1290.0">
               <content>
                 <AnchorPane fx:id="homeACPain" minHeight="0.0" minWidth="0.0" prefHeight="2000.0" prefWidth="1298.0">
@@ -378,6 +440,56 @@
                                     <ImageView fx:id="recImage5" fitHeight="123.0" fitWidth="198.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
                                  </children>
                               </AnchorPane>
+                              <ImageView fx:id="recOpenStatus1" fitHeight="360.0" fitWidth="310.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@gui/openLabelBig.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="recCloseStatus1" fitHeight="360.0" fitWidth="310.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@gui/closeLabelBig.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="recOpenStatus2" fitHeight="360.0" fitWidth="310.0" layoutX="240.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@gui/openLabelBig.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="recCloseStatus2" fitHeight="360.0" fitWidth="310.0" layoutX="240.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@gui/closeLabelBig.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="recOpenStatus3" fitHeight="360.0" fitWidth="310.0" layoutX="480.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@gui/openLabelBig.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="recCloseStatus3" fitHeight="360.0" fitWidth="310.0" layoutX="480.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@gui/closeLabelBig.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="recOpenStatus4" fitHeight="360.0" fitWidth="310.0" layoutX="720.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@gui/openLabelBig.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="recCloseStatus4" fitHeight="360.0" fitWidth="310.0" layoutX="720.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@gui/closeLabelBig.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="recOpenStatus5" fitHeight="360.0" fitWidth="310.0" layoutX="960.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@gui/openLabelBig.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="recCloseStatus5" fitHeight="360.0" fitWidth="310.0" layoutX="960.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@gui/closeLabelBig.png" />
+                                 </image>
+                              </ImageView>
                            </children>
                         </Pane>
                         <AnchorPane fx:id="mainCategoryPane" layoutX="5.0" layoutY="60.0" prefHeight="336.0" prefWidth="1290.0">
@@ -443,68 +555,6 @@
                   </AnchorPane>
               </content>
             </ScrollPane>
-            <VBox fx:id="searchVbox" layoutX="150.0" prefHeight="126.0" prefWidth="399.0" />
-            <Pane fx:id="welcomeMainPane" prefHeight="960.0" prefWidth="1290.0">
-               <children>
-                  <AnchorPane fx:id="welcomebg" prefHeight="947.0" prefWidth="1274.0">
-                     <children>
-                        <ImageView fx:id="welcomeImage" fitHeight="869.0" fitWidth="796.0" layoutX="256.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@gui/welcome/window.png" />
-                           </image>
-                        </ImageView>
-                        <Label fx:id="descriptionLabel" layoutX="694.0" layoutY="299.0" prefHeight="30.0" prefWidth="284.0" text="provides the best servises for the best experience." />
-                        <Label fx:id="shadowFindLabel" layoutX="654.0" layoutY="188.0" prefHeight="146.0" prefWidth="161.0" text="Find">
-                           <font>
-                              <Font name="Yu Gothic Bold" size="60.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="shadowLabel" layoutX="658.0" layoutY="197.0" prefHeight="130.0" prefWidth="161.0" text="Find" textFill="#fece2c">
-                           <font>
-                              <Font name="Yu Gothic Bold" size="60.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="tinyNameLabel" layoutX="658.0" layoutY="306.0" prefHeight="19.0" prefWidth="34.0" text="FindIt " textFill="#fece2c" />
-                        <Label fx:id="categoryLabel" layoutX="815.0" layoutY="196.0" prefHeight="130.0" prefWidth="58.0" text="It" textFill="#2c2c2c" />
-                        <Label fx:id="registerLabel" layoutX="657.0" layoutY="346.0" prefHeight="183.0" prefWidth="315.0" text="FindIt users have more privileges than guests &#10;as they can rate,  save their favourite &#10;destinations and they also have &#10;recommended destinations for &#10;their tastes... &#10;&#10;So what are you waiting for, register&#10;for the best experience" />
-                        <Label fx:id="welcomeToLabel" layoutX="662.0" layoutY="199.0" text="W  E  L  C  O  M  E   T  O  " />
-                        <Button fx:id="guestButton" layoutX="729.0" layoutY="662.0" mnemonicParsing="false" onAction="#guestEnterEvent" text="Continue as a guest">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </Button>
-                        <Button fx:id="registerButton" layoutX="724.0" layoutY="555.0" mnemonicParsing="false" onAction="#loadRegisterForm" prefHeight="56.0" prefWidth="125.0" text="Register">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </Button>
-                        <ImageView fx:id="circleImage1" fitHeight="111.0" fitWidth="112.0" layoutX="320.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@gui/welcome/circle.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="modelImage" fitHeight="731.0" fitWidth="556.0" layoutX="42.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@gui/welcome/person.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="lampImage" fitHeight="132.0" fitWidth="101.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@gui/welcome/lamp.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="titleBarImage" fitHeight="20.0" fitWidth="129.0" layoutX="844.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@gui/welcome/buttons.png" />
-                           </image>
-                        </ImageView>
-                        <Label fx:id="orLabel" layoutX="781.0" layoutY="631.0" text="or" />
-                        <Line endX="-25.0" layoutX="796.0" layoutY="642.0" opacity="0.26" startX="-172.0" stroke="#202124" />
-                        <Line endX="41.0" layoutX="907.0" layoutY="641.0" opacity="0.26" startX="-100.0" stroke="#202124" />
-                     </children>
-                  </AnchorPane>
-               </children>
-            </Pane>
          </children>
       </Pane>
    </center>
