@@ -415,7 +415,7 @@ public class HomeController implements Initializable {
     @FXML
     protected void  exitedCategoryAnimation(MouseEvent event){
         ScaleTransition scaleTransition = new ScaleTransition();
-        scaleTransition.setNode(scaleTransition.getNode());
+        scaleTransition.setNode(foodCategory);
         scaleTransition.setDuration(Duration.millis(300));
         scaleTransition.setFromX(1.1);
         scaleTransition.setFromY(1.1);
