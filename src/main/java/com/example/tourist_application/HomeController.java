@@ -2,6 +2,7 @@ package com.example.tourist_application;
 
 import animatefx.animation.*;
 import categories.*;
+import javafx.animation.ScaleTransition;
 import javafx.animation.TranslateTransition;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -17,17 +18,24 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.Statement;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class HomeController implements Initializable {
     String[] options = {"Kouzina", "goal cafe ", "melios oil ", "xryso ", "Today's Delicious stores ", "to spitiko ", "the coffee store 2 " , "cityzen " , "the coffee store"};
     private double xOffset = 0;
+    private boolean isFavourite = false;
+    private boolean isRating = false;
     private boolean isLightMode = true;
     private double yOffset = 0;
     private Scene scene;
@@ -38,6 +46,20 @@ public class HomeController implements Initializable {
     //<editor-fold default-state="collapsed" desc=" Initialize Objects ">
     @FXML
     private Pane cafePane1;
+    @FXML
+    private Pane ratePane;
+    @FXML
+    private ImageView rateButton1;
+    @FXML
+    private ImageView rateButton2;
+    @FXML
+    private ImageView rateButton3;
+    @FXML
+    private ImageView rateButton4;
+    @FXML
+    private ImageView rateButton5;
+    @FXML
+    private Pane searchResultsPanel;
     @FXML
     private ImageView recOpenStatus3;
     @FXML
@@ -378,29 +400,116 @@ public class HomeController implements Initializable {
     //</editor-fold>
 
     @FXML
-    protected void  enteredCategoryAnimation(MouseEvent event){
-
-        //double x = 0.1;
-        //double y = 0.1;
-
-        //ScaleTransition scaleTransition = new ScaleTransition();
-        //scaleTransition.setNode(foodCategory);
-        //scaleTransition.setDuration(Duration.millis(300));
-        //scaleTransition.setByX(x);
-        //scaleTransition.setByY(y);
-        //scaleTransition.setAutoReverse(true);
-        //scaleTransition.play();
+    protected void  enteredCategoryAnimation(MouseEvent event)
+    {
+        ScaleTransition scaleTransition = new ScaleTransition();
+        scaleTransition.setNode(foodCategory);
+        scaleTransition.setDuration(Duration.millis(300));
+        scaleTransition.setFromX(1);
+        scaleTransition.setFromY(1);
+        scaleTransition.setToX(1.1);
+        scaleTransition.setToY(1.1);
+        scaleTransition.play();
     }
+
     @FXML
     protected void  exitedCategoryAnimation(MouseEvent event){
+        ScaleTransition scaleTransition = new ScaleTransition();
+        scaleTransition.setNode(scaleTransition.getNode());
+        scaleTransition.setDuration(Duration.millis(300));
+        scaleTransition.setFromX(1.1);
+        scaleTransition.setFromY(1.1);
+        scaleTransition.setToX(1);
+        scaleTransition.setToY(1);
+        scaleTransition.play();
+    }
 
+
+    @FXML
+    protected void showSearchPanel(MouseEvent event)
+    {
+        //populateDropDownMenu(searchTextBox.getText(), options);
+        searchResultsPanel.setVisible(true);
+        searchResultsPanel.setOpacity(0.0);
+        new FadeIn(searchResultsPanel).play();
     }
 
     @FXML
-    protected void dropDownSearchList(ActionEvent event)
+    protected void hideSearchPanel(MouseEvent event)
     {
         //populateDropDownMenu(searchTextBox.getText(), options);
+        searchResultsPanel.setVisible(false);
     }
+
+    //<editor-fold default-state="collapsed" desc=" Rating Fill ">
+    @FXML
+    protected void fillRateButton1(MouseEvent event)
+    {
+        rateButton1.setImage(new Image(getClass().getResourceAsStream("gui/rating-fill.png")));
+    }
+    @FXML
+    protected void emptyRateButton1(MouseEvent event){
+        rateButton1.setImage(new Image(getClass().getResourceAsStream("gui/rating.png")));
+    }
+    @FXML
+    protected void fillRateButton2(MouseEvent event)
+    {
+        rateButton1.setImage(new Image(getClass().getResourceAsStream("gui/rating-fill.png")));
+        rateButton2.setImage(new Image(getClass().getResourceAsStream("gui/rating-fill.png")));
+    }
+    @FXML
+    protected void emptyRateButton2(MouseEvent event){
+        rateButton1.setImage(new Image(getClass().getResourceAsStream("gui/rating.png")));
+        rateButton2.setImage(new Image(getClass().getResourceAsStream("gui/rating.png")));
+    }
+    @FXML
+    protected void fillRateButton3(MouseEvent event)
+    {
+        rateButton1.setImage(new Image(getClass().getResourceAsStream("gui/rating-fill.png")));
+        rateButton2.setImage(new Image(getClass().getResourceAsStream("gui/rating-fill.png")));
+        rateButton3.setImage(new Image(getClass().getResourceAsStream("gui/rating-fill.png")));
+
+    }
+    @FXML
+    protected void emptyRateButton3(MouseEvent event){
+        rateButton1.setImage(new Image(getClass().getResourceAsStream("gui/rating.png")));
+        rateButton2.setImage(new Image(getClass().getResourceAsStream("gui/rating.png")));
+        rateButton3.setImage(new Image(getClass().getResourceAsStream("gui/rating.png")));
+    }
+    @FXML
+    protected void fillRateButton4(MouseEvent event)
+    {
+        rateButton1.setImage(new Image(getClass().getResourceAsStream("gui/rating-fill.png")));
+        rateButton2.setImage(new Image(getClass().getResourceAsStream("gui/rating-fill.png")));
+        rateButton3.setImage(new Image(getClass().getResourceAsStream("gui/rating-fill.png")));
+        rateButton4.setImage(new Image(getClass().getResourceAsStream("gui/rating-fill.png")));
+    }
+    @FXML
+    protected void emptyRateButton4(MouseEvent event){
+        rateButton1.setImage(new Image(getClass().getResourceAsStream("gui/rating.png")));
+        rateButton2.setImage(new Image(getClass().getResourceAsStream("gui/rating.png")));
+        rateButton3.setImage(new Image(getClass().getResourceAsStream("gui/rating.png")));
+        rateButton4.setImage(new Image(getClass().getResourceAsStream("gui/rating.png")));
+    }
+    @FXML
+    protected void fillRateButton5(MouseEvent event)
+    {
+        rateButton1.setImage(new Image(getClass().getResourceAsStream("gui/rating-fill.png")));
+        rateButton2.setImage(new Image(getClass().getResourceAsStream("gui/rating-fill.png")));
+        rateButton3.setImage(new Image(getClass().getResourceAsStream("gui/rating-fill.png")));
+        rateButton4.setImage(new Image(getClass().getResourceAsStream("gui/rating-fill.png")));
+        rateButton5.setImage(new Image(getClass().getResourceAsStream("gui/rating-fill.png")));
+    }
+    @FXML
+    protected void emptyRateButton5(MouseEvent event){
+        rateButton1.setImage(new Image(getClass().getResourceAsStream("gui/rating.png")));
+        rateButton2.setImage(new Image(getClass().getResourceAsStream("gui/rating.png")));
+        rateButton3.setImage(new Image(getClass().getResourceAsStream("gui/rating.png")));
+        rateButton4.setImage(new Image(getClass().getResourceAsStream("gui/rating.png")));
+        rateButton5.setImage(new Image(getClass().getResourceAsStream("gui/rating.png")));
+    }
+
+    //</editor-fold>
 
     //<editor-fold default-state="collapsed" desc=" Other ">
     @FXML
@@ -471,9 +580,13 @@ public class HomeController implements Initializable {
     @FXML
     protected void addToFavourites(MouseEvent event)
     {
-        favouriteCafe1.setImage(new Image(getClass().getResourceAsStream("gui/favouriteFill.png")));
-        new BounceIn(favouriteCafe1).play();
-
+        isFavourite = !isFavourite;
+        if(isFavourite) {
+            setFavourite();
+        }
+        else {
+            setFavouriteFill();
+        }
     }
     @FXML
     protected void loadRegisterForm(ActionEvent event) throws Exception
@@ -497,6 +610,19 @@ public class HomeController implements Initializable {
     }
     @FXML
     protected void coffeeCategoryClick(MouseEvent event){
+
+        //ScaleTransition scaleTransition = new ScaleTransition(Duration.millis(300), coffeeCategory);
+        //scaleTransition.setNode(coffeeCategory);
+
+        //scaleTransition.setFromX(1);
+        //scaleTransition.setFromY(1);
+        //scaleTransition.setToX(0.95);
+        //scaleTransition.setToY(0.95);
+        //scaleTransition.setAutoReverse(true);
+
+        //scaleTransition.play();
+
+
         homeScrollPane.setVisible(false);
         cafeScrollPane.setVisible(true);
 
@@ -531,7 +657,6 @@ public class HomeController implements Initializable {
         stage.setX(event.getScreenX() + xOffset);
         stage.setY(event.getScreenY() + yOffset);
     }
-    //</editor-fold>
 
     @FXML
     public void changeMode(MouseEvent event) {
@@ -543,10 +668,9 @@ public class HomeController implements Initializable {
             setDarkMode();
         }
     }
-
-
-
     //</editor-fold>
+    //</editor-fold>
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle)
@@ -560,6 +684,9 @@ public class HomeController implements Initializable {
         //Status
         openProfileImage.setVisible(false);
         closeProfileImage.setVisible(false);
+
+        //Search
+        searchResultsPanel.setVisible(false);
 
         //CafeStatus
         cafeOpenStatus1.setVisible(false);
@@ -806,11 +933,74 @@ public class HomeController implements Initializable {
         {
             if(!text.replace(" ", "").isEmpty() && option.toUpperCase().contains(text.toUpperCase())){
                 Label label = new Label(option);
+                label.setFont(new Font("Barlow Condensed", 35));
                 searchVbox.getChildren().add(label);
+                searchVbox.setLayoutX(35);
+                searchVbox.setLayoutY(140);
+
+
             }
         }
         return  searchVbox;
 
+    }
+
+
+    protected Favourite setFavourite()
+    {
+        new BounceIn(favouriteCafe1).play();
+        favouriteCafe1.setImage(new Image(getClass().getResourceAsStream("gui/favouriteFill.png")));
+
+        final String DB_URL = "jdbc:mysql://localhost/testing?serverTimezone=UTC";
+        final String USERNAME = "root";
+        final String PASSWORD = "";
+
+        String name = Cafe.cafeName[0];
+        String type = Cafe.cafeType[0];
+        double rating = Cafe.cafeRate[0];
+
+        Favourite favourite = null;
+        String username = User.name;
+
+        try {
+            Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
+
+            Statement stmt = conn.createStatement();
+            String sql = "INSERT INTO favourite (username, name,rating,type) " +
+                    "VALUES (?, ?, ?,?)";
+
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+
+            preparedStatement.setString(1, username);
+            preparedStatement.setString(2, name);
+            preparedStatement.setDouble(3, rating);
+            preparedStatement.setString(4, type);
+            preparedStatement.executeUpdate();
+            //Inserting rows into the table
+            int addedRows = preparedStatement.executeUpdate();
+            if (addedRows > 0) {
+                favourite = new Favourite();
+                favourite.username = username;
+                favourite.name = name;
+                favourite.rating = (float) rating;
+                favourite.type = type;
+
+            }
+
+            stmt.close();
+            conn.close();
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+
+        }
+        return favourite;
+
+    }
+    private void setFavouriteFill() {
+        new BounceIn(favouriteCafe1).play();
+        favouriteCafe1.setImage(new Image(getClass().getResourceAsStream("gui/favourite.png")));
     }
 }
 

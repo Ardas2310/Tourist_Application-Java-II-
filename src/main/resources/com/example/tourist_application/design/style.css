@@ -8,6 +8,17 @@
     -fx-border-radius: 18 18 18 18;
 
 }
+
+#searchResultsPanel
+{
+    -fx-background-color: #f9f4ec;
+}
+#resultsLabel
+{
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 800;
+    -fx-font-size: 90px;
+}
 #welcomeImage {
     -fx-background-color: #acacac;
     -fx-foreground-color: #acacac;
