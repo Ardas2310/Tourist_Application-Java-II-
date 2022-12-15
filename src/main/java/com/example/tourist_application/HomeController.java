@@ -35,6 +35,7 @@ public class HomeController implements Initializable {
     String[] options = {"Kouzina", "goal cafe ", "melios oil ", "xryso ", "Today's Delicious stores ", "to spitiko ", "the coffee store 2 " , "cityzen " , "the coffee store"};
     private double xOffset = 0;
     private boolean isFavourite = false;
+    public  static User user;
     private boolean isRating = false;
     private boolean isLightMode = true;
     private double yOffset = 0;
@@ -46,6 +47,20 @@ public class HomeController implements Initializable {
     //<editor-fold default-state="collapsed" desc=" Initialize Objects ">
     @FXML
     private Pane cafePane1;
+    @FXML
+    private PasswordField passwordPf;
+    @FXML
+    private Pane accessPane;
+    @FXML
+    private Label userLabel;
+    @FXML
+    private TextField usernameTf;
+    @FXML
+    private Pane loginAnchorPane;
+    @FXML
+    private Button loginButton;
+    @FXML
+    private ImageView bubble1;
     @FXML
     private Pane ratePane;
     @FXML
@@ -117,7 +132,7 @@ public class HomeController implements Initializable {
     @FXML
     private Label resultsCafe;
     @FXML
-    private ScrollPane cafeScrollPane;
+    private AnchorPane cafeScrollPane;
     @FXML
     private ImageView nightButton;
     @FXML
@@ -513,6 +528,76 @@ public class HomeController implements Initializable {
 
     //<editor-fold default-state="collapsed" desc=" Other ">
     @FXML
+    protected void userLogin(ActionEvent event){
+        String name = usernameTf.getText();
+        String password = passwordPf.getText();
+
+        user = Login.getAuthenticatedUser(name,password);
+
+        if(user.name !=null){
+            //<editor-fold default-state="collapsed" desc=" loadApp ">
+            loginAnchorPane.setVisible(false);
+            welcomeMainPane.setVisible(false);
+            new BounceOut(modelImage).setDelay(Duration.seconds(0.5)).play();
+            new BounceOut(lampImage).setDelay(Duration.seconds(0.7)).play();
+            new BounceOut(circleImage1).setDelay(Duration.seconds(0.7)).play();
+            new ZoomOut(welcomeMainPane).setDelay(Duration.seconds(1)).play();
+            homeScrollPane.setVisible(true);
+            appLabel.setVisible(true);
+            searchPane.setVisible(true);
+
+            categoriesLabel.setOpacity(0.0);
+            foodCategory.setOpacity(0.0);
+            parksCategory.setOpacity(0.0);
+            coffeeCategory.setOpacity(0.0);
+            nightCategory.setOpacity(0.0);
+            musuemsCategory.setOpacity(0.0);
+            churchCategory.setOpacity(0.0);
+            appLabel.setOpacity(0.0);
+            searchPane.setOpacity(0.0);
+
+            recLabel.setOpacity(0.0);
+            recPanel1.setOpacity(0.0);
+            recPanel2.setOpacity(0.0);
+            recPanel3.setOpacity(0.0);
+            recPanel4.setOpacity(0.0);
+            recPanel5.setOpacity(0.0);
+
+            recOpenStatus1.setOpacity(0.0);
+            recCloseStatus1.setOpacity(0.0);
+            recOpenStatus2.setOpacity(0.0);
+            recCloseStatus2.setOpacity(0.0);
+            recOpenStatus3.setOpacity(0.0);
+            recCloseStatus3.setOpacity(0.0);
+            recOpenStatus4.setOpacity(0.0);
+            recCloseStatus4.setOpacity(0.0);
+            recOpenStatus5.setOpacity(0.0);
+            recCloseStatus5.setOpacity(0.0);
+
+            new ZoomIn(categoriesLabel).play();
+            new ZoomIn(recLabel).play();
+            new ZoomIn(appLabel).play();
+            new ZoomIn(searchPane).play();
+
+            new ZoomIn(foodCategory).setDelay(Duration.seconds(1)).play();
+            new ZoomIn(coffeeCategory).setDelay(Duration.seconds(1.5)).play();
+            new ZoomIn(parksCategory).setDelay(Duration.seconds(2)).play();
+            new ZoomIn(nightCategory).setDelay(Duration.seconds(2.5)).play();
+            new ZoomIn(musuemsCategory).setDelay(Duration.seconds(3)).play();
+            new ZoomIn(churchCategory).setDelay(Duration.seconds(3.5)).play();
+
+            new ZoomIn(recPanel1).setDelay(Duration.seconds(1)).play();
+            new ZoomIn(recPanel2).setDelay(Duration.seconds(1.5)).play();
+            new ZoomIn(recPanel3).setDelay(Duration.seconds(2)).play();
+            new ZoomIn(recPanel4).setDelay(Duration.seconds(2.5)).play();
+            new ZoomIn(recPanel5).setDelay(Duration.seconds(3)).play();
+
+            GenerateRecommended();
+            //</editor-fold
+            userLabel.setText(User.name);
+        }
+    }
+    @FXML
     protected void guestEnterEvent(ActionEvent event)
     {
         //welcomeMainPane.setVisible(false);
@@ -580,13 +665,22 @@ public class HomeController implements Initializable {
     @FXML
     protected void addToFavourites(MouseEvent event)
     {
-        isFavourite = !isFavourite;
-        if(isFavourite) {
-            setFavourite();
+        if(user.name != null){
+            isFavourite = !isFavourite;
+            if(isFavourite) {
+                setFavourite();
+            }
+            else {
+                setFavouriteFill();
+            }
         }
-        else {
-            setFavouriteFill();
+        else{
+            System.out.println("You dont");
+            accessPane.setVisible(true);
+            new Shake(accessPane).play();
         }
+
+
     }
     @FXML
     protected void loadRegisterForm(ActionEvent event) throws Exception
@@ -601,12 +695,16 @@ public class HomeController implements Initializable {
         stage.show();
         new ZoomIn(root).play();
     }
+
+    @FXML
+    protected void loadLoginForm(ActionEvent event) throws Exception{
+        loginAnchorPane.setVisible(true);
+    }
     @FXML
     protected void coffeeCategoryClose(MouseEvent event){
 
         cafeScrollPane.setVisible(false);
         homeScrollPane.setVisible(true);
-
     }
     @FXML
     protected void coffeeCategoryClick(MouseEvent event){
@@ -680,6 +778,8 @@ public class HomeController implements Initializable {
         searchPane.setVisible(false);
         homeScrollPane.setVisible(false);
         profilePane.setVisible(false);
+        loginAnchorPane.setVisible(false);
+        accessPane.setVisible(false);
 
         //Status
         openProfileImage.setVisible(false);
@@ -762,6 +862,28 @@ public class HomeController implements Initializable {
         circleTranslate.setAutoReverse(true);
         circleTranslate.play();
         //</editor-fold
+
+        //Login Pane
+        //Image Animation
+        TranslateTransition translate = new TranslateTransition();
+        translate.setNode(lampImage);
+        translate.setDuration(Duration.millis(1000));
+        translate.setCycleCount(TranslateTransition.INDEFINITE);
+        translate.setByY(10);
+        translate.setAutoReverse(true);
+        translate.play();
+
+        //Buble Animation
+        TranslateTransition bubbleAnim = new TranslateTransition();
+        bubbleAnim.setNode(bubble1);
+        bubbleAnim.setDuration(Duration.millis(3000));
+        bubbleAnim.setCycleCount(TranslateTransition.INDEFINITE);
+
+        bubbleAnim.setToX(675);
+        bubbleAnim.setToY(-473);
+
+        bubbleAnim.setAutoReverse(true);
+        bubbleAnim.play();
 
         searchTextBox.textProperty().addListener((observable, oldValue, newValue) -> {
             if(newValue.equals("")){

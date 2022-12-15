@@ -30,6 +30,10 @@
     -fx-font-size: 15px;
 }
 
+#loginAnchorPane{
+    -fx-background-color:  #f9f4ec;
+}
+
 #createOne
 {
     -fx-background-color: Transparent;
