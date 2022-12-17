@@ -232,6 +232,114 @@ public class HomeController implements Initializable {
     @FXML
     private Pane cafePane3;
     @FXML
+    private Label cafeName4;
+    @FXML
+    private Label cafeType4;
+    @FXML
+    private Pane cafePane4;
+    @FXML
+    private Label cafeRate4;
+    @FXML
+    private ImageView cafeOpenStatus4;
+    @FXML
+    private ImageView cafeCloseStatus4;
+    @FXML
+    private Label cafeName5;
+    @FXML
+    private Label cafeType5;
+    @FXML
+    private Pane cafePane5;
+    @FXML
+    private Label cafeRate5;
+    @FXML
+    private ImageView cafeOpenStatus5;
+    @FXML
+    private ImageView cafeCloseStatus5;
+    @FXML
+    private Label cafeName6;
+    @FXML
+    private Label cafeType6;
+    @FXML
+    private Pane cafePane6;
+    @FXML
+    private Label cafeRate6;
+    @FXML
+    private ImageView cafeOpenStatus6;
+    @FXML
+    private ImageView cafeCloseStatus6;
+    @FXML
+    private Label cafeName7;
+    @FXML
+    private Label cafeType7;
+    @FXML
+    private Pane cafePane7;
+    @FXML
+    private Label cafeRate7;
+    @FXML
+    private ImageView cafeOpenStatus7;
+    @FXML
+    private ImageView cafeCloseStatus7;
+    @FXML
+    private Label cafeName8;
+    @FXML
+    private Label cafeType8;
+    @FXML
+    private Pane cafePane8;
+    @FXML
+    private Label cafeRate8;
+    @FXML
+    private ImageView cafeOpenStatus8;
+    @FXML
+    private ImageView cafeCloseStatus8;
+    @FXML
+    private Label cafeName9;
+    @FXML
+    private Label cafeType9;
+    @FXML
+    private Pane cafePane9;
+    @FXML
+    private Label cafeRate9;
+    @FXML
+    private ImageView cafeOpenStatus9;
+    @FXML
+    private ImageView cafeCloseStatus9;
+    @FXML
+    private Label cafeName10;
+    @FXML
+    private Label cafeType10;
+    @FXML
+    private Pane cafePane10;
+    @FXML
+    private Label cafeRate10;
+    @FXML
+    private ImageView cafeOpenStatus10;
+    @FXML
+    private ImageView cafeCloseStatus10;
+    @FXML
+    private Label cafeName11;
+    @FXML
+    private Label cafeType11;
+    @FXML
+    private Pane cafePane11;
+    @FXML
+    private Label cafeRate11;
+    @FXML
+    private ImageView cafeOpenStatus11;
+    @FXML
+    private ImageView cafeCloseStatus11;
+    @FXML
+    private Label cafeName12;
+    @FXML
+    private Label cafeType12;
+    @FXML
+    private Pane cafePane12;
+    @FXML
+    private Label cafeRate12;
+    @FXML
+    private ImageView cafeOpenStatus12;
+    @FXML
+    private ImageView cafeCloseStatus12;
+    @FXML
     private ImageView coffeeCategory;
     @FXML
     private  ImageView cafeCloseStatus2;
@@ -410,6 +518,384 @@ public class HomeController implements Initializable {
         bulletProfileLabel.setOpacity(0.0);
         new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
         //</editor-fold
+    }
+    @FXML
+    protected  void generateHayatRoofProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Cafe.cafeName[4]);
+        typeProfileLabel.setText(Cafe.cafeType[4]);
+        if(String.valueOf(Cafe.cafeStatus[4]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateCoffeeIslandProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Cafe.cafeName[5]);
+        typeProfileLabel.setText(Cafe.cafeType[5]);
+        if(String.valueOf(Cafe.cafeStatus[5]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateVoltaBarProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Cafe.cafeName[6]);
+        typeProfileLabel.setText(Cafe.cafeType[6]);
+        if(String.valueOf(Cafe.cafeStatus[6]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateKennedyEspressoBarProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Cafe.cafeName[7]);
+        typeProfileLabel.setText(Cafe.cafeType[7]);
+        if(String.valueOf(Cafe.cafeStatus[7]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateMikelCoffeeProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Cafe.cafeName[8]);
+        typeProfileLabel.setText(Cafe.cafeType[8]);
+        if(String.valueOf(Cafe.cafeStatus[8]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateCafeBar19Profile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Cafe.cafeName[9]);
+        typeProfileLabel.setText(Cafe.cafeType[9]);
+        if(String.valueOf(Cafe.cafeStatus[9]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateJuiceBoxNaturalBitesProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Cafe.cafeName[10]);
+        typeProfileLabel.setText(Cafe.cafeType[10]);
+        if(String.valueOf(Cafe.cafeStatus[10]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateKouzinaBarProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Cafe.cafeName[11]);
+        typeProfileLabel.setText(Cafe.cafeType[11]);
+        if(String.valueOf(Cafe.cafeStatus[11]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generategoalcafeProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Cafe.cafeName[12]);
+        typeProfileLabel.setText(Cafe.cafeType[12]);
+        if(String.valueOf(Cafe.cafeStatus[12]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
     }
 
     //</editor-fold>
@@ -941,6 +1427,141 @@ public class HomeController implements Initializable {
             cafeCloseStatus3.setVisible(true);
         }
         //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Cafe 4">
+        cafePane4.setOpacity(0.0);
+        new ZoomIn(cafePane4).setDelay(Duration.seconds(0.5)).play();
+        cafeName4.setText(Cafe.cafeName[3]);
+        cafeType4.setText(Cafe.cafeType[3]);
+        cafeRate4.setText(String.valueOf(Cafe.cafeRate[3]));
+        if(String.valueOf(Cafe.cafeStatus[3]).equals("true"))
+        {
+            cafeOpenStatus4.setVisible(true);
+        }
+        else
+        {
+            cafeCloseStatus4.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Cafe 5">
+        cafePane5.setOpacity(0.0);
+        new ZoomIn(cafePane5).setDelay(Duration.seconds(0.5)).play();
+        cafeName5.setText(Cafe.cafeName[4]);
+        cafeType5.setText(Cafe.cafeType[4]);
+        cafeRate5.setText(String.valueOf(Cafe.cafeRate[4]));
+        if(String.valueOf(Cafe.cafeStatus[4]).equals("true"))
+        {
+            cafeOpenStatus5.setVisible(true);
+        }
+        else
+        {
+            cafeCloseStatus5.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Cafe 6">
+        cafePane6.setOpacity(0.0);
+        new ZoomIn(cafePane6).setDelay(Duration.seconds(0.5)).play();
+        cafeName6.setText(Cafe.cafeName[5]);
+        cafeType6.setText(Cafe.cafeType[5]);
+        cafeRate6.setText(String.valueOf(Cafe.cafeRate[5]));
+        if(String.valueOf(Cafe.cafeStatus[5]).equals("true"))
+        {
+            cafeOpenStatus6.setVisible(true);
+        }
+        else
+        {
+            cafeCloseStatus6.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Cafe 7">
+        cafePane7.setOpacity(0.0);
+        new ZoomIn(cafePane7).setDelay(Duration.seconds(0.5)).play();
+        cafeName7.setText(Cafe.cafeName[6]);
+        cafeType7.setText(Cafe.cafeType[6]);
+        cafeRate7.setText(String.valueOf(Cafe.cafeRate[6]));
+        if(String.valueOf(Cafe.cafeStatus[6]).equals("true"))
+        {
+            cafeOpenStatus7.setVisible(true);
+        }
+        else
+        {
+            cafeCloseStatus7.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Cafe 8">
+        cafePane8.setOpacity(0.0);
+        new ZoomIn(cafePane8).setDelay(Duration.seconds(0.5)).play();
+        cafeName8.setText(Cafe.cafeName[7]);
+        cafeType8.setText(Cafe.cafeType[7]);
+        cafeRate8.setText(String.valueOf(Cafe.cafeRate[7]));
+        if(String.valueOf(Cafe.cafeStatus[7]).equals("true"))
+        {
+            cafeOpenStatus8.setVisible(true);
+        }
+        else
+        {
+            cafeCloseStatus8.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Cafe 9">
+        cafePane9.setOpacity(0.0);
+        new ZoomIn(cafePane9).setDelay(Duration.seconds(0.5)).play();
+        cafeName9.setText(Cafe.cafeName[9]);
+        cafeType9.setText(Cafe.cafeType[9]);
+        cafeRate9.setText(String.valueOf(Cafe.cafeRate[9]));
+        if(String.valueOf(Cafe.cafeStatus[9]).equals("true"))
+        {
+            cafeOpenStatus9.setVisible(true);
+        }
+        else
+        {
+            cafeCloseStatus9.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Cafe 10">
+        cafePane10.setOpacity(0.0);
+        new ZoomIn(cafePane10).setDelay(Duration.seconds(0.5)).play();
+        cafeName10.setText(Cafe.cafeName[10]);
+        cafeType10.setText(Cafe.cafeType[10]);
+        cafeRate10.setText(String.valueOf(Cafe.cafeRate[10]));
+        if(String.valueOf(Cafe.cafeStatus[10]).equals("true"))
+        {
+            cafeOpenStatus10.setVisible(true);
+        }
+        else
+        {
+            cafeCloseStatus10.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Cafe 11">
+        cafePane11.setOpacity(0.0);
+        new ZoomIn(cafePane11).setDelay(Duration.seconds(0.5)).play();
+        cafeName11.setText(Cafe.cafeName[11]);
+        cafeType11.setText(Cafe.cafeType[11]);
+        cafeRate11.setText(String.valueOf(Cafe.cafeRate[11]));
+        if(String.valueOf(Cafe.cafeStatus[11]).equals("true"))
+        {
+            cafeOpenStatus11.setVisible(true);
+        }
+        else
+        {
+            cafeCloseStatus11.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Cafe 12">
+        cafePane12.setOpacity(0.0);
+        new ZoomIn(cafePane12).setDelay(Duration.seconds(0.5)).play();
+        cafeName12.setText(Cafe.cafeName[12]);
+        cafeType12.setText(Cafe.cafeType[12]);
+        cafeRate12.setText(String.valueOf(Cafe.cafeRate[12]));
+        if(String.valueOf(Cafe.cafeStatus[12]).equals("true"))
+        {
+            cafeOpenStatus12.setVisible(true);
+        }
+        else
+        {
+            cafeCloseStatus12.setVisible(true);
+        }
+        //</editor-fold>
 
 
     }
@@ -1125,23 +1746,3 @@ public class HomeController implements Initializable {
         favouriteCafe1.setImage(new Image(getClass().getResourceAsStream("gui/favourite.png")));
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
