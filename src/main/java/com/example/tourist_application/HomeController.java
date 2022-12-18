@@ -15,6 +15,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
@@ -47,6 +49,10 @@ public class HomeController implements Initializable {
     //<editor-fold default-state="collapsed" desc=" Initialize Objects ">
     @FXML
     private Pane cafePane1;
+    @FXML
+    private AnchorPane welcomebg;
+    @FXML
+    private Button homeLoginButton;
     @FXML
     private PasswordField passwordPf;
     @FXML
@@ -898,8 +904,7 @@ public class HomeController implements Initializable {
 
     }
 
-    //</editor-fold>
-
+    //</editor-fold
     @FXML
     protected void  enteredCategoryAnimation(MouseEvent event)
     {
@@ -927,7 +932,7 @@ public class HomeController implements Initializable {
 
 
     @FXML
-    protected void showSearchPanel(MouseEvent event)
+    protected void showSearchPanel(ActionEvent event)
     {
         //populateDropDownMenu(searchTextBox.getText(), options);
         searchResultsPanel.setVisible(true);
@@ -936,10 +941,12 @@ public class HomeController implements Initializable {
     }
 
     @FXML
-    protected void hideSearchPanel(MouseEvent event)
+    protected void hideSearchPanel(KeyEvent event)
     {
         //populateDropDownMenu(searchTextBox.getText(), options);
         searchResultsPanel.setVisible(false);
+
+
     }
 
     //<editor-fold default-state="collapsed" desc=" Rating Fill ">
@@ -1081,12 +1088,12 @@ public class HomeController implements Initializable {
             GenerateRecommended();
             //</editor-fold
             userLabel.setText(User.name);
+            homeLoginButton.setVisible(false);
         }
     }
     @FXML
     protected void guestEnterEvent(ActionEvent event)
     {
-        //welcomeMainPane.setVisible(false);
         new BounceOut(modelImage).setDelay(Duration.seconds(0.5)).play();
         new BounceOut(lampImage).setDelay(Duration.seconds(0.7)).play();
         new BounceOut(circleImage1).setDelay(Duration.seconds(0.7)).play();
@@ -1142,6 +1149,7 @@ public class HomeController implements Initializable {
         new ZoomIn(recPanel5).setDelay(Duration.seconds(3)).play();
 
         GenerateRecommended();
+
     }
     @FXML
     protected void closeProfilePane(MouseEvent event)
@@ -1183,8 +1191,11 @@ public class HomeController implements Initializable {
     }
 
     @FXML
-    protected void loadLoginForm(ActionEvent event) throws Exception{
-        loginAnchorPane.setVisible(true);
+    protected void loadLoginForm(ActionEvent event){
+        if(user.name == null)
+        {
+            loginAnchorPane.setVisible(true);
+        }
     }
     @FXML
     protected void coffeeCategoryClose(MouseEvent event){
@@ -1255,7 +1266,6 @@ public class HomeController implements Initializable {
     //</editor-fold>
     //</editor-fold>
 
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle)
     {
@@ -1274,13 +1284,32 @@ public class HomeController implements Initializable {
         //Search
         searchResultsPanel.setVisible(false);
 
-        //CafeStatus
+        //<editor-fold default-state="collapsed" desc=" Cafe Status ">
         cafeOpenStatus1.setVisible(false);
         cafeCloseStatus1.setVisible(false);
         cafeOpenStatus2.setVisible(false);
         cafeCloseStatus2.setVisible(false);
         cafeOpenStatus3.setVisible(false);
         cafeCloseStatus3.setVisible(false);
+        cafeOpenStatus4.setVisible(false);
+        cafeCloseStatus4.setVisible(false);
+        cafeOpenStatus5.setVisible(false);
+        cafeCloseStatus5.setVisible(false);
+        cafeOpenStatus6.setVisible(false);
+        cafeCloseStatus6.setVisible(false);
+        cafeOpenStatus7.setVisible(false);
+        cafeCloseStatus7.setVisible(false);
+        cafeOpenStatus8.setVisible(false);
+        cafeCloseStatus8.setVisible(false);
+        cafeOpenStatus9.setVisible(false);
+        cafeCloseStatus9.setVisible(false);
+        cafeOpenStatus10.setVisible(false);
+        cafeCloseStatus10.setVisible(false);
+        cafeOpenStatus11.setVisible(false);
+        cafeCloseStatus11.setVisible(false);
+        cafeOpenStatus12.setVisible(false);
+        cafeCloseStatus12.setVisible(false);
+        //</editor-fold
 
         //Cafe Initializer
         cafeScrollPane.setVisible(false);
@@ -1378,6 +1407,8 @@ public class HomeController implements Initializable {
             searchVbox.getChildren().clear();
             populateDropDownMenu(searchTextBox.getText(), options);
         });
+
+
     }
 
     public void GenerateCafe()
@@ -1672,6 +1703,7 @@ public class HomeController implements Initializable {
     }
 
     public VBox populateDropDownMenu(String text, String[] options){
+        searchResultsPanel.setVisible(true);
         for(String option : options)
         {
             if(!text.replace(" ", "").isEmpty() && option.toUpperCase().contains(text.toUpperCase())){

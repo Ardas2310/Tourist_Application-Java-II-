@@ -79,9 +79,10 @@
 #searchTextBox {
     -fx-font-size: 15;
     -fx-padding: 1,1,1,1;
-    -fx-border-width: 2;
-    -fx-border-radius: 1;
-    -fx-border: gone;
+    -fx-border-width: none;
+    -fx-border-radius: none;
+    -fx-border:transparent;
+    -fx-border-color: #e5e5e4;
     -fx-background-color: transparent;
     -fx-text-fill: #8e8e93;
 }

@@ -37,7 +37,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <Pane fx:id="searchPane" layoutX="221.0" layoutY="15.0" onMouseEntered="#showSearchPanel" onMouseExited="#hideSearchPanel" prefHeight="40.0" prefWidth="398.0">
+            <Pane fx:id="searchPane" layoutX="221.0" layoutY="15.0" prefHeight="40.0" prefWidth="398.0">
                <children>
                   <TextField fx:id="searchTextBox" focusTraversable="false" layoutX="40.0" layoutY="6.0" prefHeight="28.0" prefWidth="352.0" promptText="Search FindIt" />
                   <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
@@ -863,6 +863,7 @@
                         </AnchorPane>
                         <Label fx:id="welcomeLabel" layoutX="44.0" layoutY="14.0" prefHeight="26.0" prefWidth="38.0" text="Hello" />
                         <Label fx:id="userLabel" layoutX="44.0" layoutY="35.0" text="User" />
+                        <Button fx:id="homeLoginButton" layoutX="112.0" layoutY="15.0" mnemonicParsing="false" onAction="#loadLoginForm" text="Login" />
                      </children>
                   </AnchorPane>
               </content>
@@ -942,41 +943,41 @@
                         </Button>
                      </children>
                   </AnchorPane>
-                  <AnchorPane fx:id="loginAnchorPane" prefHeight="947.0" prefWidth="1274.0">
-                     <children>
-                        <ImageView fx:id="welcomeImage1" fitHeight="869.0" fitWidth="796.0" layoutX="256.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@gui/welcome/window.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="lampImage1" fitHeight="132.0" fitWidth="101.0" layoutX="506.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@gui/welcome/lamp.png" />
-                           </image>
-                        </ImageView>
-                        <TextField fx:id="usernameTf" layoutX="458.0" layoutY="438.0" prefHeight="25.0" prefWidth="392.0" />
-                        <Button fx:id="loginButton" layoutX="575.0" layoutY="598.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="55.0" prefWidth="120.0" text="Login">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </Button>
-                        <Label fx:id="labelDonthave" layoutX="532.0" layoutY="674.0" prefHeight="17.0" prefWidth="134.0" text="Don't have an account ?" />
-                        <Label fx:id="loginLabel" layoutX="451.0" layoutY="232.0" prefHeight="130.0" prefWidth="409.0" text="L     g  In">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </Label>
-                        <Button fx:id="createOne" layoutX="647.0" layoutY="669.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="92.0" text="Create One" />
-                        <PasswordField fx:id="passwordPf" layoutX="458.0" layoutY="517.0" prefHeight="40.0" prefWidth="394.0" />
-                        <ImageView fx:id="bubble1" fitHeight="111.0" fitWidth="112.0" layoutX="255.0" layoutY="792.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@gui/welcome/circle.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
                </children>
             </Pane>
+            <AnchorPane fx:id="loginAnchorPane" prefHeight="947.0" prefWidth="1274.0">
+               <children>
+                  <ImageView fx:id="welcomeImage1" fitHeight="869.0" fitWidth="796.0" layoutX="256.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gui/welcome/window.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="lampImage1" fitHeight="132.0" fitWidth="101.0" layoutX="506.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gui/welcome/lamp.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="usernameTf" layoutX="458.0" layoutY="438.0" prefHeight="25.0" prefWidth="392.0" />
+                  <Button fx:id="loginButton" layoutX="575.0" layoutY="598.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="55.0" prefWidth="120.0" text="Login">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="labelDonthave" layoutX="532.0" layoutY="674.0" prefHeight="17.0" prefWidth="134.0" text="Don't have an account ?" />
+                  <Label fx:id="loginLabel" layoutX="451.0" layoutY="232.0" prefHeight="130.0" prefWidth="409.0" text="L     g  In">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="createOne" layoutX="647.0" layoutY="669.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="92.0" text="Create One" />
+                  <PasswordField fx:id="passwordPf" layoutX="458.0" layoutY="517.0" prefHeight="40.0" prefWidth="394.0" />
+                  <ImageView fx:id="bubble1" fitHeight="111.0" fitWidth="112.0" layoutX="255.0" layoutY="792.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gui/welcome/circle.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
          </children>
       </Pane>
    </center>
