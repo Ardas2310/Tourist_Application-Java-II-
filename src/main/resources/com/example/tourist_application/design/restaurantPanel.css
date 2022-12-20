@@ -24,34 +24,34 @@
     -fx-text-fill: #736c61;
 }
 
-#restaurantPane1 {
+#restaurantPane1,#restaurantPane2 , #restaurantPane3 {
     -fx-background-color: white;
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0.5, 0.0, 0.0);
     -fx-background-radius: 8 8 8 8;
     -fx-border-radius: 8 8 8 8;
 }
-#restaurantName1 {
+#restaurantName1,#restaurantName2,#restaurantName3 {
     -fx-font-family: 'Barlow Condensed', sans-serif;
     -fx-font-weight: 800;
     -fx-font-size: 18px;
 }
-#restaurantType1 {
+#restaurantType1,#restaurantType2 ,#restaurantType3 {
     -fx-font-family: 'Barlow Condensed', sans-serif;
     -fx-font-weight: 200;
     -fx-font-size: 15px;
 }
-#restaurantRate1 {
+#restaurantRate1,#restaurantRate2,#restaurantRate3 {
     -fx-font-family: 'Barlow Condensed', sans-serif;
     -fx-font-weight: 600;
     -fx-font-size: 15px;
     -fx-text-fill: #0ed598;
 }
-#restaurantStatus1 {
+#restaurantStatus1 ,#restaurantStatus2 ,#restaurantStatus3{
     -fx-font-family: 'Barlow Condensed', sans-serif;
     -fx-font-weight: 200;
     -fx-font-size: 15px;
 }
-#restaurantImage1 {
+#restaurantImage1 ,#restaurantImage2,#restaurantImage3{
     -fx-background-color: transparent;
     -fx-foreground-color: transparent;
 }

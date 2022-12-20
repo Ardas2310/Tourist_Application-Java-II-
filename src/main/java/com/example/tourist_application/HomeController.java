@@ -2,8 +2,7 @@ package com.example.tourist_application;
 
 import animatefx.animation.*;
 import categories.*;
-import javafx.animation.ScaleTransition;
-import javafx.animation.TranslateTransition;
+import javafx.animation.*;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -36,6 +35,7 @@ public class HomeController implements Initializable {
     String[] options = {"Kouzina", "goal cafe ", "melios oil ", "xryso ", "Today's Delicious stores ", "to spitiko ", "the coffee store 2 " , "cityzen " , "the coffee store"};
     private double xOffset = 0;
     private boolean isFavourite = false;
+    private int favCountDown=5;
     public  static User user;
     private boolean isRating = false;
     private boolean isLightMode = true;
@@ -48,6 +48,14 @@ public class HomeController implements Initializable {
     //<editor-fold default-state="collapsed" desc=" Initialize Objects ">
     @FXML
     private Pane cafePane1;
+    @FXML
+    private ImageView recImage5;
+    @FXML
+    private ImageView recImage4;
+    @FXML
+    private ImageView recImage3;
+    @FXML
+    private ImageView recImage2;
     @FXML
     private AnchorPane welcomebg;
     @FXML
@@ -947,7 +955,6 @@ public class HomeController implements Initializable {
 
     //</editor-fold
 
-
     //<editor-fold default-state="collapsed" desc=" Restaurant Profiles ">
     @FXML
     protected  void generateMonopolionKathodonProfile(MouseEvent event) {
@@ -1075,9 +1082,9 @@ public class HomeController implements Initializable {
 
     //</editor-fold
 
+    //<editor-fold default-state="collapsed" desc=" PanelAnimations">
     @FXML
-    protected void  enteredCategoryAnimation(MouseEvent event)
-    {
+    protected void  enteredCategoryAnimation(MouseEvent event){
         ScaleTransition scaleTransition = new ScaleTransition();
         scaleTransition.setNode(foodCategory);
         scaleTransition.setDuration(Duration.millis(300));
@@ -1087,7 +1094,6 @@ public class HomeController implements Initializable {
         scaleTransition.setToY(1.1);
         scaleTransition.play();
     }
-
     @FXML
     protected void  exitedCategoryAnimation(MouseEvent event){
         ScaleTransition scaleTransition = new ScaleTransition();
@@ -1099,6 +1105,153 @@ public class HomeController implements Initializable {
         scaleTransition.setToY(1);
         scaleTransition.play();
     }
+    @FXML
+    protected void  enteredCoffeeCategoryAnimation(MouseEvent event)
+    {
+        ScaleTransition scaleTransition = new ScaleTransition();
+        scaleTransition.setNode(coffeeCategory);
+        scaleTransition.setDuration(Duration.millis(300));
+        scaleTransition.setFromX(1);
+        scaleTransition.setFromY(1);
+        scaleTransition.setToX(1.1);
+        scaleTransition.setToY(1.1);
+        scaleTransition.play();
+    }
+    @FXML
+    protected void  exitedCoffeeCategoryAnimation(MouseEvent event)
+    {
+        ScaleTransition scaleTransition = new ScaleTransition();
+        scaleTransition.setNode(coffeeCategory);
+        scaleTransition.setDuration(Duration.millis(300));
+        scaleTransition.setFromX(1.1);
+        scaleTransition.setFromY(1.1);
+        scaleTransition.setToX(1);
+        scaleTransition.setToY(1);
+        scaleTransition.play();
+    }
+    @FXML
+    protected void  enteredParksCategoryAnimation(MouseEvent event)
+    {
+        ScaleTransition scaleTransition = new ScaleTransition();
+        scaleTransition.setNode(parksCategory);
+        scaleTransition.setDuration(Duration.millis(300));
+        scaleTransition.setFromX(1);
+        scaleTransition.setFromY(1);
+        scaleTransition.setToX(1.1);
+        scaleTransition.setToY(1.1);
+        scaleTransition.play();
+    }
+    @FXML
+    protected void  exitedParksCategoryAnimation(MouseEvent event)
+    {
+        ScaleTransition scaleTransition = new ScaleTransition();
+        scaleTransition.setNode(parksCategory);
+        scaleTransition.setDuration(Duration.millis(300));
+        scaleTransition.setFromX(1.1);
+        scaleTransition.setFromY(1.1);
+        scaleTransition.setToX(1);
+        scaleTransition.setToY(1);
+        scaleTransition.play();
+    }
+    @FXML
+    protected void  enteredNightCategoryAnimation(MouseEvent event)
+    {
+        ScaleTransition scaleTransition = new ScaleTransition();
+        scaleTransition.setNode(nightCategory);
+        scaleTransition.setDuration(Duration.millis(300));
+        scaleTransition.setFromX(1);
+        scaleTransition.setFromY(1);
+        scaleTransition.setToX(1.1);
+        scaleTransition.setToY(1.1);
+        scaleTransition.play();
+    }
+    @FXML
+    protected void  exitedNightCategoryAnimation(MouseEvent event)
+    {
+        ScaleTransition scaleTransition = new ScaleTransition();
+        scaleTransition.setNode(nightCategory);
+        scaleTransition.setDuration(Duration.millis(300));
+        scaleTransition.setFromX(1.1);
+        scaleTransition.setFromY(1.1);
+        scaleTransition.setToX(1);
+        scaleTransition.setToY(1);
+        scaleTransition.play();
+    }
+    @FXML
+    protected void  enteredMuseumsCategoryAnimation(MouseEvent event)
+    {
+        ScaleTransition scaleTransition = new ScaleTransition();
+        scaleTransition.setNode(musuemsCategory);
+        scaleTransition.setDuration(Duration.millis(300));
+        scaleTransition.setFromX(1);
+        scaleTransition.setFromY(1);
+        scaleTransition.setToX(1.1);
+        scaleTransition.setToY(1.1);
+        scaleTransition.play();
+    }
+    @FXML
+    protected void  exitedMuseumsCategoryAnimation(MouseEvent event)
+    {
+        ScaleTransition scaleTransition = new ScaleTransition();
+        scaleTransition.setNode(musuemsCategory);
+        scaleTransition.setDuration(Duration.millis(300));
+        scaleTransition.setFromX(1.1);
+        scaleTransition.setFromY(1.1);
+        scaleTransition.setToX(1);
+        scaleTransition.setToY(1);
+        scaleTransition.play();
+    }
+    @FXML
+    protected void  enteredChurchCategoryAnimation(MouseEvent event)
+    {
+        ScaleTransition scaleTransition = new ScaleTransition();
+        scaleTransition.setNode(churchCategory);
+        scaleTransition.setDuration(Duration.millis(300));
+        scaleTransition.setFromX(1);
+        scaleTransition.setFromY(1);
+        scaleTransition.setToX(1.1);
+        scaleTransition.setToY(1.1);
+        scaleTransition.play();
+    }
+    @FXML
+    protected void  exitedChurchCategoryAnimation(MouseEvent event)
+    {
+        ScaleTransition scaleTransition = new ScaleTransition();
+        scaleTransition.setNode(churchCategory);
+        scaleTransition.setDuration(Duration.millis(300));
+        scaleTransition.setFromX(1.1);
+        scaleTransition.setFromY(1.1);
+        scaleTransition.setToX(1);
+        scaleTransition.setToY(1);
+        scaleTransition.play();
+    }
+    //</editor-fold
+    //<editor-fold default-state="collapsed" desc=" RecPanelAnimations">
+    @FXML
+    protected void  enteredRec1CategoryAnimation(MouseEvent event)
+    {
+        ScaleTransition scaleTransition = new ScaleTransition();
+        scaleTransition.setNode(recPanel1);
+        scaleTransition.setDuration(Duration.millis(300));
+        scaleTransition.setFromX(1);
+        scaleTransition.setFromY(1);
+        scaleTransition.setToX(1.1);
+        scaleTransition.setToY(1.1);
+        scaleTransition.play();
+    }
+    @FXML
+    protected void  exitedRec1CategoryAnimation(MouseEvent event)
+    {
+        ScaleTransition scaleTransition = new ScaleTransition();
+        scaleTransition.setNode(recPanel1);
+        scaleTransition.setDuration(Duration.millis(300));
+        scaleTransition.setFromX(1.1);
+        scaleTransition.setFromY(1.1);
+        scaleTransition.setToX(1);
+        scaleTransition.setToY(1);
+        scaleTransition.play();
+    }
+    //</editor-fold
 
 
     @FXML
@@ -1868,7 +2021,7 @@ public class HomeController implements Initializable {
         recName1.setText(Church.churchName[2]);
         recType1.setText(Church.churchType[2]);
         recRate1.setText(String.valueOf(Church.churchRate[2]));
-        recStatus1.setText(String.valueOf(Church.churchStatus[2]));
+        recImage1.setImage(new Image(getClass().getResourceAsStream("gui/churchCategory.png")));
         if(String.valueOf(Church.churchStatus[2]).equals("true"))
         {
             recOpenStatus1.setVisible(true);
@@ -1884,7 +2037,7 @@ public class HomeController implements Initializable {
         recName2.setText(Bar.barName[6]);
         recType2.setText(Bar.barType[6]);
         recRate2.setText(String.valueOf(Bar.barRate[6]));
-        recStatus2.setText(String.valueOf(Bar.barStatus[6]));
+        recImage2.setImage(new Image(getClass().getResourceAsStream("gui/barImageCategory.png")));
         if(String.valueOf(Bar.barStatus[6]).equals("true"))
         {
             recOpenStatus1.setVisible(true);
@@ -1900,7 +2053,7 @@ public class HomeController implements Initializable {
         recName3.setText(Museum.museumName[2]);
         recType3.setText(Museum.museumType[2]);
         recRate3.setText(String.valueOf(Museum.museumRate[2]));
-        recStatus3.setText(String.valueOf(Museum.museumStatus[2]));
+        recImage3.setImage(new Image(getClass().getResourceAsStream("gui/musuemCategory.png")));
         if(String.valueOf(Museum.museumStatus[2]).equals("true"))
         {
             recOpenStatus1.setVisible(true);
@@ -1916,7 +2069,7 @@ public class HomeController implements Initializable {
         recName4.setText(Restaurant.restaurantName[1]);
         recType4.setText(Restaurant.restaurantType[1]);
         recRate4.setText(String.valueOf(Restaurant.restaurantRate[1]));
-        recStatus4.setText(String.valueOf(Restaurant.restaurantStatus[1]));
+        recImage4.setImage(new Image(getClass().getResourceAsStream("gui/restaurantCategory.png")));
         if(String.valueOf(Restaurant.restaurantStatus[1]).equals("true"))
         {
             recOpenStatus1.setVisible(true);
@@ -1933,7 +2086,7 @@ public class HomeController implements Initializable {
         recName5.setText(Park.parkName[10]);
         recType5.setText(Park.parkType[10]);
         recRate5.setText(String.valueOf(Park.parkRate[10]));
-        recStatus5.setText(String.valueOf(Park.parkStatus[10]));
+        recImage5.setImage(new Image(getClass().getResourceAsStream("gui/parkCategory.png")));
         if(String.valueOf(Park.parkStatus[10]).equals("true"))
         {
             recOpenStatus1.setVisible(true);

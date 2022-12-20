@@ -14,3 +14,13 @@
 #descriptionLabel,#categoryLabel,#welcomeToLabel,#appLabel,#registerLabel,#categoriesLabel,#recLabel{
     -fx-text-fill: #202124;
 }
+
+#recPanel1,#recPanel2,#recPanel3,#recPanel4,#recPanel5{
+    -fx-background-color: #ffffff;
+}
+
+
+#recName1,#recName2,#recName3,#recName4,#recName5 , #recType1,#recType2,#recType3,#recType4,#recType5
+{
+    -fx-text-fill: #3a3b41;
+}

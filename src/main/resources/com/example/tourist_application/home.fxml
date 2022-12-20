@@ -725,7 +725,7 @@
                      <children>
                         <Pane fx:id="recommendedPane" layoutX="10.0" layoutY="410.0" prefHeight="358.0" prefWidth="1150.0">
                            <children>
-                              <AnchorPane fx:id="recPanel1" layoutX="40.0" layoutY="80.0" prefHeight="259.0" prefWidth="200.0">
+                              <AnchorPane fx:id="recPanel1" layoutX="40.0" layoutY="80.0" onMouseEntered="#enteredRec1CategoryAnimation" onMouseExited="#exitedRec1CategoryAnimation" prefHeight="259.0" prefWidth="200.0">
                                  <children>
                                     <Label fx:id="recName1" layoutX="17.0" layoutY="123.0" prefHeight="23.0" prefWidth="177.0" text="recName1">
                                        <font>
@@ -748,8 +748,7 @@
                                        </image>
                                     </ImageView>
                                     <Label fx:id="bulletLabel" layoutX="20.0" layoutY="202.0" text="•" />
-                                    <Label fx:id="recStatus1" layoutX="17.0" layoutY="228.0" text="recStatus1" />
-                                    <ImageView fx:id="recImage1" fitHeight="123.0" fitWidth="198.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="recImage1" fitHeight="123.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
                                  </children>
                               </AnchorPane>
                               <Label fx:id="recLabel" layoutX="40.0" prefHeight="52.0" prefWidth="328.0" text="Recommended places">
@@ -780,8 +779,7 @@
                                        </image>
                                     </ImageView>
                                     <Label fx:id="bulletLabel2" layoutX="20.0" layoutY="202.0" text="•" />
-                                    <Label fx:id="recStatus2" layoutX="17.0" layoutY="228.0" text="recStatus2" />
-                                    <ImageView fx:id="recImage2" fitHeight="123.0" fitWidth="198.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="recImage2" fitHeight="123.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
                                  </children>
                               </AnchorPane>
                               <AnchorPane fx:id="recPanel3" layoutX="520.0" layoutY="80.0" prefHeight="259.0" prefWidth="200.0">
@@ -807,8 +805,7 @@
                                        </image>
                                     </ImageView>
                                     <Label fx:id="bulletLabel3" layoutX="20.0" layoutY="202.0" text="•" />
-                                    <Label fx:id="recStatus3" layoutX="17.0" layoutY="228.0" text="recStatus3" />
-                                    <ImageView fx:id="recImage3" fitHeight="123.0" fitWidth="198.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="recImage3" fitHeight="123.0" fitWidth="200.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
                                  </children>
                               </AnchorPane>
                               <AnchorPane fx:id="recPanel4" layoutX="760.0" layoutY="80.0" prefHeight="259.0" prefWidth="200.0">
@@ -834,8 +831,7 @@
                                        </image>
                                     </ImageView>
                                     <Label fx:id="bulletLabel4" layoutX="20.0" layoutY="202.0" text="•" />
-                                    <Label fx:id="recStatus4" layoutX="17.0" layoutY="228.0" text="recStatus4" />
-                                    <ImageView fx:id="recImage4" fitHeight="123.0" fitWidth="198.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="recImage4" fitHeight="123.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
                                  </children>
                               </AnchorPane>
                               <AnchorPane fx:id="recPanel5" layoutX="1000.0" layoutY="80.0" prefHeight="259.0" prefWidth="200.0">
@@ -861,8 +857,7 @@
                                        </image>
                                     </ImageView>
                                     <Label fx:id="bulletLabel5" layoutX="20.0" layoutY="202.0" text="•" />
-                                    <Label fx:id="recStatus5" layoutX="17.0" layoutY="228.0" text="recStatus5" />
-                                    <ImageView fx:id="recImage5" fitHeight="123.0" fitWidth="198.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="recImage5" fitHeight="123.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
                                  </children>
                               </AnchorPane>
                               <ImageView fx:id="recOpenStatus1" fitHeight="360.0" fitWidth="310.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
@@ -924,7 +919,7 @@
                                     <Font name="Corbel" size="20.0" />
                                  </font>
                               </Label>
-                              <ImageView fx:id="foodCategory" fitHeight="220.0" fitWidth="160.0" layoutX="40.0" layoutY="90.0" onMouseClicked="#foodCategoryClick" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="foodCategory" fitHeight="220.0" fitWidth="160.0" layoutX="40.0" layoutY="90.0" onMouseClicked="#foodCategoryClick" onMouseEntered="#enteredCategoryAnimation" onMouseExited="#exitedCategoryAnimation" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@gui/foodCategory.png" />
                                  </image>
@@ -932,7 +927,7 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </ImageView>
-                              <ImageView fx:id="coffeeCategory" fitHeight="220.0" fitWidth="160.0" layoutX="235.0" layoutY="90.0" onMouseClicked="#coffeeCategoryClick" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="coffeeCategory" fitHeight="220.0" fitWidth="160.0" layoutX="235.0" layoutY="90.0" onMouseClicked="#coffeeCategoryClick" onMouseEntered="#enteredCoffeeCategoryAnimation" onMouseExited="#exitedCoffeeCategoryAnimation" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@gui/coffeeCategory.png" />
                                  </image>
@@ -940,7 +935,7 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </ImageView>
-                              <ImageView fx:id="parksCategory" fitHeight="220.0" fitWidth="160.0" layoutX="430.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="parksCategory" fitHeight="220.0" fitWidth="160.0" layoutX="430.0" layoutY="90.0" onMouseEntered="#enteredParksCategoryAnimation" onMouseExited="#exitedParksCategoryAnimation" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@gui/parksCategory.png" />
                                  </image>
@@ -948,7 +943,7 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </ImageView>
-                              <ImageView fx:id="nightCategory" fitHeight="220.0" fitWidth="160.0" layoutX="625.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="nightCategory" fitHeight="220.0" fitWidth="160.0" layoutX="625.0" layoutY="90.0" onMouseEntered="#enteredNightCategoryAnimation" onMouseExited="#exitedNightCategoryAnimation" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@gui/barCategory.png" />
                                  </image>
@@ -956,7 +951,7 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </ImageView>
-                              <ImageView fx:id="musuemsCategory" fitHeight="220.0" fitWidth="160.0" layoutX="820.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="musuemsCategory" fitHeight="220.0" fitWidth="160.0" layoutX="820.0" layoutY="90.0" onMouseEntered="#enteredMuseumsCategoryAnimation" onMouseExited="#exitedMuseumsCategoryAnimation" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@gui/musuemsCategory.png" />
                                  </image>
@@ -964,7 +959,7 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </ImageView>
-                              <ImageView fx:id="churchCategory" fitHeight="220.0" fitWidth="160.0" layoutX="1015.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="churchCategory" fitHeight="220.0" fitWidth="160.0" layoutX="1015.0" layoutY="90.0" onMouseEntered="#enteredChurchCategoryAnimation" onMouseExited="#exitedChurchCategoryAnimation" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@gui/othersCategory.png" />
                                  </image>
