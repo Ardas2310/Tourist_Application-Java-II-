@@ -15,7 +15,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
@@ -355,6 +354,48 @@ public class HomeController implements Initializable {
     private  ImageView cafeOpenStatus3;
     @FXML
     private Label cafeRate2;
+    @FXML
+    private Pane cafePane;
+    @FXML
+    private ImageView restaurantCloseStatus1;
+    @FXML
+    private ImageView restaurantOpenStatus1;
+    @FXML
+    private Label resultsRestaurant;
+    @FXML
+    private Pane restaurantPane;
+    @FXML
+    private Pane restaurantPane1;
+    @FXML
+    private Label restaurantName1;
+    @FXML
+    private Label restaurantRate1;
+    @FXML
+    private Label restaurantType1;
+    @FXML
+    private Pane restaurantPane2;
+    @FXML
+    private Label restaurantName2;
+    @FXML
+    private Label restaurantType2;
+    @FXML
+    private Label restaurantRate2;
+    @FXML
+    private ImageView restaurantOpenStatus2;
+    @FXML
+    private ImageView restaurantCloseStatus2;
+    @FXML
+    private Pane restaurantPane3;
+    @FXML
+    private Label restaurantName3;
+    @FXML
+    private Label restaurantType3;
+    @FXML
+    private Label restaurantRate3;
+    @FXML
+    private ImageView restaurantOpenStatus3;
+    @FXML
+    private ImageView restaurantCloseStatus3;
     @FXML
     private Label shadowLabel;
     @FXML
@@ -905,6 +946,135 @@ public class HomeController implements Initializable {
     }
 
     //</editor-fold
+
+
+    //<editor-fold default-state="collapsed" desc=" Restaurant Profiles ">
+    @FXML
+    protected  void generateMonopolionKathodonProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Restaurant.restaurantName[0]);
+        typeProfileLabel.setText(Restaurant.restaurantType[0]);
+        if(String.valueOf(Restaurant.restaurantStatus[0]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateMasisetoProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/caffettieri/profile.png")));
+        nameProfileLabel.setText(Restaurant.restaurantName[1]);
+        typeProfileLabel.setText(Restaurant.restaurantType[1]);
+        if(String.valueOf(Restaurant.restaurantStatus[1]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442859";
+        web.load(urlweb);
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+    }
+    @FXML
+    protected  void generatePsitopoleioPallikarisProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        nameProfileLabel.setText(Restaurant.restaurantName[2]);
+        typeProfileLabel.setText(Restaurant.restaurantType[2]);
+        if(String.valueOf(Restaurant.restaurantStatus[2]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442866";
+        web.load(urlweb);
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+    }
+
+
+    //</editor-fold
+
     @FXML
     protected void  enteredCategoryAnimation(MouseEvent event)
     {
@@ -1204,6 +1374,12 @@ public class HomeController implements Initializable {
         homeScrollPane.setVisible(true);
     }
     @FXML
+    protected void restaurantCategoryClose(MouseEvent event){
+
+        cafeScrollPane.setVisible(false);
+        homeScrollPane.setVisible(true);
+    }
+    @FXML
     protected void coffeeCategoryClick(MouseEvent event){
 
         //ScaleTransition scaleTransition = new ScaleTransition(Duration.millis(300), coffeeCategory);
@@ -1219,12 +1395,41 @@ public class HomeController implements Initializable {
 
 
         homeScrollPane.setVisible(false);
+        cafePane.setVisible(true);
+        restaurantPane.setVisible(false);
         cafeScrollPane.setVisible(true);
 
-        cafeScrollPane.setOpacity(0.0);
-        new FadeIn(cafeScrollPane).play();
+        cafePane.setOpacity(0.0);
+        new FadeIn(cafePane).play();
 
         GenerateCafe();
+
+    }
+    @FXML
+    protected void foodCategoryClick(MouseEvent event){
+
+        //ScaleTransition scaleTransition = new ScaleTransition(Duration.millis(300), foodCategory);
+        //scaleTransition.setNode(coffeeCategory);
+
+        //scaleTransition.setFromX(1);
+        //scaleTransition.setFromY(1);
+        //scaleTransition.setToX(0.95);
+        //scaleTransition.setToY(0.95);
+        //scaleTransition.setAutoReverse(true);
+
+        //scaleTransition.play();
+
+
+        homeScrollPane.setVisible(false);
+        cafePane.setVisible(false);
+        cafeScrollPane.setVisible(true);
+
+
+        restaurantPane.setOpacity(0.0);
+        new FadeIn(restaurantPane).play();
+        restaurantPane.setVisible(true);
+
+        GenerateFood();
 
     }
     @FXML
@@ -1311,9 +1516,20 @@ public class HomeController implements Initializable {
         cafeCloseStatus12.setVisible(false);
         //</editor-fold
 
+        //<editor-fold default-state="collapsed" desc=" Restaurant Status ">
+        restaurantOpenStatus1.setVisible(false);
+        restaurantCloseStatus1.setVisible(false);
+        restaurantOpenStatus2.setVisible(false);
+        restaurantCloseStatus2.setVisible(false);
+        restaurantOpenStatus3.setVisible(false);
+        restaurantCloseStatus3.setVisible(false);
+        //</editor-fold
+
         //Cafe Initializer
         cafeScrollPane.setVisible(false);
         resultsCafe.setText(String.valueOf(Cafe.cafeCounter) + " results" );
+        //Restaurant Initializer
+        resultsRestaurant.setText(String.valueOf(Restaurant.restaurantCounter) + " results" );
 
         //<editor-fold default-state="collapsed" desc=" Animations ">
         appLabel.setOpacity(0.0);
@@ -1594,6 +1810,55 @@ public class HomeController implements Initializable {
         }
         //</editor-fold>
 
+
+    }
+    public void GenerateFood()
+    {
+        //<editor-fold default-state="collapsed" desc="Restaurant 1">
+        restaurantPane1.setOpacity(0.0);
+        new ZoomIn(restaurantPane1).setDelay(Duration.seconds(0.5)).play();
+        restaurantName1.setText(Restaurant.restaurantName[0]);
+        restaurantType1.setText(Restaurant.restaurantType[0]);
+        restaurantRate1.setText(String.valueOf(Restaurant.restaurantRate[0]));
+        if(String.valueOf(Restaurant.restaurantStatus[0]).equals("true"))
+        {
+            restaurantOpenStatus1.setVisible(true);
+        }
+        else
+        {
+            restaurantCloseStatus1.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Restaurant 2">
+        restaurantPane2.setOpacity(0.0);
+        new ZoomIn(restaurantPane2).setDelay(Duration.seconds(0.5)).play();
+        restaurantName2.setText(Restaurant.restaurantName[1]);
+        restaurantType2.setText(Restaurant.restaurantType[1]);
+        restaurantRate2.setText(String.valueOf(Restaurant.restaurantRate[1]));
+        if(String.valueOf(Restaurant.restaurantStatus[1]).equals("true"))
+        {
+            restaurantOpenStatus2.setVisible(true);
+        }
+        else
+        {
+            restaurantCloseStatus2.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Restaurant 3">
+        restaurantPane3.setOpacity(0.0);
+        new ZoomIn(restaurantPane3).setDelay(Duration.seconds(0.5)).play();
+        restaurantName3.setText(Restaurant.restaurantName[2]);
+        restaurantType3.setText(Restaurant.restaurantType[2]);
+        restaurantRate3.setText(String.valueOf(Restaurant.restaurantRate[2]));
+        if(String.valueOf(Restaurant.restaurantStatus[2]).equals("true"))
+        {
+            restaurantOpenStatus3.setVisible(true);
+        }
+        else
+        {
+            restaurantCloseStatus3.setVisible(true);
+        }
+        //</editor-fold>
 
     }
 
