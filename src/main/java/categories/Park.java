@@ -97,7 +97,6 @@ public class Park {
                 parkType[i] = check_type.getString(0);
 
                 addParkToDatabase(shopID, name, valueOf(open_now)  , business_status, rating, vicinity,type,geometry, check_type);
-
             }
         }
 

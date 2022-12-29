@@ -24,34 +24,34 @@
     -fx-text-fill: #736c61;
 }
 
-#restaurantPane1,#restaurantPane2 , #restaurantPane3 {
+#restaurantPane1,#restaurantPane2,#restaurantPane3,#restaurantPane4,#restaurantPane5,#restaurantPane6,#restaurantPane7,#restaurantPane8,#restaurantPane9,#restaurantPane10,#restaurantPane11,#restaurantPane12,#restaurantPane13,#restaurantPane14,#restaurantPane15,#restaurantPane16,#restaurantPane17,#restaurantPane18,#restaurantPane19 {
     -fx-background-color: white;
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0.5, 0.0, 0.0);
     -fx-background-radius: 8 8 8 8;
     -fx-border-radius: 8 8 8 8;
 }
-#restaurantName1,#restaurantName2,#restaurantName3 {
+#restaurantName1,#restaurantName2,#restaurantName3,#restaurantName4,#restaurantName5,#restaurantName6,#restaurantName7,#restaurantName8,#restaurantName9,#restaurantName10,#restaurantName11,#restaurantName12,#restaurantName13,#restaurantName14,#restaurantName15,#restaurantName16,#restaurantName17,#restaurantName18,#restaurantName19 {
     -fx-font-family: 'Barlow Condensed', sans-serif;
     -fx-font-weight: 800;
     -fx-font-size: 18px;
 }
-#restaurantType1,#restaurantType2 ,#restaurantType3 {
+#restaurantType1,#restaurantType2,#restaurantType3,#restaurantType4,#restaurantType5,#restaurantType6,#restaurantType7,#restaurantType8,#restaurantType9,#restaurantType10,#restaurantType11,#restaurantType12,#restaurantType13,#restaurantType14,#restaurantType15,#restaurantType16,#restaurantType17,#restaurantType18,#restaurantType19 {
     -fx-font-family: 'Barlow Condensed', sans-serif;
     -fx-font-weight: 200;
     -fx-font-size: 15px;
 }
-#restaurantRate1,#restaurantRate2,#restaurantRate3 {
+#restaurantRate1,#restaurantRate2,#restaurantRate3,#restaurantRate4,#restaurantRate5,#restaurantRate6,#restaurantRate7,#restaurantRate8,#restaurantRate9,#restaurantRate10,#restaurantRate11,#restaurantRate12,#restaurantRate13,#restaurantRate14,#restaurantRate15,#restaurantRate16,#restaurantRate17,#restaurantRate18,#restaurantRate19 {
     -fx-font-family: 'Barlow Condensed', sans-serif;
     -fx-font-weight: 600;
     -fx-font-size: 15px;
     -fx-text-fill: #0ed598;
 }
-#restaurantStatus1 ,#restaurantStatus2 ,#restaurantStatus3{
+#restaurantStatus1,#restaurantStatus2,#restaurantStatus3,#restaurantStatus4,#restaurantStatus5,#restaurantStatus6,#restaurantStatus7,#restaurantStatus8,#restaurantStatus9,#restaurantStatus10,#restaurantStatus11,#restaurantStatus12,#restaurantStatus13,#restaurantStatus14,#restaurantStatus15,#restaurantStatus16,#restaurantStatus17,#restaurantStatus18,#restaurantStatus19 {
     -fx-font-family: 'Barlow Condensed', sans-serif;
     -fx-font-weight: 200;
     -fx-font-size: 15px;
 }
-#restaurantImage1 ,#restaurantImage2,#restaurantImage3{
+#restaurantImage1,#restaurantImage2,#restaurantImage3,#restaurantImage4,#restaurantImage5,#restaurantImage6,#restaurantImage7,#restaurantImage8,#restaurantImage9,#restaurantImage10,#restaurantImage11,#restaurantImage12,#restaurantImage13,#restaurantImage14,#restaurantImage15,#restaurantImage16,#restaurantImage17,#restaurantImage18,#restaurantImage19 {
     -fx-background-color: transparent;
     -fx-foreground-color: transparent;
 }

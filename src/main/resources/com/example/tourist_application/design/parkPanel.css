@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+#closeParkButton {
+    -fx-background-color: #d9cab3;
+    -fx-background-radius: 6 6 6 6;
+    -fx-border-radius: 6 6 6 6;
+}
+#closeParkLabel {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 20px;
+    -fx-text-fill: #736c61;
+}
+#xParkLabel {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 20px;
+    -fx-text-fill: #736c61;
+}
+#resultsPark {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 25px;
+    -fx-text-fill: #736c61;
+}
+
+#parkPane1,#parkPane2,#parkPane3,#parkPane4,#parkPane5,#parkPane6,#parkPane7,#parkPane8,#parkPane9,#parkPane10,#parkPane11,#parkPane12,#parkPane13,#parkPane14,#parkPane15,#parkPane16,#parkPane17,#parkPane18,#parkPane19,#parkPane20 {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0.5, 0.0, 0.0);
+    -fx-background-radius: 8 8 8 8;
+    -fx-border-radius: 8 8 8 8;
+}
+#parkName1,#parkName2,#parkName3,#parkName4,#parkName5,#parkName6,#parkName7,#parkName8,#parkName9,#parkName10,#parkName11,#parkName12,#parkName13,#parkName14,#parkName15,#parkName16,#parkName17,#parkName18,#parkName19,#parkName20 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 800;
+    -fx-font-size: 18px;
+}
+#parkType1,#parkType2,#parkType3,#parkType4,#parkType5,#parkType6,#parkType7,#parkType8,#parkType9,#parkType10,#parkType11,#parkType12,#parkType13,#parkType14,#parkType15,#parkType16,#parkType17,#parkType18,#parkType19,#parkType20 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 15px;
+}
+#parkRate1,#parkRate2,#parkRate3,#parkRate4,#parkRate5,#parkRate6,#parkRate7,#parkRate8,#parkRate9,#parkRate10,#parkRate11,#parkRate12,#parkRate13,#parkRate14,#parkRate15,#parkRate16,#parkRate17,#parkRate18,#parkRate19,#parkRate20 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 600;
+    -fx-font-size: 15px;
+    -fx-text-fill: #0ed598;
+}
+#parkStatus1,#parkStatus2,#parkStatus3,#parkStatus4,#parkStatus5,#parkStatus6,#parkStatus7,#parkStatus8,#parkStatus9,#parkStatus10,#parkStatus11,#parkStatus12,#parkStatus13,#parkStatus14,#parkStatus15,#parkStatus16,#parkStatus17,#parkStatus18,#parkStatus19,#parkStatus20 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 15px;
+}
+#parkImage1,#parkImage2,#parkImage3,#parkImage4,#parkImage5,#parkImage6,#parkImage7,#parkImage8,#parkImage9,#parkImage10,#parkImage11,#parkImage12,#parkImage13,#parkImage14,#parkImage15,#parkImage16,#parkImage17,#parkImage18,#parkImage19,#parkImage20 {
+    -fx-background-color: transparent;
+    -fx-foreground-color: transparent;
+}

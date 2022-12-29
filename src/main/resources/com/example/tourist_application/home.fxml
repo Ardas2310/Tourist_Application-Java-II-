@@ -80,7 +80,7 @@
               <content>
                 <AnchorPane fx:id="cafeScrollPane" minHeight="0.0" minWidth="0.0" prefHeight="2000.0" prefWidth="1298.0">
                      <children>
-                        <Pane fx:id="cafePane" prefHeight="2000.0" prefWidth="1298.0">
+                        <Pane fx:id="cafePane" prefHeight="3000.0" prefWidth="1298.0">
                            <children>
                               <Pane fx:id="cafeAll" layoutX="26.0" layoutY="139.0" prefHeight="436.0" prefWidth="1195.0">
                                  <children>
@@ -556,6 +556,306 @@
                                           </Label>
                                        </children>
                                     </Pane>
+                                    <Pane fx:id="cafePane13" layoutX="14.0" layoutY="1374.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <ImageView fx:id="cafeImage13" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="cafeOpenStatus13" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="cafeCloseStatus13" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="cafeType13" layoutX="40.0" layoutY="207.0" text="cafeType13" />
+                                          <Label fx:id="cafeBullet13" layoutX="33.0" layoutY="208.0" text="•" />
+                                          <Label fx:id="cafeName13" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateMeliosOilProfile" prefHeight="29.0" prefWidth="330.0" text="cafeName13">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                          <ImageView fx:id="favouriteCafe13" fitHeight="30.0" fitWidth="30.0" layoutX="316.0" layoutY="171.0" onMouseClicked="#addToFavourites" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/favourite.png" />
+                                             </image>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ImageView>
+                                          <Label fx:id="cafeRate13" layoutX="33.0" layoutY="231.0" text="cafeRate13" />
+                                          <Pane fx:id="ratePane1111" layoutX="24.0" layoutY="251.0" prefHeight="41.0" prefWidth="143.0">
+                                             <children>
+                                                <ImageView fx:id="rateButton11111" fitHeight="20.0" fitWidth="20.0" layoutX="10.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@gui/rating.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fx:id="rateButton21111" fitHeight="20.0" fitWidth="20.0" layoutX="35.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@gui/rating.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fx:id="rateButton31111" fitHeight="20.0" fitWidth="20.0" layoutX="60.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@gui/rating.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fx:id="rateButton41111" fitHeight="20.0" fitWidth="20.0" layoutX="85.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@gui/rating.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fx:id="rateButton51111" fitHeight="20.0" fitWidth="20.0" layoutX="110.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@gui/rating.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="cafePane14" layoutX="413.0" layoutY="1374.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="cafeType14" layoutX="40.0" layoutY="207.0" text="cafeType14" />
+                                          <Label fx:id="cafeBullet14" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="cafeRate14" layoutX="24.0" layoutY="234.0" text="cafeRate14" />
+                                          <ImageView fx:id="cafeImage14" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="cafeOpenStatus14" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="cafeCloseStatus14" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="cafeName14" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateXrysoProfile" prefHeight="29.0" prefWidth="330.0" text="cafeName14">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="cafePane15" layoutX="811.0" layoutY="1374.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="cafeType15" layoutX="40.0" layoutY="207.0" text="cafeType15" />
+                                          <Label fx:id="cafeBullet15" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="cafeRate15" layoutX="24.0" layoutY="234.0" text="cafeRate15" />
+                                          <ImageView fx:id="cafeImage15" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="cafeOpenStatus15" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="cafeCloseStatus15" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="cafeName15" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateTodaysDeliciousProfile" prefHeight="29.0" prefWidth="330.0" text="cafeName15">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="cafePane16" layoutX="14.0" layoutY="1714.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <ImageView fx:id="cafeImage16" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="cafeOpenStatus16" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="cafeCloseStatus16" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="cafeType16" layoutX="40.0" layoutY="207.0" text="cafeType16" />
+                                          <Label fx:id="cafeBullet16" layoutX="33.0" layoutY="208.0" text="•" />
+                                          <Label fx:id="cafeName16" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateToSpitikoProfile" prefHeight="29.0" prefWidth="330.0" text="cafeName16">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                          <ImageView fx:id="favouriteCafe16" fitHeight="30.0" fitWidth="30.0" layoutX="316.0" layoutY="171.0" onMouseClicked="#addToFavourites" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/favourite.png" />
+                                             </image>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ImageView>
+                                          <Label fx:id="cafeRate16" layoutX="33.0" layoutY="231.0" text="cafeRate16" />
+                                          <Pane fx:id="ratePane11111" layoutX="24.0" layoutY="251.0" prefHeight="41.0" prefWidth="143.0">
+                                             <children>
+                                                <ImageView fx:id="rateButton111111" fitHeight="20.0" fitWidth="20.0" layoutX="10.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@gui/rating.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fx:id="rateButton211111" fitHeight="20.0" fitWidth="20.0" layoutX="35.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@gui/rating.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fx:id="rateButton311111" fitHeight="20.0" fitWidth="20.0" layoutX="60.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@gui/rating.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fx:id="rateButton411111" fitHeight="20.0" fitWidth="20.0" layoutX="85.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@gui/rating.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fx:id="rateButton511111" fitHeight="20.0" fitWidth="20.0" layoutX="110.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@gui/rating.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="cafePane17" layoutX="413.0" layoutY="1714.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="cafeType17" layoutX="40.0" layoutY="207.0" text="cafeType17" />
+                                          <Label fx:id="cafeBullet17" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="cafeRate17" layoutX="24.0" layoutY="234.0" text="cafeRate17" />
+                                          <ImageView fx:id="cafeImage17" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="cafeOpenStatus17" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="cafeCloseStatus17" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="cafeName17" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateTheCoffeeStore2Profile" prefHeight="29.0" prefWidth="330.0" text="cafeName17">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="cafePane18" layoutX="811.0" layoutY="1714.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="cafeType18" layoutX="40.0" layoutY="207.0" text="cafeType18" />
+                                          <Label fx:id="cafeBullet18" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="cafeRate18" layoutX="24.0" layoutY="234.0" text="cafeRate18" />
+                                          <ImageView fx:id="cafeImage18" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="cafeOpenStatus18" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="cafeCloseStatus18" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="cafeName18" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateCityZenProfile" prefHeight="29.0" prefWidth="330.0" text="cafeName18">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="cafePane19" layoutX="14.0" layoutY="2054.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <ImageView fx:id="cafeImage19" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="cafeOpenStatus19" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="cafeCloseStatus19" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="cafeType19" layoutX="40.0" layoutY="207.0" text="cafeType19" />
+                                          <Label fx:id="cafeBullet19" layoutX="33.0" layoutY="208.0" text="•" />
+                                          <Label fx:id="cafeName19" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateTheCoffeeStoreProfile" prefHeight="29.0" prefWidth="330.0" text="cafeName19">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                          <ImageView fx:id="favouriteCafe19" fitHeight="30.0" fitWidth="30.0" layoutX="316.0" layoutY="171.0" onMouseClicked="#addToFavourites" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/favourite.png" />
+                                             </image>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ImageView>
+                                          <Label fx:id="cafeRate19" layoutX="33.0" layoutY="231.0" text="cafeRate19" />
+                                          <Pane fx:id="ratePane111111" layoutX="24.0" layoutY="251.0" prefHeight="41.0" prefWidth="143.0">
+                                             <children>
+                                                <ImageView fx:id="rateButton1111111" fitHeight="20.0" fitWidth="20.0" layoutX="10.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@gui/rating.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fx:id="rateButton2111111" fitHeight="20.0" fitWidth="20.0" layoutX="35.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@gui/rating.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fx:id="rateButton3111111" fitHeight="20.0" fitWidth="20.0" layoutX="60.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@gui/rating.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fx:id="rateButton4111111" fitHeight="20.0" fitWidth="20.0" layoutX="85.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@gui/rating.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fx:id="rateButton5111111" fitHeight="20.0" fitWidth="20.0" layoutX="110.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@gui/rating.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </Pane>
                                  </children>
                               </Pane>
                               <Pane fx:id="closeCafeButton" layoutX="40.0" layoutY="14.0" prefHeight="39.0" prefWidth="82.0">
@@ -571,7 +871,7 @@
                               <Label fx:id="resultsCafe" layoutX="41.0" layoutY="77.0" prefHeight="45.0" prefWidth="320.0" text="Results" />
                            </children>
                         </Pane>
-                        <Pane fx:id="restaurantPane" prefHeight="2000.0" prefWidth="1298.0">
+                        <Pane fx:id="restaurantPane" prefHeight="3000.0" prefWidth="1298.0">
                            <children>
                               <Pane fx:id="restaurantAll" layoutX="26.0" layoutY="139.0" prefHeight="436.0" prefWidth="1195.0">
                                  <children>
@@ -664,6 +964,446 @@
                                           </Label>
                                        </children>
                                     </Pane>
+                                    <Pane fx:id="restaurantPane4" layoutX="14.0" layoutY="354.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <ImageView fx:id="restaurantImage4" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantOpenStatus4" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantCloseStatus4" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="restaurantType4" layoutX="40.0" layoutY="207.0" text="restaurantType4" />
+                                          <Label fx:id="restaurantBullet4" layoutX="33.0" layoutY="208.0" text="•" />
+                                          <Label fx:id="restaurantName4" layoutX="24.0" layoutY="171.0" onMouseClicked="#generatePsitopoleioAulogirosProfile" prefHeight="29.0" prefWidth="330.0" text="restaurantName4">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                          <ImageView fx:id="favouriteRestaurant4" fitHeight="30.0" fitWidth="30.0" layoutX="316.0" layoutY="171.0" onMouseClicked="#addToFavourites" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/favourite.png" />
+                                             </image>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ImageView>
+                                          <Label fx:id="restaurantRate4" layoutX="33.0" layoutY="231.0" text="restaurantRate4" />
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="restaurantPane5" layoutX="413.0" layoutY="354.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="restaurantType5" layoutX="40.0" layoutY="207.0" text="restaurantType2" />
+                                          <Label fx:id="restaurantBullet5" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="restaurantRate5" layoutX="24.0" layoutY="234.0" text="restaurantRate2" />
+                                          <ImageView fx:id="restaurantImage5" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantOpenStatus5" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantCloseStatus5" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="restaurantName5" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateMprikiHomebarandgrillProfile" prefHeight="29.0" prefWidth="330.0" text="restaurantName2">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="restaurantPane6" layoutX="811.0" layoutY="354.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="restaurantType6" layoutX="40.0" layoutY="207.0" text="restaurantType3" />
+                                          <Label fx:id="restaurantBullet6" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="restaurantRate6" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
+                                          <ImageView fx:id="restaurantImage6" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantOpenStatus6" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantCloseStatus6" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="restaurantName6" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateOKaliterosProfile" prefHeight="29.0" prefWidth="330.0" text="restaurantName3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="restaurantPane7" layoutX="14.0" layoutY="694.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="restaurantType7" layoutX="40.0" layoutY="207.0" text="restaurantType3" />
+                                          <Label fx:id="restaurantBullet7" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="restaurantRate7" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
+                                          <ImageView fx:id="restaurantImage7" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantOpenStatus7" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantCloseStatus7" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="restaurantName7" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateSpecialProfile" prefHeight="29.0" prefWidth="330.0" text="restaurantName3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="restaurantPane8" layoutX="413.0" layoutY="694.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="restaurantType8" layoutX="40.0" layoutY="207.0" text="restaurantType3" />
+                                          <Label fx:id="restaurantBullet8" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="restaurantRate8" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
+                                          <ImageView fx:id="restaurantImage8" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantOpenStatus8" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantCloseStatus8" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="restaurantName8" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateHayatRoofRestProfile" prefHeight="29.0" prefWidth="330.0" text="restaurantName3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="restaurantPane9" layoutX="811.0" layoutY="694.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="restaurantType9" layoutX="40.0" layoutY="207.0" text="restaurantType3" />
+                                          <Label fx:id="restaurantBullet9" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="restaurantRate9" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
+                                          <ImageView fx:id="restaurantImage9" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantOpenStatus9" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantCloseStatus9" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="restaurantName9" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateTheMeatHouseProfile" prefHeight="29.0" prefWidth="330.0" text="restaurantName3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="restaurantPane10" layoutX="14.0" layoutY="1034.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="restaurantType10" layoutX="40.0" layoutY="207.0" text="restaurantType3" />
+                                          <Label fx:id="restaurantBullet10" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="restaurantRate10" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
+                                          <ImageView fx:id="restaurantImage10" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantOpenStatus10" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantCloseStatus10" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="restaurantName10" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateGiroGiroOloiProfile" prefHeight="29.0" prefWidth="330.0" text="restaurantName3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="restaurantPane11" layoutX="413.0" layoutY="1034.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="restaurantType11" layoutX="40.0" layoutY="207.0" text="restaurantType3" />
+                                          <Label fx:id="restaurantBullet11" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="restaurantRate11" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
+                                          <ImageView fx:id="restaurantImage11" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantOpenStatus11" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantCloseStatus11" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="restaurantName11" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateKennedyEspressoBarRestProfile" prefHeight="29.0" prefWidth="330.0" text="restaurantName3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="restaurantPane12" layoutX="811.0" layoutY="1034.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="restaurantType12" layoutX="40.0" layoutY="207.0" text="restaurantType3" />
+                                          <Label fx:id="restaurantBullet12" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="restaurantRate12" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
+                                          <ImageView fx:id="restaurantImage12" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantOpenStatus12" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantCloseStatus12" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="restaurantName12" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateTramCafeSerresProfile" prefHeight="29.0" prefWidth="330.0" text="restaurantName3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="restaurantPane13" layoutX="14.0" layoutY="1374.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="restaurantType13" layoutX="40.0" layoutY="207.0" text="restaurantType3" />
+                                          <Label fx:id="restaurantBullet13" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="restaurantRate13" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
+                                          <ImageView fx:id="restaurantImage13" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantOpenStatus13" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantCloseStatus13" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="restaurantName13" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateOSotosProfile" prefHeight="29.0" prefWidth="330.0" text="restaurantName3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="restaurantPane14" layoutX="413.0" layoutY="1374.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="restaurantType14" layoutX="40.0" layoutY="207.0" text="restaurantType3" />
+                                          <Label fx:id="restaurantBullet14" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="restaurantRate14" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
+                                          <ImageView fx:id="restaurantImage14" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantOpenStatus14" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantCloseStatus14" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="restaurantName14" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateMpougatsaRekorProfile" prefHeight="29.0" prefWidth="330.0" text="restaurantName3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="restaurantPane15" layoutX="811.0" layoutY="1374.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="restaurantType15" layoutX="40.0" layoutY="207.0" text="restaurantType3" />
+                                          <Label fx:id="restaurantBullet15" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="restaurantRate15" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
+                                          <ImageView fx:id="restaurantImage15" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantOpenStatus15" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantCloseStatus15" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="restaurantName15" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateKouzinaBarRestProfile" prefHeight="29.0" prefWidth="330.0" text="restaurantName3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="restaurantPane16" layoutX="14.0" layoutY="1714.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="restaurantType16" layoutX="40.0" layoutY="207.0" text="restaurantType3" />
+                                          <Label fx:id="restaurantBullet16" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="restaurantRate16" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
+                                          <ImageView fx:id="restaurantImage16" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantOpenStatus16" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantCloseStatus16" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="restaurantName16" layoutX="24.0" layoutY="171.0" onMouseClicked="#generatePsitopolioOKostasProfile" prefHeight="29.0" prefWidth="330.0" text="restaurantName3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="restaurantPane17" layoutX="413.0" layoutY="1714.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="restaurantType17" layoutX="40.0" layoutY="207.0" text="restaurantType3" />
+                                          <Label fx:id="restaurantBullet17" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="restaurantRate17" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
+                                          <ImageView fx:id="restaurantImage17" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantOpenStatus17" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantCloseStatus17" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="restaurantName17" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateTodaysDeliciousRestProfile" prefHeight="29.0" prefWidth="330.0" text="restaurantName3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="restaurantPane18" layoutX="811.0" layoutY="1714.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="restaurantType18" layoutX="40.0" layoutY="207.0" text="restaurantType3" />
+                                          <Label fx:id="restaurantBullet18" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="restaurantRate18" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
+                                          <ImageView fx:id="restaurantImage18" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantOpenStatus18" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantCloseStatus18" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="restaurantName18" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateKappariProfile" prefHeight="29.0" prefWidth="330.0" text="restaurantName3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="restaurantPane19" layoutX="14.0" layoutY="2054.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="restaurantType19" layoutX="40.0" layoutY="207.0" text="restaurantType3" />
+                                          <Label fx:id="restaurantBullet19" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="restaurantRate19" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
+                                          <ImageView fx:id="restaurantImage19" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantOpenStatus19" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="restaurantCloseStatus19" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="restaurantName19" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateToSpitikoRestProfile" prefHeight="29.0" prefWidth="330.0" text="restaurantName3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
                                  </children>
                               </Pane>
                               <Pane fx:id="closeRestaurantButton" layoutX="40.0" layoutY="14.0" prefHeight="39.0" prefWidth="82.0">
@@ -677,6 +1417,581 @@
                                  </children>
                               </Pane>
                               <Label fx:id="resultsRestaurant" layoutX="41.0" layoutY="77.0" prefHeight="45.0" prefWidth="320.0" text="Results" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="ParkPane" prefHeight="3000.0" prefWidth="1298.0">
+                           <children>
+                              <Pane fx:id="parkAll" layoutX="26.0" layoutY="139.0" prefHeight="436.0" prefWidth="1195.0">
+                                 <children>
+                                    <Pane fx:id="parkPane1" layoutX="14.0" layoutY="14.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <ImageView fx:id="parkImage1" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus1" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus1" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkType1" layoutX="40.0" layoutY="207.0" text="parkType1" />
+                                          <Label fx:id="parkBullet1" layoutX="33.0" layoutY="208.0" text="•" />
+                                          <Label fx:id="parkName1" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateMonumentCaptainMitrousisProfile" prefHeight="29.0" prefWidth="330.0" text="parkName1">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                          <ImageView fx:id="favouritePark1" fitHeight="30.0" fitWidth="30.0" layoutX="316.0" layoutY="171.0" onMouseClicked="#addToFavourites" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/favourite.png" />
+                                             </image>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ImageView>
+                                          <Label fx:id="parkRate1" layoutX="33.0" layoutY="231.0" text="parkRate1" />
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane2" layoutX="413.0" layoutY="14.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType2" layoutX="40.0" layoutY="207.0" text="parkType2" />
+                                          <Label fx:id="parkBullet2" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate2" layoutX="24.0" layoutY="234.0" text="parkRate2" />
+                                          <ImageView fx:id="parkImage2" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus2" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus2" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName2" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateTRIKALAProfile" prefHeight="29.0" prefWidth="330.0" text="parkName2">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane3" layoutX="811.0" layoutY="14.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType3" layoutX="40.0" layoutY="207.0" text="parkType3" />
+                                          <Label fx:id="parkBullet3" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate3" layoutX="24.0" layoutY="234.0" text="parkRate3" />
+                                          <ImageView fx:id="parkImage3" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus3" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus3" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName3" layoutX="24.0" layoutY="171.0" onMouseClicked="#generatePlateiaKonstantinouKabafiProfile" prefHeight="29.0" prefWidth="330.0" text="parkName3">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane4" layoutX="14.0" layoutY="354.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <ImageView fx:id="parkImage4" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus4" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus4" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkType4" layoutX="40.0" layoutY="207.0" text="parkType4" />
+                                          <Label fx:id="parkBullet4" layoutX="33.0" layoutY="208.0" text="•" />
+                                          <Label fx:id="parkName4" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateRodosbeatsProfile" prefHeight="29.0" prefWidth="330.0" text="parkName4">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                          <ImageView fx:id="favouritePark4" fitHeight="30.0" fitWidth="30.0" layoutX="316.0" layoutY="171.0" onMouseClicked="#addToFavourites" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/favourite.png" />
+                                             </image>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ImageView>
+                                          <Label fx:id="parkRate4" layoutX="33.0" layoutY="231.0" text="parkRate4" />
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane5" layoutX="413.0" layoutY="354.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType5" layoutX="40.0" layoutY="207.0" text="parkType5" />
+                                          <Label fx:id="parkBullet5" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate5" layoutX="24.0" layoutY="234.0" text="parkRate5" />
+                                          <ImageView fx:id="parkImage5" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus5" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus5" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName5" layoutX="24.0" layoutY="171.0" onMouseClicked="#generatePlateiaKroniouProfile" prefHeight="29.0" prefWidth="330.0" text="parkName5">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane6" layoutX="811.0" layoutY="354.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType6" layoutX="40.0" layoutY="207.0" text="parkType6" />
+                                          <Label fx:id="parkBullet6" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate6" layoutX="24.0" layoutY="234.0" text="parkRate6" />
+                                          <ImageView fx:id="parkImage6" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus6" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus6" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName6" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateAgalmaAnastasiouPolizoidiProfile" prefHeight="29.0" prefWidth="330.0" text="parkName6">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane7" layoutX="14.0" layoutY="694.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType7" layoutX="40.0" layoutY="207.0" text="parkType7" />
+                                          <Label fx:id="parkBullet7" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate7" layoutX="24.0" layoutY="234.0" text="parkRate7" />
+                                          <ImageView fx:id="parkImage7" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus7" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus7" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName7" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateTriaSintribaniaProfile" prefHeight="29.0" prefWidth="330.0" text="parkName7">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane8" layoutX="413.0" layoutY="694.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType8" layoutX="40.0" layoutY="207.0" text="parkType8" />
+                                          <Label fx:id="parkBullet8" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate8" layoutX="24.0" layoutY="234.0" text="parkRate8" />
+                                          <ImageView fx:id="parkImage8" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus8" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus8" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName8" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateLibertySquareProfile" prefHeight="29.0" prefWidth="330.0" text="parkName8">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane9" layoutX="811.0" layoutY="694.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType9" layoutX="40.0" layoutY="207.0" text="parkType9" />
+                                          <Label fx:id="parkBullet9" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate9" layoutX="24.0" layoutY="234.0" text="parkRate9" />
+                                          <ImageView fx:id="parkImage9" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus9" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus9" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName9" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateParkFormerProfile" prefHeight="29.0" prefWidth="330.0" text="parkName9">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane10" layoutX="14.0" layoutY="1034.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType10" layoutX="40.0" layoutY="207.0" text="parkType10" />
+                                          <Label fx:id="parkBullet10" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate10" layoutX="24.0" layoutY="234.0" text="parkRate10" />
+                                          <ImageView fx:id="parkImage10" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus10" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus10" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName10" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateParkSerresProfile" prefHeight="29.0" prefWidth="330.0" text="parkName10">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane11" layoutX="413.0" layoutY="1034.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType11" layoutX="40.0" layoutY="207.0" text="parkType11" />
+                                          <Label fx:id="parkBullet11" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate11" layoutX="24.0" layoutY="234.0" text="parkRate11" />
+                                          <ImageView fx:id="parkImage11" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus11" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus11" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName11" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateAnoikto8eatrakiProfile" prefHeight="29.0" prefWidth="330.0" text="parkName11">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane12" layoutX="811.0" layoutY="1034.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType12" layoutX="40.0" layoutY="207.0" text="parkType12" />
+                                          <Label fx:id="parkBullet12" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate12" layoutX="24.0" layoutY="234.0" text="parkRate12" />
+                                          <ImageView fx:id="parkImage12" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus12" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus12" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName12" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateMnimeioE8nikisAntistasisProfile" prefHeight="29.0" prefWidth="330.0" text="parkName12">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane13" layoutX="14.0" layoutY="1374.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType13" layoutX="40.0" layoutY="207.0" text="parkType13" />
+                                          <Label fx:id="parkBullet13" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate13" layoutX="24.0" layoutY="234.0" text="parkRate13" />
+                                          <ImageView fx:id="parkImage13" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus13" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus13" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName13" layoutX="24.0" layoutY="171.0" onMouseClicked="#generatePlateiaEmporeiouProfile" prefHeight="29.0" prefWidth="330.0" text="parkName13">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane14" layoutX="413.0" layoutY="1374.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType14" layoutX="40.0" layoutY="207.0" text="parkType14" />
+                                          <Label fx:id="parkBullet14" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate14" layoutX="24.0" layoutY="234.0" text="parkRate14" />
+                                          <ImageView fx:id="parkImage14" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus14" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus14" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName14" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateAgalmaDoukaProfile" prefHeight="29.0" prefWidth="330.0" text="parkName14">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane15" layoutX="811.0" layoutY="1374.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType15" layoutX="40.0" layoutY="207.0" text="parkType15" />
+                                          <Label fx:id="parkBullet15" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate15" layoutX="24.0" layoutY="234.0" text="parkRate15" />
+                                          <ImageView fx:id="parkImage15" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus15" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus15" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName15" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateProtomiDimitriouMisirliProfile" prefHeight="29.0" prefWidth="330.0" text="parkName15">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane16" layoutX="14.0" layoutY="1714.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType16" layoutX="40.0" layoutY="207.0" text="parkType16" />
+                                          <Label fx:id="parkBullet16" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate16" layoutX="24.0" layoutY="234.0" text="parkRate16" />
+                                          <ImageView fx:id="parkImage16" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus16" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus16" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName16" layoutX="24.0" layoutY="171.0" onMouseClicked="#generatePublicSquareProfile" prefHeight="29.0" prefWidth="330.0" text="parkName16">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane17" layoutX="413.0" layoutY="1714.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType17" layoutX="40.0" layoutY="207.0" text="parkType17" />
+                                          <Label fx:id="parkBullet17" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate17" layoutX="24.0" layoutY="234.0" text="parkRate17" />
+                                          <ImageView fx:id="parkImage17" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus17" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus17" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName17" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateBoreioanatolikiPleuraparkouIKAProfile" prefHeight="29.0" prefWidth="330.0" text="parkName17">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane18" layoutX="811.0" layoutY="1714.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType18" layoutX="40.0" layoutY="207.0" text="parkType18" />
+                                          <Label fx:id="parkBullet18" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate18" layoutX="24.0" layoutY="234.0" text="parkRate18" />
+                                          <ImageView fx:id="parkImage18" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus18" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus18" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName18" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateProtomiPasxaliTsiagkaProfile" prefHeight="29.0" prefWidth="330.0" text="parkName18">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane19" layoutX="14.0" layoutY="2054.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType19" layoutX="40.0" layoutY="207.0" text="parkType19" />
+                                          <Label fx:id="parkBullet19" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate19" layoutX="24.0" layoutY="234.0" text="parkRate19" />
+                                          <ImageView fx:id="parkImage19" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus19" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus19" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName19" layoutX="24.0" layoutY="171.0" onMouseClicked="#generateParkakiSidirokastrouBourlonProfile" prefHeight="29.0" prefWidth="330.0" text="parkName19">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="parkPane20" layoutX="413.0" layoutY="2054.0" prefHeight="300.0" prefWidth="370.0">
+                                       <children>
+                                          <Label fx:id="parkType20" layoutX="40.0" layoutY="207.0" text="parkType20" />
+                                          <Label fx:id="parkBullet20" layoutX="27.0" layoutY="207.0" text="•" />
+                                          <Label fx:id="parkRate20" layoutX="24.0" layoutY="234.0" text="parkRate20" />
+                                          <ImageView fx:id="parkImage20" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkOpenStatus20" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/openLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="parkCloseStatus20" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@gui/closeLabelBig.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="parkName20" layoutX="24.0" layoutY="171.0" onMouseClicked="#generatePlateiaProfitiHliaProfile" prefHeight="29.0" prefWidth="330.0" text="parkName20">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </Pane>
+                              <Pane fx:id="closeParkButton" layoutX="40.0" layoutY="14.0" prefHeight="39.0" prefWidth="82.0">
+                                 <children>
+                                    <Label fx:id="closeParkLabel" layoutX="35.0" layoutY="6.0" prefHeight="26.0" prefWidth="63.0" text="park" />
+                                    <Label layoutX="14.0" layoutY="6.0" onMouseClicked="#parkCategoryClose" prefHeight="26.0" prefWidth="15.0" text="X" fx:id="xParkLabel">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Label fx:id="resultsPark" layoutX="41.0" layoutY="77.0" prefHeight="45.0" prefWidth="320.0" text="Results" />
                            </children>
                         </Pane>
                      </children>
@@ -703,6 +2018,7 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </ImageView>
+                              <WebView fx:id="shopWebView1" layoutY="400.0" prefHeight="200.0" prefWidth="200.0" />
                            </children>
                         </Pane>
                         <ImageView fx:id="openProfileImage" fitHeight="300.0" fitWidth="300.0" layoutX="81.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
@@ -935,7 +2251,7 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </ImageView>
-                              <ImageView fx:id="parksCategory" fitHeight="220.0" fitWidth="160.0" layoutX="430.0" layoutY="90.0" onMouseEntered="#enteredParksCategoryAnimation" onMouseExited="#exitedParksCategoryAnimation" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="parksCategory" fitHeight="220.0" fitWidth="160.0" layoutX="430.0" layoutY="90.0" onMouseClicked="#parkCategoryClick" onMouseEntered="#enteredParksCategoryAnimation" onMouseExited="#exitedParksCategoryAnimation" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@gui/parksCategory.png" />
                                  </image>
@@ -1098,5 +2414,6 @@
       <URL value="@design/lightMode.css" />
       <URL value="@design/login.css" />
       <URL value="@design/restaurantPanel.css" />
+      <URL value="@design/parkPanel.css" />
    </stylesheets>
 </BorderPane>
