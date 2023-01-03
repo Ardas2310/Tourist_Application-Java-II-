@@ -2018,7 +2018,12 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </ImageView>
-                              <WebView fx:id="shopWebView1" layoutY="400.0" prefHeight="200.0" prefWidth="200.0" />
+                              <WebView fx:id="shopWebView1" layoutY="400.0" layoutX="10" prefHeight="200.0" prefWidth="200.0" />
+                              <WebView fx:id="shopWebView2" layoutY="400.0" layoutX="40" prefHeight="200.0" prefWidth="200.0" />
+                              <WebView fx:id="shopWebView3" layoutY="400.0" layoutX="70" prefHeight="200.0" prefWidth="200.0" />
+                              <WebView fx:id="shopWebView4" layoutY="400.0" layoutX="100" prefHeight="200.0" prefWidth="200.0" />
+                              <WebView fx:id="shopWebView5" layoutY="400.0" layoutX="130" prefHeight="200.0" prefWidth="200.0" />
+                              <WebView fx:id="shopWebView6" layoutY="400.0" layoutX="160" prefHeight="200.0" prefWidth="200.0" />
                            </children>
                         </Pane>
                         <ImageView fx:id="openProfileImage" fitHeight="300.0" fitWidth="300.0" layoutX="81.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">

@@ -69,6 +69,16 @@ public class HomeController implements Initializable {
     @FXML
     private Pane accessPane;
     @FXML
+    private WebView shopWebView2;
+    @FXML
+    private WebView shopWebView3;
+    @FXML
+    private WebView shopWebView4;
+    @FXML
+    private WebView shopWebView5;
+    @FXML
+    private WebView shopWebView6;
+    @FXML
     private Label userLabel;
     @FXML
     private TextField usernameTf;
@@ -1005,10 +1015,25 @@ public class HomeController implements Initializable {
         web.load(urlweb);
 
         final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
         String placeId = "ChIJGXx-G41xqRQRr6TPQ6pf5lo"; // Place ID gia ton mple giaka
         PhotoParser.generatePhotos(placeId);
         String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
         image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
