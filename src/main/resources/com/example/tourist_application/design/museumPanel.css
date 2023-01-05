@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+#closeMuseumButton {
+    -fx-background-color: #d9cab3;
+    -fx-background-radius: 6 6 6 6;
+    -fx-border-radius: 6 6 6 6;
+}
+#closeMuseumLabel {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 20px;
+    -fx-text-fill: #736c61;
+}
+#xMuseumLabel {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 20px;
+    -fx-text-fill: #736c61;
+}
+#resultsMuseum {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 25px;
+    -fx-text-fill: #736c61;
+}
+
+#museumPane1,#museumPane2,#museumPane3,#museumPane4,#museumPane5,#museumPane6 {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0.5, 0.0, 0.0);
+    -fx-background-radius: 8 8 8 8;
+    -fx-border-radius: 8 8 8 8;
+}
+#museumName1,#museumName2,#museumName3,#museumName4,#museumName5,#museumName6 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 800;
+    -fx-font-size: 18px;
+}
+#museumType1,#museumType2,#museumType3,#museumType4,#museumType5,#museumType6 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 15px;
+}
+#museumRate1,#museumRate2,#museumRate3,#museumRate4,#museumRate5,#museumRate6 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 600;
+    -fx-font-size: 15px;
+    -fx-text-fill: #0ed598;
+}
+#museumStatus1,#museumStatus2,#museumStatus3,#museumStatus4,#museumStatus5,#museumStatus6 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 15px;
+}
+#museumImage1,#museumImage2,#museumImage3,#museumImage4,#museumImage5,#museumImage6 {
+    -fx-background-color: transparent;
+    -fx-foreground-color: transparent;
+}

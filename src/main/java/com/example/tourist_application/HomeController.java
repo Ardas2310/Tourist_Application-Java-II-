@@ -941,6 +941,240 @@ public class HomeController implements Initializable {
     @FXML
     private ImageView parkCloseStatus20;
     @FXML
+    private Pane BarPane;
+    @FXML
+    private Label resultsBar;
+    @FXML
+    private ImageView BarCategory;
+    @FXML
+    private Pane barPane1;
+    @FXML
+    private Label barName1;
+    @FXML
+    private Label barType1;
+    @FXML
+    private Label barRate1;
+    @FXML
+    private ImageView barOpenStatus1;
+    @FXML
+    private ImageView barCloseStatus1;
+    @FXML
+    private Pane barPane2;
+    @FXML
+    private Label barName2;
+    @FXML
+    private Label barType2;
+    @FXML
+    private Label barRate2;
+    @FXML
+    private ImageView barOpenStatus2;
+    @FXML
+    private ImageView barCloseStatus2;
+    @FXML
+    private Pane barPane3;
+    @FXML
+    private Label barName3;
+    @FXML
+    private Label barType3;
+    @FXML
+    private Label barRate3;
+    @FXML
+    private ImageView barOpenStatus3;
+    @FXML
+    private ImageView barCloseStatus3;
+    @FXML
+    private Pane barPane4;
+    @FXML
+    private Label barName4;
+    @FXML
+    private Label barType4;
+    @FXML
+    private Label barRate4;
+    @FXML
+    private ImageView barOpenStatus4;
+    @FXML
+    private ImageView barCloseStatus4;
+    @FXML
+    private Pane barPane5;
+    @FXML
+    private Label barName5;
+    @FXML
+    private Label barType5;
+    @FXML
+    private Label barRate5;
+    @FXML
+    private ImageView barOpenStatus5;
+    @FXML
+    private ImageView barCloseStatus5;
+    @FXML
+    private Pane barPane6;
+    @FXML
+    private Label barName6;
+    @FXML
+    private Label barType6;
+    @FXML
+    private Label barRate6;
+    @FXML
+    private ImageView barOpenStatus6;
+    @FXML
+    private ImageView barCloseStatus6;
+    @FXML
+    private Pane ChurchPane;
+    @FXML
+    private Label resultsChurch;
+    @FXML
+    private ImageView ChurchCategory;
+    @FXML
+    private Pane churchPane1;
+    @FXML
+    private Label churchName1;
+    @FXML
+    private Label churchType1;
+    @FXML
+    private Label churchRate1;
+    @FXML
+    private ImageView churchOpenStatus1;
+    @FXML
+    private ImageView churchCloseStatus1;
+    @FXML
+    private Pane churchPane2;
+    @FXML
+    private Label churchName2;
+    @FXML
+    private Label churchType2;
+    @FXML
+    private Label churchRate2;
+    @FXML
+    private ImageView churchOpenStatus2;
+    @FXML
+    private ImageView churchCloseStatus2;
+    @FXML
+    private Pane churchPane3;
+    @FXML
+    private Label churchName3;
+    @FXML
+    private Label churchType3;
+    @FXML
+    private Label churchRate3;
+    @FXML
+    private ImageView churchOpenStatus3;
+    @FXML
+    private ImageView churchCloseStatus3;
+    @FXML
+    private Pane churchPane4;
+    @FXML
+    private Label churchName4;
+    @FXML
+    private Label churchType4;
+    @FXML
+    private Label churchRate4;
+    @FXML
+    private ImageView churchOpenStatus4;
+    @FXML
+    private ImageView churchCloseStatus4;
+    @FXML
+    private Pane churchPane5;
+    @FXML
+    private Label churchName5;
+    @FXML
+    private Label churchType5;
+    @FXML
+    private Label churchRate5;
+    @FXML
+    private ImageView churchOpenStatus5;
+    @FXML
+    private ImageView churchCloseStatus5;
+    @FXML
+    private Pane churchPane6;
+    @FXML
+    private Label churchName6;
+    @FXML
+    private Label churchType6;
+    @FXML
+    private Label churchRate6;
+    @FXML
+    private ImageView churchOpenStatus6;
+    @FXML
+    private ImageView churchCloseStatus6;
+    @FXML
+    private Pane MuseumPane;
+    @FXML
+    private Label resultsMuseum;
+    @FXML
+    private ImageView MuseumCategory;
+    @FXML
+    private Pane museumPane1;
+    @FXML
+    private Label museumName1;
+    @FXML
+    private Label museumType1;
+    @FXML
+    private Label museumRate1;
+    @FXML
+    private ImageView museumOpenStatus1;
+    @FXML
+    private ImageView museumCloseStatus1;
+    @FXML
+    private Pane museumPane2;
+    @FXML
+    private Label museumName2;
+    @FXML
+    private Label museumType2;
+    @FXML
+    private Label museumRate2;
+    @FXML
+    private ImageView museumOpenStatus2;
+    @FXML
+    private ImageView museumCloseStatus2;
+    @FXML
+    private Pane museumPane3;
+    @FXML
+    private Label museumName3;
+    @FXML
+    private Label museumType3;
+    @FXML
+    private Label museumRate3;
+    @FXML
+    private ImageView museumOpenStatus3;
+    @FXML
+    private ImageView museumCloseStatus3;
+    @FXML
+    private Pane museumPane4;
+    @FXML
+    private Label museumName4;
+    @FXML
+    private Label museumType4;
+    @FXML
+    private Label museumRate4;
+    @FXML
+    private ImageView museumOpenStatus4;
+    @FXML
+    private ImageView museumCloseStatus4;
+    @FXML
+    private Pane museumPane5;
+    @FXML
+    private Label museumName5;
+    @FXML
+    private Label museumType5;
+    @FXML
+    private Label museumRate5;
+    @FXML
+    private ImageView museumOpenStatus5;
+    @FXML
+    private ImageView museumCloseStatus5;
+    @FXML
+    private Pane museumPane6;
+    @FXML
+    private Label museumName6;
+    @FXML
+    private Label museumType6;
+    @FXML
+    private Label museumRate6;
+    @FXML
+    private ImageView museumOpenStatus6;
+    @FXML
+    private ImageView museumCloseStatus6;
+    @FXML
     private Label shadowLabel;
     @FXML
     private Label descriptionLabel;
@@ -3415,6 +3649,776 @@ public class HomeController implements Initializable {
 
     //</editor-fold
 
+    //<editor-fold default-state="collapsed" desc=" Bar Profiles ">
+    @FXML
+    protected  void generateBlueGiakasBarProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Bar.barName[0]);
+        typeProfileLabel.setText(Bar.barType[0]);
+        if(String.valueOf(Bar.barStatus[0]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateMprikiBarProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Bar.barName[1]);
+        typeProfileLabel.setText(Bar.barType[1]);
+        if(String.valueOf(Bar.barStatus[1]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateHayatRoofBarProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Bar.barName[2]);
+        typeProfileLabel.setText(Bar.barType[2]);
+        if(String.valueOf(Bar.barStatus[2]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateCafeBar19BarProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Bar.barName[3]);
+        typeProfileLabel.setText(Bar.barType[3]);
+        if(String.valueOf(Bar.barStatus[3]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateKouzinaBarBarProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Bar.barName[4]);
+        typeProfileLabel.setText(Bar.barType[4]);
+        if(String.valueOf(Bar.barStatus[4]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateCityZenBarProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Bar.barName[5]);
+        typeProfileLabel.setText(Bar.barType[5]);
+        if(String.valueOf(Bar.barStatus[5]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+
+
+    //</editor-fold
+
+    //<editor-fold default-state="collapsed" desc=" Church Profiles ">
+    @FXML
+    protected  void generateChurchOf40MartyrsProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Church.churchName[0]);
+        typeProfileLabel.setText(Church.churchType[0]);
+        if(String.valueOf(Church.churchStatus[0]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateIerosBuzantinosNaosTimiouProdromouProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Church.churchName[1]);
+        typeProfileLabel.setText(Church.churchType[1]);
+        if(String.valueOf(Church.churchStatus[1]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateChurchOfTheHolyCrossProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Church.churchName[2]);
+        typeProfileLabel.setText(Church.churchType[2]);
+        if(String.valueOf(Church.churchStatus[2]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateChurchOfStAntonyAndStMariaProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Church.churchName[3]);
+        typeProfileLabel.setText(Church.churchType[3]);
+        if(String.valueOf(Church.churchStatus[3]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateChurchOfAssumptionOfMaryProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Church.churchName[4]);
+        typeProfileLabel.setText(Church.churchType[4]);
+        if(String.valueOf(Church.churchStatus[4]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateGoutasNikolaosProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Church.churchName[5]);
+        typeProfileLabel.setText(Church.churchType[5]);
+        if(String.valueOf(Church.churchStatus[5]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+
+    //</editor-fold
+
+    //<editor-fold default-state="collapsed" desc=" Museum Profiles ">
+    @FXML
+    protected  void generateArchaeologicalMuseumOfSerresProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Museum.museumName[0]);
+        typeProfileLabel.setText(Museum.museumType[0]);
+        if(String.valueOf(Museum.museumStatus[0]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateVlachFolkloreMuseumProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Museum.museumName[1]);
+        typeProfileLabel.setText(Museum.museumType[1]);
+        if(String.valueOf(Museum.museumStatus[1]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateSarakatsaniFolkloreMuseumProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Museum.museumName[2]);
+        typeProfileLabel.setText(Museum.museumType[2]);
+        if(String.valueOf(Museum.museumStatus[2]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateProtomiEleutheriouBenizelouProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Museum.museumName[3]);
+        typeProfileLabel.setText(Museum.museumType[3]);
+        if(String.valueOf(Museum.museumStatus[3]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateEkklisiastikoMouseioIerasMitropolisSerronProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Museum.museumName[4]);
+        typeProfileLabel.setText(Museum.museumType[4]);
+        if(String.valueOf(Museum.museumStatus[4]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generatePinakothikiKonstantinos3enakisProfile(MouseEvent event) {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Museum.museumName[5]);
+        typeProfileLabel.setText(Museum.museumType[5]);
+        if(String.valueOf(Museum.museumStatus[5]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+
+
+    //</editor-fold
+
     //<editor-fold default-state="collapsed" desc=" PanelAnimations">
     @FXML
     protected void  enteredCategoryAnimation(MouseEvent event){
@@ -3872,6 +4876,24 @@ public class HomeController implements Initializable {
         homeScrollPane.setVisible(true);
     }
     @FXML
+    protected void barCategoryClose(MouseEvent event){
+
+        cafeScrollPane.setVisible(false);
+        homeScrollPane.setVisible(true);
+    }
+    @FXML
+    protected void churchCategoryClose(MouseEvent event){
+
+        cafeScrollPane.setVisible(false);
+        homeScrollPane.setVisible(true);
+    }
+    @FXML
+    protected void museumCategoryClose(MouseEvent event){
+
+        cafeScrollPane.setVisible(false);
+        homeScrollPane.setVisible(true);
+    }
+    @FXML
     protected void coffeeCategoryClick(MouseEvent event){
 
         //ScaleTransition scaleTransition = new ScaleTransition(Duration.millis(300), coffeeCategory);
@@ -3890,6 +4912,9 @@ public class HomeController implements Initializable {
         cafePane.setVisible(true);
         restaurantPane.setVisible(false);
         ParkPane.setVisible(false);
+        BarPane.setVisible(false);
+        ChurchPane.setVisible(false);
+        MuseumPane.setVisible(false);
         cafeScrollPane.setVisible(true);
 
         cafePane.setOpacity(0.0);
@@ -3916,6 +4941,9 @@ public class HomeController implements Initializable {
         homeScrollPane.setVisible(false);
         cafePane.setVisible(false);
         ParkPane.setVisible(false);
+        BarPane.setVisible(false);
+        ChurchPane.setVisible(false);
+        MuseumPane.setVisible(false);
         cafeScrollPane.setVisible(true);
 
 
@@ -3944,6 +4972,9 @@ public class HomeController implements Initializable {
         homeScrollPane.setVisible(false);
         cafePane.setVisible(false);
         restaurantPane.setVisible(false);
+        BarPane.setVisible(false);
+        ChurchPane.setVisible(false);
+        MuseumPane.setVisible(false);
         cafeScrollPane.setVisible(true);
 
 
@@ -3952,6 +4983,99 @@ public class HomeController implements Initializable {
         ParkPane.setVisible(true);
 
         GeneratePark();
+
+    }
+    @FXML
+    protected void barCategoryClick(MouseEvent event){
+
+        //ScaleTransition scaleTransition = new ScaleTransition(Duration.millis(300), foodCategory);
+        //scaleTransition.setNode(coffeeCategory);
+
+        //scaleTransition.setFromX(1);
+        //scaleTransition.setFromY(1);
+        //scaleTransition.setToX(0.95);
+        //scaleTransition.setToY(0.95);
+        //scaleTransition.setAutoReverse(true);
+
+        //scaleTransition.play();
+
+
+        homeScrollPane.setVisible(false);
+        cafePane.setVisible(false);
+        restaurantPane.setVisible(false);
+        ParkPane.setVisible(false);
+        ChurchPane.setVisible(false);
+        MuseumPane.setVisible(false);
+        cafeScrollPane.setVisible(true);
+
+
+        BarPane.setOpacity(0.0);
+        new FadeIn(BarPane).play();
+        BarPane.setVisible(true);
+
+        GenerateBar();
+
+    }
+    @FXML
+    protected void ChurchCategoryClick(MouseEvent event){
+
+        //ScaleTransition scaleTransition = new ScaleTransition(Duration.millis(300), foodCategory);
+        //scaleTransition.setNode(coffeeCategory);
+
+        //scaleTransition.setFromX(1);
+        //scaleTransition.setFromY(1);
+        //scaleTransition.setToX(0.95);
+        //scaleTransition.setToY(0.95);
+        //scaleTransition.setAutoReverse(true);
+
+        //scaleTransition.play();
+
+
+        homeScrollPane.setVisible(false);
+        cafePane.setVisible(false);
+        restaurantPane.setVisible(false);
+        ParkPane.setVisible(false);
+        BarPane.setVisible(false);
+        MuseumPane.setVisible(false);
+        cafeScrollPane.setVisible(true);
+
+
+        ChurchPane.setOpacity(0.0);
+        new FadeIn(ChurchPane).play();
+        ChurchPane.setVisible(true);
+
+        GenerateChurch();
+
+    }
+    @FXML
+    protected void MuseumCategoryClick(MouseEvent event){
+
+        //ScaleTransition scaleTransition = new ScaleTransition(Duration.millis(300), foodCategory);
+        //scaleTransition.setNode(coffeeCategory);
+
+        //scaleTransition.setFromX(1);
+        //scaleTransition.setFromY(1);
+        //scaleTransition.setToX(0.95);
+        //scaleTransition.setToY(0.95);
+        //scaleTransition.setAutoReverse(true);
+
+        //scaleTransition.play();
+
+
+        homeScrollPane.setVisible(false);
+        cafePane.setVisible(false);
+        restaurantPane.setVisible(false);
+        ParkPane.setVisible(false);
+        BarPane.setVisible(false);
+        ChurchPane.setVisible(false);
+        cafeScrollPane.setVisible(true);
+
+
+        MuseumPane.setOpacity(0.0);
+        new FadeIn(MuseumPane).play();
+        MuseumPane.setVisible(true);
+
+        GenerateMuseum();
 
     }
     @FXML
@@ -4134,6 +5258,51 @@ public class HomeController implements Initializable {
         parkCloseStatus19.setVisible(false);
         parkOpenStatus20.setVisible(false);
         parkCloseStatus20.setVisible(false);
+        //</editor-fold
+
+        //<editor-fold default-state="collapsed" desc=" Bar Status ">
+        barOpenStatus1.setVisible(false);
+        barCloseStatus1.setVisible(false);
+        barOpenStatus2.setVisible(false);
+        barCloseStatus2.setVisible(false);
+        barOpenStatus3.setVisible(false);
+        barCloseStatus3.setVisible(false);
+        barOpenStatus4.setVisible(false);
+        barCloseStatus4.setVisible(false);
+        barOpenStatus5.setVisible(false);
+        barCloseStatus5.setVisible(false);
+        barOpenStatus6.setVisible(false);
+        barCloseStatus6.setVisible(false);
+        //</editor-fold
+
+        //<editor-fold default-state="collapsed" desc=" Church Status ">
+        churchOpenStatus1.setVisible(false);
+        churchCloseStatus1.setVisible(false);
+        churchOpenStatus2.setVisible(false);
+        churchCloseStatus2.setVisible(false);
+        churchOpenStatus3.setVisible(false);
+        churchCloseStatus3.setVisible(false);
+        churchOpenStatus4.setVisible(false);
+        churchCloseStatus4.setVisible(false);
+        churchOpenStatus5.setVisible(false);
+        churchCloseStatus5.setVisible(false);
+        churchOpenStatus6.setVisible(false);
+        churchCloseStatus6.setVisible(false);
+        //</editor-fold
+
+        //<editor-fold default-state="collapsed" desc=" Museum Status ">
+        museumOpenStatus1.setVisible(false);
+        museumCloseStatus1.setVisible(false);
+        museumOpenStatus2.setVisible(false);
+        museumCloseStatus2.setVisible(false);
+        museumOpenStatus3.setVisible(false);
+        museumCloseStatus3.setVisible(false);
+        museumOpenStatus4.setVisible(false);
+        museumCloseStatus4.setVisible(false);
+        museumOpenStatus5.setVisible(false);
+        museumCloseStatus5.setVisible(false);
+        museumOpenStatus6.setVisible(false);
+        museumCloseStatus6.setVisible(false);
         //</editor-fold
 
         //Cafe Initializer
@@ -5117,6 +6286,289 @@ public class HomeController implements Initializable {
         else
         {
             parkCloseStatus20.setVisible(true);
+        }
+        //</editor-fold>
+
+    }
+    public void GenerateBar()
+    {
+        //<editor-fold default-state="collapsed" desc="Bar 1">
+        barPane1.setOpacity(0.0);
+        new ZoomIn(barPane1).setDelay(Duration.seconds(0.5)).play();
+        barName1.setText(Bar.barName[0]);
+        barType1.setText(Bar.barType[0]);
+        barRate1.setText(String.valueOf(Bar.barRate[0]));
+        if(String.valueOf(Bar.barStatus[0]).equals("true"))
+        {
+            barOpenStatus1.setVisible(true);
+        }
+        else
+        {
+            barCloseStatus1.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Bar 2">
+        barPane2.setOpacity(0.0);
+        new ZoomIn(barPane2).setDelay(Duration.seconds(0.5)).play();
+        barName2.setText(Bar.barName[1]);
+        barType2.setText(Bar.barType[1]);
+        barRate2.setText(String.valueOf(Bar.barRate[1]));
+        if(String.valueOf(Bar.barStatus[1]).equals("true"))
+        {
+            barOpenStatus2.setVisible(true);
+        }
+        else
+        {
+            barCloseStatus2.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Bar 3">
+        barPane3.setOpacity(0.0);
+        new ZoomIn(barPane3).setDelay(Duration.seconds(0.5)).play();
+        barName3.setText(Bar.barName[2]);
+        barType3.setText(Bar.barType[2]);
+        barRate3.setText(String.valueOf(Bar.barRate[2]));
+        if(String.valueOf(Bar.barStatus[2]).equals("true"))
+        {
+            barOpenStatus3.setVisible(true);
+        }
+        else
+        {
+            barCloseStatus3.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Bar 4">
+        barPane4.setOpacity(0.0);
+        new ZoomIn(barPane4).setDelay(Duration.seconds(0.5)).play();
+        barName4.setText(Bar.barName[3]);
+        barType4.setText(Bar.barType[3]);
+        barRate4.setText(String.valueOf(Bar.barRate[3]));
+        if(String.valueOf(Bar.barStatus[3]).equals("true"))
+        {
+            barOpenStatus4.setVisible(true);
+        }
+        else
+        {
+            barCloseStatus4.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Bar 5">
+        barPane5.setOpacity(0.0);
+        new ZoomIn(barPane5).setDelay(Duration.seconds(0.5)).play();
+        barName5.setText(Bar.barName[4]);
+        barType5.setText(Bar.barType[4]);
+        barRate5.setText(String.valueOf(Bar.barRate[4]));
+        if(String.valueOf(Bar.barStatus[4]).equals("true"))
+        {
+            barOpenStatus5.setVisible(true);
+        }
+        else
+        {
+            barCloseStatus5.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Bar 6">
+        barPane6.setOpacity(0.0);
+        new ZoomIn(barPane6).setDelay(Duration.seconds(0.5)).play();
+        barName6.setText(Bar.barName[5]);
+        barType6.setText(Bar.barType[5]);
+        barRate6.setText(String.valueOf(Bar.barRate[5]));
+        if(String.valueOf(Bar.barStatus[5]).equals("true"))
+        {
+            barOpenStatus6.setVisible(true);
+        }
+        else
+        {
+            barCloseStatus6.setVisible(true);
+        }
+        //</editor-fold>
+
+    }
+    public void GenerateChurch()
+    {
+        //<editor-fold default-state="collapsed" desc="Church 1">
+        churchPane1.setOpacity(0.0);
+        new ZoomIn(churchPane1).setDelay(Duration.seconds(0.5)).play();
+        churchName1.setText(Church.churchName[0]);
+        churchType1.setText(Church.churchType[0]);
+        churchRate1.setText(String.valueOf(Church.churchRate[0]));
+        if(String.valueOf(Church.churchStatus[0]).equals("true"))
+        {
+            churchOpenStatus1.setVisible(true);
+        }
+        else
+        {
+            churchCloseStatus1.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Church 2">
+        churchPane2.setOpacity(0.0);
+        new ZoomIn(churchPane2).setDelay(Duration.seconds(0.5)).play();
+        churchName2.setText(Church.churchName[1]);
+        churchType2.setText(Church.churchType[1]);
+        churchRate2.setText(String.valueOf(Church.churchRate[1]));
+        if(String.valueOf(Church.churchStatus[1]).equals("true"))
+        {
+            churchOpenStatus2.setVisible(true);
+        }
+        else
+        {
+            churchCloseStatus2.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Church 3">
+        churchPane3.setOpacity(0.0);
+        new ZoomIn(churchPane3).setDelay(Duration.seconds(0.5)).play();
+        churchName3.setText(Church.churchName[2]);
+        churchType3.setText(Church.churchType[2]);
+        churchRate3.setText(String.valueOf(Church.churchRate[2]));
+        if(String.valueOf(Church.churchStatus[2]).equals("true"))
+        {
+            churchOpenStatus3.setVisible(true);
+        }
+        else
+        {
+            churchCloseStatus3.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Church 4">
+        churchPane4.setOpacity(0.0);
+        new ZoomIn(churchPane4).setDelay(Duration.seconds(0.5)).play();
+        churchName4.setText(Church.churchName[3]);
+        churchType4.setText(Church.churchType[3]);
+        churchRate4.setText(String.valueOf(Church.churchRate[3]));
+        if(String.valueOf(Church.churchStatus[3]).equals("true"))
+        {
+            churchOpenStatus4.setVisible(true);
+        }
+        else
+        {
+            churchCloseStatus4.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Church 5">
+        churchPane5.setOpacity(0.0);
+        new ZoomIn(churchPane5).setDelay(Duration.seconds(0.5)).play();
+        churchName5.setText(Church.churchName[4]);
+        churchType5.setText(Church.churchType[4]);
+        churchRate5.setText(String.valueOf(Church.churchRate[4]));
+        if(String.valueOf(Church.churchStatus[4]).equals("true"))
+        {
+            churchOpenStatus5.setVisible(true);
+        }
+        else
+        {
+            churchCloseStatus5.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Church 6">
+        churchPane6.setOpacity(0.0);
+        new ZoomIn(churchPane6).setDelay(Duration.seconds(0.5)).play();
+        churchName6.setText(Church.churchName[5]);
+        churchType6.setText(Church.churchType[5]);
+        churchRate6.setText(String.valueOf(Church.churchRate[5]));
+        if(String.valueOf(Church.churchStatus[5]).equals("true"))
+        {
+            churchOpenStatus6.setVisible(true);
+        }
+        else
+        {
+            churchCloseStatus6.setVisible(true);
+        }
+        //</editor-fold>
+
+    }
+
+    public void GenerateMuseum()
+    {
+        //<editor-fold default-state="collapsed" desc="Museum 1">
+        museumPane1.setOpacity(0.0);
+        new ZoomIn(museumPane1).setDelay(Duration.seconds(0.5)).play();
+        museumName1.setText(Museum.museumName[0]);
+        museumType1.setText(Museum.museumType[0]);
+        museumRate1.setText(String.valueOf(Museum.museumRate[0]));
+        if(String.valueOf(Museum.museumStatus[0]).equals("true"))
+        {
+            museumOpenStatus1.setVisible(true);
+        }
+        else
+        {
+            museumCloseStatus1.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Museum 2">
+        museumPane2.setOpacity(0.0);
+        new ZoomIn(museumPane2).setDelay(Duration.seconds(0.5)).play();
+        museumName2.setText(Museum.museumName[1]);
+        museumType2.setText(Museum.museumType[1]);
+        museumRate2.setText(String.valueOf(Museum.museumRate[1]));
+        if(String.valueOf(Museum.museumStatus[1]).equals("true"))
+        {
+            museumOpenStatus2.setVisible(true);
+        }
+        else
+        {
+            museumCloseStatus2.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Museum 3">
+        museumPane3.setOpacity(0.0);
+        new ZoomIn(museumPane3).setDelay(Duration.seconds(0.5)).play();
+        museumName3.setText(Museum.museumName[2]);
+        museumType3.setText(Museum.museumType[2]);
+        museumRate3.setText(String.valueOf(Museum.museumRate[2]));
+        if(String.valueOf(Museum.museumStatus[2]).equals("true"))
+        {
+            museumOpenStatus3.setVisible(true);
+        }
+        else
+        {
+            museumCloseStatus3.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Museum 4">
+        museumPane4.setOpacity(0.0);
+        new ZoomIn(museumPane4).setDelay(Duration.seconds(0.5)).play();
+        museumName4.setText(Museum.museumName[3]);
+        museumType4.setText(Museum.museumType[3]);
+        museumRate4.setText(String.valueOf(Museum.museumRate[3]));
+        if(String.valueOf(Museum.museumStatus[3]).equals("true"))
+        {
+            museumOpenStatus4.setVisible(true);
+        }
+        else
+        {
+            museumCloseStatus4.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Museum 5">
+        museumPane5.setOpacity(0.0);
+        new ZoomIn(museumPane5).setDelay(Duration.seconds(0.5)).play();
+        museumName5.setText(Museum.museumName[4]);
+        museumType5.setText(Museum.museumType[4]);
+        museumRate5.setText(String.valueOf(Museum.museumRate[4]));
+        if(String.valueOf(Museum.museumStatus[4]).equals("true"))
+        {
+            museumOpenStatus5.setVisible(true);
+        }
+        else
+        {
+            museumCloseStatus5.setVisible(true);
+        }
+        //</editor-fold>
+        //<editor-fold default-state="collapsed" desc="Museum 6">
+        museumPane6.setOpacity(0.0);
+        new ZoomIn(museumPane6).setDelay(Duration.seconds(0.5)).play();
+        museumName6.setText(Museum.museumName[5]);
+        museumType6.setText(Museum.museumType[5]);
+        museumRate6.setText(String.valueOf(Museum.museumRate[5]));
+        if(String.valueOf(Museum.museumStatus[5]).equals("true"))
+        {
+            museumOpenStatus6.setVisible(true);
+        }
+        else
+        {
+            museumCloseStatus6.setVisible(true);
         }
         //</editor-fold>
 

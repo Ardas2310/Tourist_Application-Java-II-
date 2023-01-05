@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+#closeChurchButton {
+    -fx-background-color: #d9cab3;
+    -fx-background-radius: 6 6 6 6;
+    -fx-border-radius: 6 6 6 6;
+}
+#closeChurchLabel {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 20px;
+    -fx-text-fill: #736c61;
+}
+#xChurchLabel {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 20px;
+    -fx-text-fill: #736c61;
+}
+#resultsChurch {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 25px;
+    -fx-text-fill: #736c61;
+}
+
+#churchPane1,#churchPane2,#churchPane3,#churchPane4,#churchPane5,#churchPane6 {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0.5, 0.0, 0.0);
+    -fx-background-radius: 8 8 8 8;
+    -fx-border-radius: 8 8 8 8;
+}
+#churchName1,#churchName2,#churchName3,#churchName4,#churchName5,#churchName6 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 800;
+    -fx-font-size: 18px;
+}
+#churchType1,#churchType2,#churchType3,#churchType4,#churchType5,#churchType6 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 15px;
+}
+#churchRate1,#churchRate2,#churchRate3,#churchRate4,#churchRate5,#churchRate6 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 600;
+    -fx-font-size: 15px;
+    -fx-text-fill: #0ed598;
+}
+#churchStatus1,#churchStatus2,#churchStatus3,#churchStatus4,#churchStatus5,#churchStatus6 {
+    -fx-font-family: 'Barlow Condensed', sans-serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 15px;
+}
+#churchImage1,#churchImage2,#churchImage3,#churchImage4,#churchImage5,#churchImage6 {
+    -fx-background-color: transparent;
+    -fx-foreground-color: transparent;
+}
