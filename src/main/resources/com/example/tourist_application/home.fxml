@@ -2586,11 +2586,11 @@
                                  </cursor>
                               </ImageView>
                               <WebView fx:id="shopWebView1" layoutX="10" layoutY="400.0" prefHeight="200.0" prefWidth="200.0" />
-                              <WebView fx:id="shopWebView2" layoutX="40" layoutY="400.0" prefHeight="200.0" prefWidth="200.0" />
-                              <WebView fx:id="shopWebView3" layoutX="70" layoutY="400.0" prefHeight="200.0" prefWidth="200.0" />
-                              <WebView fx:id="shopWebView4" layoutX="100" layoutY="400.0" prefHeight="200.0" prefWidth="200.0" />
-                              <WebView fx:id="shopWebView5" layoutX="130" layoutY="400.0" prefHeight="200.0" prefWidth="200.0" />
-                              <WebView fx:id="shopWebView6" layoutX="160" layoutY="400.0" prefHeight="200.0" prefWidth="200.0" />
+                              <WebView fx:id="shopWebView2" layoutX="230.0" layoutY="400.0" prefHeight="200.0" prefWidth="200.0" />
+                              <WebView fx:id="shopWebView3" layoutX="450.0" layoutY="400.0" prefHeight="200.0" prefWidth="200.0" />
+                              <WebView fx:id="shopWebView4" layoutX="670.0" layoutY="400.0" prefHeight="200.0" prefWidth="200.0" />
+                              <WebView fx:id="shopWebView5" layoutX="890.0" layoutY="400.0" prefHeight="200.0" prefWidth="200.0" />
+                              <WebView fx:id="shopWebView6" layoutX="160.0" layoutY="600.0" prefHeight="200.0" prefWidth="200.0" />
                            </children>
                         </Pane>
                         <ImageView fx:id="openProfileImage" fitHeight="300.0" fitWidth="300.0" layoutX="81.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">

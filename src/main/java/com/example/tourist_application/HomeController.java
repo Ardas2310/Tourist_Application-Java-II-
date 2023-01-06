@@ -1254,7 +1254,7 @@ public class HomeController implements Initializable {
         final WebEngine image4 = shopWebView4.getEngine();
         final WebEngine image5 = shopWebView5.getEngine();
         final WebEngine image6 = shopWebView6.getEngine();
-        String placeId = "ChIJGXx-G41xqRQRr6TPQ6pf5lo"; // Place ID gia ton mple giaka
+        String placeId = "ChIJGXx-G41xqRQRr6TPQ6pf5lo";
         PhotoParser.generatePhotos(placeId);
         String photo1 = PhotoParser.photosArray[0];
         String photo2 = PhotoParser.photosArray[1];
@@ -1284,7 +1284,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateCaffetterieProfile(MouseEvent event) {
+    protected  void generateCaffetterieProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/caffettieri/profile.png")));
@@ -1309,6 +1309,27 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442859";
         web.load(urlweb);
 
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJi6ecPI1xqRQRVLe4JNuPZXc";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
+
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -1324,7 +1345,7 @@ public class HomeController implements Initializable {
         //</editor-fold
     }
     @FXML
-    protected  void generateVoiceEspressoProfile(MouseEvent event) {
+    protected  void generateVoiceEspressoProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
@@ -1349,6 +1370,27 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442866";
         web.load(urlweb);
 
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJRSLgSI1xqRQRS8QFRcWYS_8";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
+
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -1364,7 +1406,70 @@ public class HomeController implements Initializable {
         //</editor-fold
     }
     @FXML
-    protected  void generateHayatRoofProfile(MouseEvent event) {
+    protected  void generateHayatRoofProfile(MouseEvent event) throws IOException {
+        profilePane.setVisible(true);
+        new FadeIn(profilePane).play();
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        nameProfileLabel.setText(Cafe.cafeName[3]);
+        typeProfileLabel.setText(Cafe.cafeType[3]);
+        if(String.valueOf(Cafe.cafeStatus[3]).equals("true"))
+        {
+            openProfileImage.setOpacity(0.0);
+            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
+            openProfileImage.setVisible(true);
+            closeProfileImage.setVisible(false);
+        }
+        else
+        {
+            closeProfileImage.setOpacity(0.0);
+            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
+            closeProfileImage.setVisible(true);
+            openProfileImage.setVisible(false);
+        }
+
+        final WebEngine web = map.getEngine();
+        String urlweb = "https://snazzymaps.com/embed/442864";
+        web.load(urlweb);
+
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJlU1gjKukoRQR0amZBIYa8vE";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
+
+
+
+        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
+        map.setOpacity(0.0);
+        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
+        profileImage.setOpacity(0.0);
+        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
+        nameProfileLabel.setOpacity(0.0);
+        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        typeProfileLabel.setOpacity(0.0);
+        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        bulletProfileLabel.setOpacity(0.0);
+        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
+        //</editor-fold
+
+    }
+    @FXML
+    protected  void generateCoffeeIslandProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -1390,6 +1495,28 @@ public class HomeController implements Initializable {
         web.load(urlweb);
 
 
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJj0ZQSY1xqRQRvVbQ5L1OuiI";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
+
+
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -1406,7 +1533,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateCoffeeIslandProfile(MouseEvent event) {
+    protected  void generateVoltaBarProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -1431,6 +1558,27 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJz2ixMo1xqRQRlYvpev7L2oc";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
+
 
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
@@ -1448,7 +1596,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateVoltaBarProfile(MouseEvent event) {
+    protected  void generateKennedyEspressoBarProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -1473,6 +1621,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJVQvKfYtxqRQRJFOYWwt6FSk";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
@@ -1490,7 +1658,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateKennedyEspressoBarProfile(MouseEvent event) {
+    protected  void generateMikelCoffeeProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -1515,6 +1683,27 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJI33bqZJxqRQR0T2kFUCJxsQ";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
+
 
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
@@ -1532,7 +1721,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateMikelCoffeeProfile(MouseEvent event) {
+    protected  void generateCafeBar19Profile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -1557,6 +1746,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJiaHTVI1xqRQRNBlHy2qQvz4";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
@@ -1574,7 +1783,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateCafeBar19Profile(MouseEvent event) {
+    protected  void generateJuiceBoxNaturalBitesProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -1599,6 +1808,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJezh9qPJxqRQRPh18taFwdNI";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
@@ -1616,7 +1845,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateJuiceBoxNaturalBitesProfile(MouseEvent event) {
+    protected  void generateKouzinaBarProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -1658,7 +1887,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateKouzinaBarProfile(MouseEvent event) {
+    protected  void generategoalcafeProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -1700,7 +1929,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generategoalcafeProfile(MouseEvent event) {
+    protected  void generateMeliosOilProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -1742,7 +1971,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateMeliosOilProfile(MouseEvent event) {
+    protected  void generateXrysoProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -1784,7 +2013,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateXrysoProfile(MouseEvent event) {
+    protected  void generateTodaysDeliciousProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -1826,7 +2055,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateTodaysDeliciousProfile(MouseEvent event) {
+    protected  void generateToSpitikoProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -1868,7 +2097,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateToSpitikoProfile(MouseEvent event) {
+    protected  void generateTheCoffeeStore2Profile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -1910,7 +2139,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateTheCoffeeStore2Profile(MouseEvent event) {
+    protected  void generateCityZenProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -1952,55 +2181,13 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateCityZenProfile(MouseEvent event) {
+    protected  void generateTheCoffeeStoreProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
         nameProfileLabel.setText(Cafe.cafeName[18]);
         typeProfileLabel.setText(Cafe.cafeType[18]);
         if(String.valueOf(Cafe.cafeStatus[18]).equals("true"))
-        {
-            openProfileImage.setOpacity(0.0);
-            new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
-            openProfileImage.setVisible(true);
-            closeProfileImage.setVisible(false);
-        }
-        else
-        {
-            closeProfileImage.setOpacity(0.0);
-            new FadeIn(closeProfileImage).setDelay(Duration.seconds(0.5)).play();
-            closeProfileImage.setVisible(true);
-            openProfileImage.setVisible(false);
-        }
-
-        final WebEngine web = map.getEngine();
-        String urlweb = "https://snazzymaps.com/embed/442864";
-        web.load(urlweb);
-
-
-
-        //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
-        map.setOpacity(0.0);
-        new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
-        profileImage.setOpacity(0.0);
-        new FadeIn(profileImage).setDelay(Duration.seconds(0.5)).play();
-        nameProfileLabel.setOpacity(0.0);
-        new FadeIn(nameProfileLabel).setDelay(Duration.seconds(0.5)).play();
-        typeProfileLabel.setOpacity(0.0);
-        new FadeIn(typeProfileLabel).setDelay(Duration.seconds(0.5)).play();
-        bulletProfileLabel.setOpacity(0.0);
-        new FadeIn(bulletProfileLabel).setDelay(Duration.seconds(0.5)).play();
-        //</editor-fold
-
-    }
-    @FXML
-    protected  void generateTheCoffeeStoreProfile(MouseEvent event) {
-        profilePane.setVisible(true);
-        new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
-        nameProfileLabel.setText(Cafe.cafeName[19]);
-        typeProfileLabel.setText(Cafe.cafeType[19]);
-        if(String.valueOf(Cafe.cafeStatus[19]).equals("true"))
         {
             openProfileImage.setOpacity(0.0);
             new FadeIn(openProfileImage).setDelay(Duration.seconds(0.5)).play();
@@ -2807,7 +2994,7 @@ public class HomeController implements Initializable {
 
     //<editor-fold default-state="collapsed" desc=" Park Profiles ">
     @FXML
-    protected  void generateMonumentCaptainMitrousisProfile(MouseEvent event) {
+    protected  void generateMonumentCaptainMitrousisProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -2832,7 +3019,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJfQSlmSlyqRQRwHsTbHZSNKU";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -2849,7 +3055,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateTRIKALAProfile(MouseEvent event) {
+    protected  void generateTRIKALAProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -2874,6 +3080,21 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = " ChIJpScvZF1xqRQRSO3TxgVxdpM";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
 
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
@@ -2891,7 +3112,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generatePlateiaKonstantinouKabafiProfile(MouseEvent event) {
+    protected  void generatePlateiaKonstantinouKabafiProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -2916,7 +3137,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJibnF2cJxqRQRhVOk7Go84h0";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -2933,7 +3173,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateRodosbeatsProfile(MouseEvent event) {
+    protected  void generateRodosbeatsProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -2958,7 +3198,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJv8f-d1NxqRQRlScnH134Ni8";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -2975,7 +3234,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generatePlateiaKroniouProfile(MouseEvent event) {
+    protected  void generatePlateiaKroniouProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3000,7 +3259,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJOcOlVS1xqRQRppkMYuz15ts";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3017,7 +3295,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateAgalmaAnastasiouPolizoidiProfile(MouseEvent event) {
+    protected  void generateAgalmaAnastasiouPolizoidiProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3042,7 +3320,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJpWqYXi9xqRQRYxyB33H9xbY";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3059,7 +3356,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateTriaSintribaniaProfile(MouseEvent event) {
+    protected  void generateTriaSintribaniaProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3084,7 +3381,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJGXx-G41xqRQRr6TPQ6pf5lo";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3101,7 +3417,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateLibertySquareProfile(MouseEvent event) {
+    protected  void generateLibertySquareProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3126,7 +3442,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJ8XRBW-1xqRQRVM-XIVFGTyE";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3143,7 +3478,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateParkFormerProfile(MouseEvent event) {
+    protected  void generateParkFormerProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3168,7 +3503,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJGXx-G41xqRQRr6TPQ6pf5lo";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3185,7 +3539,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateParkSerresProfile(MouseEvent event) {
+    protected  void generateParkSerresProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3210,7 +3564,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJGXx-G41xqRQRr6TPQ6pf5lo";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3227,7 +3600,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateAnoikto8eatrakiProfile(MouseEvent event) {
+    protected  void generateAnoikto8eatrakiProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3252,7 +3625,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJ3-G5XCFxqRQRJbbZXHwRK9g";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3269,7 +3661,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateMnimeioE8nikisAntistasisProfile(MouseEvent event) {
+    protected  void generateMnimeioE8nikisAntistasisProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3294,7 +3686,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJaXCdf_JxqRQRvsayadcxsDY";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3311,7 +3722,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generatePlateiaEmporeiouProfile(MouseEvent event) {
+    protected  void generatePlateiaEmporeiouProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3336,7 +3747,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJGXx-G41xqRQRr6TPQ6pf5lo";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3353,7 +3783,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateAgalmaDoukaProfile(MouseEvent event) {
+    protected  void generateAgalmaDoukaProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3378,7 +3808,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJGXx-G41xqRQRr6TPQ6pf5lo";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3395,7 +3844,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateProtomiDimitriouMisirliProfile(MouseEvent event) {
+    protected  void generateProtomiDimitriouMisirliProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3420,7 +3869,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJGXx-G41xqRQRr6TPQ6pf5lo";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3437,7 +3905,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generatePublicSquareProfile(MouseEvent event) {
+    protected  void generatePublicSquareProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3462,7 +3930,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJGXx-G41xqRQRr6TPQ6pf5lo";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3479,7 +3966,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateBoreioanatolikiPleuraparkouIKAProfile(MouseEvent event) {
+    protected  void generateBoreioanatolikiPleuraparkouIKAProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3504,7 +3991,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJGXx-G41xqRQRr6TPQ6pf5lo";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3521,7 +4027,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateProtomiPasxaliTsiagkaProfile(MouseEvent event) {
+    protected  void generateProtomiPasxaliTsiagkaProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3546,7 +4052,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJU4r07iZxqRQRJoHdDm_6m-4";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3563,7 +4088,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateParkakiSidirokastrouBourlonProfile(MouseEvent event) {
+    protected  void generateParkakiSidirokastrouBourlonProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3588,7 +4113,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJGXx-G41xqRQRr6TPQ6pf5lo";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3605,7 +4149,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generatePlateiaProfitiHliaProfile(MouseEvent event) {
+    protected  void generatePlateiaProfitiHliaProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3630,7 +4174,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJGXx-G41xqRQRr6TPQ6pf5lo";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3908,7 +4471,7 @@ public class HomeController implements Initializable {
 
     //<editor-fold default-state="collapsed" desc=" Church Profiles ">
     @FXML
-    protected  void generateChurchOf40MartyrsProfile(MouseEvent event) {
+    protected  void generateChurchOf40MartyrsProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3933,7 +4496,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJ8-AY7vVxqRQRjYd99eBbwao";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3950,7 +4532,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateIerosBuzantinosNaosTimiouProdromouProfile(MouseEvent event) {
+    protected  void generateIerosBuzantinosNaosTimiouProdromouProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -3975,7 +4557,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJf6VQCelxqRQR5NG3mspTsc4";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -3992,7 +4593,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateChurchOfTheHolyCrossProfile(MouseEvent event) {
+    protected  void generateChurchOfTheHolyCrossProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -4017,7 +4618,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJc9rQpvNxqRQRyEJI7MVjqFQ";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -4034,7 +4654,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateChurchOfStAntonyAndStMariaProfile(MouseEvent event) {
+    protected  void generateChurchOfStAntonyAndStMariaProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -4059,7 +4679,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJKce8s-5xqRQRBpjgvNIs6mk";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -4076,7 +4715,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateChurchOfAssumptionOfMaryProfile(MouseEvent event) {
+    protected  void generateChurchOfAssumptionOfMaryProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -4101,7 +4740,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJGWCqbYxxqRQR3hU9fg6uiZY";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -4117,8 +4775,10 @@ public class HomeController implements Initializable {
         //</editor-fold
 
     }
+
+    //den exei placeID
     @FXML
-    protected  void generateGoutasNikolaosProfile(MouseEvent event) {
+    protected  void generateGoutasNikolaosProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -4143,8 +4803,6 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
-
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
         new FadeIn(map).setDelay(Duration.seconds(0.5)).play();
@@ -4164,7 +4822,7 @@ public class HomeController implements Initializable {
 
     //<editor-fold default-state="collapsed" desc=" Museum Profiles ">
     @FXML
-    protected  void generateArchaeologicalMuseumOfSerresProfile(MouseEvent event) {
+    protected  void generateArchaeologicalMuseumOfSerresProfile(MouseEvent event) throws  IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -4189,7 +4847,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJheFRVO1xqRQReski8ouDQOo";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -4206,7 +4883,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateVlachFolkloreMuseumProfile(MouseEvent event) {
+    protected  void generateVlachFolkloreMuseumProfile(MouseEvent event)  throws  IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -4231,7 +4908,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJp26mYY5xqRQRT-Y-VWS73Ww";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -4248,7 +4944,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateSarakatsaniFolkloreMuseumProfile(MouseEvent event) {
+    protected  void generateSarakatsaniFolkloreMuseumProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -4273,7 +4969,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJre7fA-xxqRQRtfb4xf65Kr4";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -4290,7 +5005,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateProtomiEleutheriouBenizelouProfile(MouseEvent event) {
+    protected  void generateProtomiEleutheriouBenizelouProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -4315,7 +5030,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJ8Wx4gyxxqRQRoBluAQjPbbA";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -4332,7 +5066,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generateEkklisiastikoMouseioIerasMitropolisSerronProfile(MouseEvent event) {
+    protected  void generateEkklisiastikoMouseioIerasMitropolisSerronProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -4357,7 +5091,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJYxcIEbNxqRQRCdC9oqQ0Oz0";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
@@ -4374,7 +5127,7 @@ public class HomeController implements Initializable {
 
     }
     @FXML
-    protected  void generatePinakothikiKonstantinos3enakisProfile(MouseEvent event) {
+    protected  void generatePinakothikiKonstantinos3enakisProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
         profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
@@ -4399,7 +5152,26 @@ public class HomeController implements Initializable {
         String urlweb = "https://snazzymaps.com/embed/442864";
         web.load(urlweb);
 
-
+        final WebEngine image1 = shopWebView1.getEngine();
+        final WebEngine image2 = shopWebView2.getEngine();
+        final WebEngine image3 = shopWebView3.getEngine();
+        final WebEngine image4 = shopWebView4.getEngine();
+        final WebEngine image5 = shopWebView5.getEngine();
+        final WebEngine image6 = shopWebView6.getEngine();
+        String placeId = "ChIJWUbhMfJxqRQRlZzSY3XC3fU";
+        PhotoParser.generatePhotos(placeId);
+        String photo1 = PhotoParser.photosArray[0];
+        String photo2 = PhotoParser.photosArray[1];
+        String photo3 = PhotoParser.photosArray[2];
+        String photo4 = PhotoParser.photosArray[3];
+        String photo5 = PhotoParser.photosArray[4];
+        String photo6 = PhotoParser.photosArray[5];
+        image1.load(photo1);
+        image2.load(photo2);
+        image3.load(photo3);
+        image4.load(photo4);
+        image5.load(photo5);
+        image6.load(photo6);
 
         //<editor-fold default-state="collapsed" desc=" Profile Form Animations">
         map.setOpacity(0.0);
