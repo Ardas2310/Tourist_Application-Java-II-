@@ -88,7 +88,7 @@
                                        <children>
                                           <ImageView fx:id="cafeImage1" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus1" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -155,7 +155,7 @@
                                           <Label fx:id="cafeRate2" layoutX="24.0" layoutY="234.0" text="cafeRate2" />
                                           <ImageView fx:id="cafeImage2" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus2" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -182,7 +182,7 @@
                                           <Label fx:id="cafeRate3" layoutX="24.0" layoutY="234.0" text="cafeRate3" />
                                           <ImageView fx:id="cafeImage3" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus3" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -206,7 +206,7 @@
                                        <children>
                                           <ImageView fx:id="cafeImage4" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus4" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -273,7 +273,7 @@
                                           <Label fx:id="cafeRate5" layoutX="24.0" layoutY="234.0" text="cafeRate5" />
                                           <ImageView fx:id="cafeImage5" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus5" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -300,7 +300,7 @@
                                           <Label fx:id="cafeRate6" layoutX="24.0" layoutY="234.0" text="cafeRate6" />
                                           <ImageView fx:id="cafeImage6" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus6" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -324,7 +324,7 @@
                                        <children>
                                           <ImageView fx:id="cafeImage7" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus7" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -391,7 +391,7 @@
                                           <Label fx:id="cafeRate8" layoutX="24.0" layoutY="234.0" text="cafeRate8" />
                                           <ImageView fx:id="cafeImage8" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus8" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -418,7 +418,7 @@
                                           <Label fx:id="cafeRate9" layoutX="24.0" layoutY="234.0" text="cafeRate9" />
                                           <ImageView fx:id="cafeImage9" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus9" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -442,7 +442,7 @@
                                        <children>
                                           <ImageView fx:id="cafeImage10" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus10" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -509,7 +509,7 @@
                                           <Label fx:id="cafeRate11" layoutX="24.0" layoutY="234.0" text="cafeRate11" />
                                           <ImageView fx:id="cafeImage11" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus11" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -536,7 +536,7 @@
                                           <Label fx:id="cafeRate12" layoutX="24.0" layoutY="234.0" text="cafeRate12" />
                                           <ImageView fx:id="cafeImage12" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus12" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -560,7 +560,7 @@
                                        <children>
                                           <ImageView fx:id="cafeImage13" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus13" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -627,7 +627,7 @@
                                           <Label fx:id="cafeRate14" layoutX="24.0" layoutY="234.0" text="cafeRate14" />
                                           <ImageView fx:id="cafeImage14" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus14" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -654,7 +654,7 @@
                                           <Label fx:id="cafeRate15" layoutX="24.0" layoutY="234.0" text="cafeRate15" />
                                           <ImageView fx:id="cafeImage15" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus15" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -678,7 +678,7 @@
                                        <children>
                                           <ImageView fx:id="cafeImage16" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus16" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -745,7 +745,7 @@
                                           <Label fx:id="cafeRate17" layoutX="24.0" layoutY="234.0" text="cafeRate17" />
                                           <ImageView fx:id="cafeImage17" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus17" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -772,7 +772,7 @@
                                           <Label fx:id="cafeRate18" layoutX="24.0" layoutY="234.0" text="cafeRate18" />
                                           <ImageView fx:id="cafeImage18" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus18" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -796,7 +796,7 @@
                                        <children>
                                           <ImageView fx:id="cafeImage19" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/cafes-photos/cafeImage1.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="cafeOpenStatus19" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -879,7 +879,7 @@
                                        <children>
                                           <ImageView fx:id="restaurantImage1" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus1" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -917,7 +917,7 @@
                                           <Label fx:id="restaurantRate2" layoutX="24.0" layoutY="234.0" text="restaurantRate2" />
                                           <ImageView fx:id="restaurantImage2" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus2" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -944,7 +944,7 @@
                                           <Label fx:id="restaurantRate3" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
                                           <ImageView fx:id="restaurantImage3" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus3" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -968,7 +968,7 @@
                                        <children>
                                           <ImageView fx:id="restaurantImage4" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus4" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1006,7 +1006,7 @@
                                           <Label fx:id="restaurantRate5" layoutX="24.0" layoutY="234.0" text="restaurantRate2" />
                                           <ImageView fx:id="restaurantImage5" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus5" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1033,7 +1033,7 @@
                                           <Label fx:id="restaurantRate6" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
                                           <ImageView fx:id="restaurantImage6" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus6" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1060,7 +1060,7 @@
                                           <Label fx:id="restaurantRate7" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
                                           <ImageView fx:id="restaurantImage7" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus7" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1087,7 +1087,7 @@
                                           <Label fx:id="restaurantRate8" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
                                           <ImageView fx:id="restaurantImage8" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus8" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1114,7 +1114,7 @@
                                           <Label fx:id="restaurantRate9" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
                                           <ImageView fx:id="restaurantImage9" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus9" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1141,7 +1141,7 @@
                                           <Label fx:id="restaurantRate10" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
                                           <ImageView fx:id="restaurantImage10" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus10" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1168,7 +1168,7 @@
                                           <Label fx:id="restaurantRate11" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
                                           <ImageView fx:id="restaurantImage11" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus11" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1195,7 +1195,7 @@
                                           <Label fx:id="restaurantRate12" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
                                           <ImageView fx:id="restaurantImage12" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus12" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1222,7 +1222,7 @@
                                           <Label fx:id="restaurantRate13" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
                                           <ImageView fx:id="restaurantImage13" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus13" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1249,7 +1249,7 @@
                                           <Label fx:id="restaurantRate14" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
                                           <ImageView fx:id="restaurantImage14" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus14" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1276,7 +1276,7 @@
                                           <Label fx:id="restaurantRate15" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
                                           <ImageView fx:id="restaurantImage15" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus15" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1303,7 +1303,7 @@
                                           <Label fx:id="restaurantRate16" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
                                           <ImageView fx:id="restaurantImage16" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus16" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1330,7 +1330,7 @@
                                           <Label fx:id="restaurantRate17" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
                                           <ImageView fx:id="restaurantImage17" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus17" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1357,7 +1357,7 @@
                                           <Label fx:id="restaurantRate18" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
                                           <ImageView fx:id="restaurantImage18" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus18" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1384,7 +1384,7 @@
                                           <Label fx:id="restaurantRate19" layoutX="24.0" layoutY="234.0" text="restaurantRate3" />
                                           <ImageView fx:id="restaurantImage19" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/restaurants-photos/restaurantBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="restaurantOpenStatus19" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1427,7 +1427,7 @@
                                        <children>
                                           <ImageView fx:id="parkImage1" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus1" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1465,7 +1465,7 @@
                                           <Label fx:id="parkRate2" layoutX="24.0" layoutY="234.0" text="parkRate2" />
                                           <ImageView fx:id="parkImage2" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus2" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1492,7 +1492,7 @@
                                           <Label fx:id="parkRate3" layoutX="24.0" layoutY="234.0" text="parkRate3" />
                                           <ImageView fx:id="parkImage3" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus3" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1516,7 +1516,7 @@
                                        <children>
                                           <ImageView fx:id="parkImage4" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus4" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1554,7 +1554,7 @@
                                           <Label fx:id="parkRate5" layoutX="24.0" layoutY="234.0" text="parkRate5" />
                                           <ImageView fx:id="parkImage5" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus5" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1581,7 +1581,7 @@
                                           <Label fx:id="parkRate6" layoutX="24.0" layoutY="234.0" text="parkRate6" />
                                           <ImageView fx:id="parkImage6" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus6" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1608,7 +1608,7 @@
                                           <Label fx:id="parkRate7" layoutX="24.0" layoutY="234.0" text="parkRate7" />
                                           <ImageView fx:id="parkImage7" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus7" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1635,7 +1635,7 @@
                                           <Label fx:id="parkRate8" layoutX="24.0" layoutY="234.0" text="parkRate8" />
                                           <ImageView fx:id="parkImage8" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus8" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1662,7 +1662,7 @@
                                           <Label fx:id="parkRate9" layoutX="24.0" layoutY="234.0" text="parkRate9" />
                                           <ImageView fx:id="parkImage9" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus9" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1689,7 +1689,7 @@
                                           <Label fx:id="parkRate10" layoutX="24.0" layoutY="234.0" text="parkRate10" />
                                           <ImageView fx:id="parkImage10" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus10" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1716,7 +1716,7 @@
                                           <Label fx:id="parkRate11" layoutX="24.0" layoutY="234.0" text="parkRate11" />
                                           <ImageView fx:id="parkImage11" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus11" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1743,7 +1743,7 @@
                                           <Label fx:id="parkRate12" layoutX="24.0" layoutY="234.0" text="parkRate12" />
                                           <ImageView fx:id="parkImage12" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus12" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1770,7 +1770,7 @@
                                           <Label fx:id="parkRate13" layoutX="24.0" layoutY="234.0" text="parkRate13" />
                                           <ImageView fx:id="parkImage13" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus13" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1797,7 +1797,7 @@
                                           <Label fx:id="parkRate14" layoutX="24.0" layoutY="234.0" text="parkRate14" />
                                           <ImageView fx:id="parkImage14" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus14" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1824,7 +1824,7 @@
                                           <Label fx:id="parkRate15" layoutX="24.0" layoutY="234.0" text="parkRate15" />
                                           <ImageView fx:id="parkImage15" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus15" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1851,7 +1851,7 @@
                                           <Label fx:id="parkRate16" layoutX="24.0" layoutY="234.0" text="parkRate16" />
                                           <ImageView fx:id="parkImage16" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus16" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1878,7 +1878,7 @@
                                           <Label fx:id="parkRate17" layoutX="24.0" layoutY="234.0" text="parkRate17" />
                                           <ImageView fx:id="parkImage17" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus17" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1905,7 +1905,7 @@
                                           <Label fx:id="parkRate18" layoutX="24.0" layoutY="234.0" text="parkRate18" />
                                           <ImageView fx:id="parkImage18" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus18" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1932,7 +1932,7 @@
                                           <Label fx:id="parkRate19" layoutX="24.0" layoutY="234.0" text="parkRate19" />
                                           <ImageView fx:id="parkImage19" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus19" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -1959,7 +1959,7 @@
                                           <Label fx:id="parkRate20" layoutX="24.0" layoutY="234.0" text="parkRate20" />
                                           <ImageView fx:id="parkImage20" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/parks-photos/parkBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="parkOpenStatus20" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2002,7 +2002,7 @@
                                        <children>
                                           <ImageView fx:id="barImage1" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/bars-photos/barBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="barOpenStatus1" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2040,7 +2040,7 @@
                                           <Label fx:id="barRate2" layoutX="24.0" layoutY="234.0" text="barRate2" />
                                           <ImageView fx:id="barImage2" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/bars-photos/barBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="barOpenStatus2" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2067,7 +2067,7 @@
                                           <Label fx:id="barRate3" layoutX="24.0" layoutY="234.0" text="barRate3" />
                                           <ImageView fx:id="barImage3" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/bars-photos/barBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="barOpenStatus3" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2094,7 +2094,7 @@
                                           <Label fx:id="barRate4" layoutX="24.0" layoutY="234.0" text="barRate4" />
                                           <ImageView fx:id="barImage4" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/bars-photos/barBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="barOpenStatus4" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2121,7 +2121,7 @@
                                           <Label fx:id="barRate5" layoutX="24.0" layoutY="234.0" text="barRate5" />
                                           <ImageView fx:id="barImage5" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/bars-photos/barBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="barOpenStatus5" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2148,7 +2148,7 @@
                                           <Label fx:id="barRate6" layoutX="24.0" layoutY="234.0" text="barRate6" />
                                           <ImageView fx:id="barImage6" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/bars-photos/barBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="barOpenStatus6" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2191,7 +2191,7 @@
                                        <children>
                                           <ImageView fx:id="churchImage1" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/church-photos/churchBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="churchOpenStatus1" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2229,7 +2229,7 @@
                                           <Label fx:id="churchRate2" layoutX="24.0" layoutY="234.0" text="churchRate2" />
                                           <ImageView fx:id="churchImage2" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/church-photos/churchBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="churchOpenStatus2" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2256,7 +2256,7 @@
                                           <Label fx:id="churchRate3" layoutX="24.0" layoutY="234.0" text="churchRate3" />
                                           <ImageView fx:id="churchImage3" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/church-photos/churchBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="churchOpenStatus3" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2283,7 +2283,7 @@
                                           <Label fx:id="churchRate4" layoutX="24.0" layoutY="234.0" text="churchRate4" />
                                           <ImageView fx:id="churchImage4" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/church-photos/churchBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="churchOpenStatus4" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2310,7 +2310,7 @@
                                           <Label fx:id="churchRate5" layoutX="24.0" layoutY="234.0" text="churchRate5" />
                                           <ImageView fx:id="churchImage5" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/church-photos/churchBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="churchOpenStatus5" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2337,7 +2337,7 @@
                                           <Label fx:id="churchRate6" layoutX="24.0" layoutY="234.0" text="churchRate6" />
                                           <ImageView fx:id="churchImage6" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/church-photos/churchBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="churchOpenStatus6" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2380,7 +2380,7 @@
                                        <children>
                                           <ImageView fx:id="museumImage1" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/museums-photos/museumBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="museumOpenStatus1" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2418,7 +2418,7 @@
                                           <Label fx:id="museumRate2" layoutX="24.0" layoutY="234.0" text="museumRate2" />
                                           <ImageView fx:id="museumImage2" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/museums-photos/museumBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="museumOpenStatus2" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2445,7 +2445,7 @@
                                           <Label fx:id="museumRate3" layoutX="24.0" layoutY="234.0" text="museumRate3" />
                                           <ImageView fx:id="museumImage3" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/museums-photos/museumBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="museumOpenStatus3" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2472,7 +2472,7 @@
                                           <Label fx:id="museumRate4" layoutX="24.0" layoutY="234.0" text="museumRate4" />
                                           <ImageView fx:id="museumImage4" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/museums-photos/museumBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="museumOpenStatus4" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2499,7 +2499,7 @@
                                           <Label fx:id="museumRate5" layoutX="24.0" layoutY="234.0" text="museumRate5" />
                                           <ImageView fx:id="museumImage5" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/museums-photos/museumBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="museumOpenStatus5" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
@@ -2526,7 +2526,7 @@
                                           <Label fx:id="museumRate6" layoutX="24.0" layoutY="234.0" text="museumRate6" />
                                           <ImageView fx:id="museumImage6" fitHeight="160.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@gui/cafe/images/cafeImage1.png" />
+                                                <Image url="@gui/museums-photos/museumBackroundImage.png" />
                                              </image>
                                           </ImageView>
                                           <ImageView fx:id="museumOpenStatus6" fitHeight="300.0" fitWidth="300.0" layoutX="-28.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">

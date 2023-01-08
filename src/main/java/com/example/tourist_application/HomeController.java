@@ -1226,7 +1226,7 @@ public class HomeController implements Initializable {
     protected  void generateBlueGiakasProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/mple-giakas.jpg")));
         nameProfileLabel.setText(Cafe.cafeName[0]);
         typeProfileLabel.setText(Cafe.cafeType[0]);
         if(String.valueOf(Cafe.cafeStatus[0]).equals("true"))
@@ -1287,7 +1287,7 @@ public class HomeController implements Initializable {
     protected  void generateCaffetterieProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/caffettieri/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/i-caffettieri.png")));
         nameProfileLabel.setText(Cafe.cafeName[1]);
         typeProfileLabel.setText(Cafe.cafeType[1]);
         if(String.valueOf(Cafe.cafeStatus[1]).equals("true"))
@@ -1348,7 +1348,7 @@ public class HomeController implements Initializable {
     protected  void generateVoiceEspressoProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/voice-espresso.jpg")));
         nameProfileLabel.setText(Cafe.cafeName[2]);
         typeProfileLabel.setText(Cafe.cafeType[2]);
         if(String.valueOf(Cafe.cafeStatus[2]).equals("true"))
@@ -1409,7 +1409,7 @@ public class HomeController implements Initializable {
     protected  void generateHayatRoofProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/hayat.jpg")));
         nameProfileLabel.setText(Cafe.cafeName[3]);
         typeProfileLabel.setText(Cafe.cafeType[3]);
         if(String.valueOf(Cafe.cafeStatus[3]).equals("true"))
@@ -1472,7 +1472,7 @@ public class HomeController implements Initializable {
     protected  void generateCoffeeIslandProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/coffe-island.jpg")));
         nameProfileLabel.setText(Cafe.cafeName[4]);
         typeProfileLabel.setText(Cafe.cafeType[4]);
         if(String.valueOf(Cafe.cafeStatus[4]).equals("true"))
@@ -1536,7 +1536,7 @@ public class HomeController implements Initializable {
     protected  void generateVoltaBarProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/volta-bar.png")));
         nameProfileLabel.setText(Cafe.cafeName[5]);
         typeProfileLabel.setText(Cafe.cafeType[5]);
         if(String.valueOf(Cafe.cafeStatus[5]).equals("true"))
@@ -1599,7 +1599,7 @@ public class HomeController implements Initializable {
     protected  void generateKennedyEspressoBarProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/kennedy.jpg")));
         nameProfileLabel.setText(Cafe.cafeName[6]);
         typeProfileLabel.setText(Cafe.cafeType[6]);
         if(String.valueOf(Cafe.cafeStatus[6]).equals("true"))
@@ -1661,7 +1661,7 @@ public class HomeController implements Initializable {
     protected  void generateMikelCoffeeProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/mikel-coffee.png")));
         nameProfileLabel.setText(Cafe.cafeName[7]);
         typeProfileLabel.setText(Cafe.cafeType[7]);
         if(String.valueOf(Cafe.cafeStatus[7]).equals("true"))
@@ -1724,7 +1724,7 @@ public class HomeController implements Initializable {
     protected  void generateCafeBar19Profile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/Cafe-Bar-19.png")));
         nameProfileLabel.setText(Cafe.cafeName[8]);
         typeProfileLabel.setText(Cafe.cafeType[8]);
         if(String.valueOf(Cafe.cafeStatus[8]).equals("true"))
@@ -1786,7 +1786,7 @@ public class HomeController implements Initializable {
     protected  void generateJuiceBoxNaturalBitesProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/JuiceBox-Natural-Bites.jfif")));
         nameProfileLabel.setText(Cafe.cafeName[9]);
         typeProfileLabel.setText(Cafe.cafeType[9]);
         if(String.valueOf(Cafe.cafeStatus[9]).equals("true"))
@@ -1848,7 +1848,7 @@ public class HomeController implements Initializable {
     protected  void generateKouzinaBarProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/Kouzina-Bar.jpg")));
         nameProfileLabel.setText(Cafe.cafeName[10]);
         typeProfileLabel.setText(Cafe.cafeType[10]);
         if(String.valueOf(Cafe.cafeStatus[10]).equals("true"))
@@ -1911,7 +1911,7 @@ public class HomeController implements Initializable {
     protected  void generategoalcafeProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/goal-cafe.jpg")));
         nameProfileLabel.setText(Cafe.cafeName[11]);
         typeProfileLabel.setText(Cafe.cafeType[11]);
         if(String.valueOf(Cafe.cafeStatus[11]).equals("true"))
@@ -1974,7 +1974,7 @@ public class HomeController implements Initializable {
     protected  void generateMeliosOilProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/MELIOS-OIL.jfif")));
         nameProfileLabel.setText(Cafe.cafeName[12]);
         typeProfileLabel.setText(Cafe.cafeType[12]);
         if(String.valueOf(Cafe.cafeStatus[12]).equals("true"))
@@ -2038,7 +2038,7 @@ public class HomeController implements Initializable {
     protected  void generateXrysoProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/Xryso.png")));
         nameProfileLabel.setText(Cafe.cafeName[13]);
         typeProfileLabel.setText(Cafe.cafeType[13]);
         if(String.valueOf(Cafe.cafeStatus[13]).equals("true"))
@@ -2101,7 +2101,7 @@ public class HomeController implements Initializable {
     protected  void generateTodaysDeliciousProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/Today's-Delicious-Stores.png")));
         nameProfileLabel.setText(Cafe.cafeName[14]);
         typeProfileLabel.setText(Cafe.cafeType[14]);
         if(String.valueOf(Cafe.cafeStatus[14]).equals("true"))
@@ -2164,7 +2164,7 @@ public class HomeController implements Initializable {
     protected  void generateToSpitikoProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/to-spitiko.png")));
         nameProfileLabel.setText(Cafe.cafeName[15]);
         typeProfileLabel.setText(Cafe.cafeType[15]);
         if(String.valueOf(Cafe.cafeStatus[15]).equals("true"))
@@ -2227,7 +2227,7 @@ public class HomeController implements Initializable {
     protected  void generateTheCoffeeStore2Profile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/the-coffee-store.jpg")));
         nameProfileLabel.setText(Cafe.cafeName[16]);
         typeProfileLabel.setText(Cafe.cafeType[16]);
         if(String.valueOf(Cafe.cafeStatus[16]).equals("true"))
@@ -2290,7 +2290,7 @@ public class HomeController implements Initializable {
     protected  void generateCityZenProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/cityzen.jpg")));
         nameProfileLabel.setText(Cafe.cafeName[17]);
         typeProfileLabel.setText(Cafe.cafeType[17]);
         if(String.valueOf(Cafe.cafeStatus[17]).equals("true"))
@@ -2352,7 +2352,7 @@ public class HomeController implements Initializable {
     protected  void generateTheCoffeeStoreProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafes-photos/the-coffee-store.jpg")));
         nameProfileLabel.setText(Cafe.cafeName[18]);
         typeProfileLabel.setText(Cafe.cafeType[18]);
         if(String.valueOf(Cafe.cafeStatus[18]).equals("true"))
