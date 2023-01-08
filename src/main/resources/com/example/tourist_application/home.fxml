@@ -119,27 +119,27 @@
                                           <Label fx:id="cafeRate1" layoutX="33.0" layoutY="231.0" text="cafeRate1" />
                                           <Pane fx:id="ratePane" layoutX="24.0" layoutY="251.0" prefHeight="41.0" prefWidth="143.0">
                                              <children>
-                                                <ImageView fx:id="rateButton1" fitHeight="20.0" fitWidth="20.0" layoutX="10.0" layoutY="6.0" onMouseEntered="#fillRateButton1" onMouseExited="#emptyRateButton1" pickOnBounds="true" preserveRatio="true">
+                                                <ImageView fx:id="rateButton1" onMouseClicked="#setRate1" fitHeight="20.0" fitWidth="20.0" layoutX="10.0" layoutY="6.0"  pickOnBounds="true" preserveRatio="true">
                                                    <image>
                                                       <Image url="@gui/rating.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="rateButton2" fitHeight="20.0" fitWidth="20.0" layoutX="35.0" layoutY="6.0" onMouseEntered="#fillRateButton2" onMouseExited="#emptyRateButton2" pickOnBounds="true" preserveRatio="true">
+                                                <ImageView fx:id="rateButton2"  onMouseClicked="#setRate2" fitHeight="20.0" fitWidth="20.0" layoutX="35.0" layoutY="6.0"  pickOnBounds="true" preserveRatio="true">
                                                    <image>
                                                       <Image url="@gui/rating.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="rateButton3" fitHeight="20.0" fitWidth="20.0" layoutX="60.0" layoutY="6.0" onMouseEntered="#fillRateButton3" onMouseExited="#emptyRateButton3" pickOnBounds="true" preserveRatio="true">
+                                                <ImageView fx:id="rateButton3" onMouseClicked="#setRate3" fitHeight="20.0" fitWidth="20.0" layoutX="60.0" layoutY="6.0"  pickOnBounds="true" preserveRatio="true">
                                                    <image>
                                                       <Image url="@gui/rating.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="rateButton4" fitHeight="20.0" fitWidth="20.0" layoutX="85.0" layoutY="6.0" onMouseEntered="#fillRateButton4" onMouseExited="#emptyRateButton4" pickOnBounds="true" preserveRatio="true">
+                                                <ImageView fx:id="rateButton4" onMouseClicked="#setRate4" fitHeight="20.0" fitWidth="20.0" layoutX="85.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                                    <image>
                                                       <Image url="@gui/rating.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="rateButton5" fitHeight="20.0" fitWidth="20.0" layoutX="110.0" layoutY="6.0" onMouseEntered="#fillRateButton5" onMouseExited="#emptyRateButton5" pickOnBounds="true" preserveRatio="true">
+                                                <ImageView fx:id="rateButton5"  onMouseClicked="#setRate5" fitHeight="20.0" fitWidth="20.0" layoutX="110.0" layoutY="6.0"  pickOnBounds="true" preserveRatio="true">
                                                    <image>
                                                       <Image url="@gui/rating.png" />
                                                    </image>
