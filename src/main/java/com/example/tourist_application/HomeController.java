@@ -2419,7 +2419,7 @@ public class HomeController implements Initializable {
     protected  void generateMonopolionKathodonProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[0]);
         typeProfileLabel.setText(Restaurant.restaurantType[0]);
         if(String.valueOf(Restaurant.restaurantStatus[0]).equals("true"))
@@ -2483,7 +2483,7 @@ public class HomeController implements Initializable {
     protected  void generateMasisetoProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/caffettieri/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[1]);
         typeProfileLabel.setText(Restaurant.restaurantType[1]);
         if(String.valueOf(Restaurant.restaurantStatus[1]).equals("true"))
@@ -2544,7 +2544,7 @@ public class HomeController implements Initializable {
     protected  void generatePsitopoleioPallikarisProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[2]);
         typeProfileLabel.setText(Restaurant.restaurantType[2]);
         if(String.valueOf(Restaurant.restaurantStatus[2]).equals("true"))
@@ -2605,7 +2605,7 @@ public class HomeController implements Initializable {
     protected  void generatePsitopoleioAulogirosProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[3]);
         typeProfileLabel.setText(Restaurant.restaurantType[3]);
         if(String.valueOf(Restaurant.restaurantStatus[3]).equals("true"))
@@ -2666,7 +2666,7 @@ public class HomeController implements Initializable {
     protected  void generateMprikiHomebarandgrillProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[4]);
         typeProfileLabel.setText(Restaurant.restaurantType[4]);
         if(String.valueOf(Restaurant.restaurantStatus[4]).equals("true"))
@@ -2727,7 +2727,7 @@ public class HomeController implements Initializable {
     protected  void generateOKaliterosProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/kaliterosImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[5]);
         typeProfileLabel.setText(Restaurant.restaurantType[5]);
         if(String.valueOf(Restaurant.restaurantStatus[5]).equals("true"))
@@ -2788,7 +2788,7 @@ public class HomeController implements Initializable {
     protected  void generateSpecialProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[6]);
         typeProfileLabel.setText(Restaurant.restaurantType[6]);
         if(String.valueOf(Restaurant.restaurantStatus[6]).equals("true"))
@@ -2849,7 +2849,7 @@ public class HomeController implements Initializable {
     protected  void generateHayatRoofRestProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[7]);
         typeProfileLabel.setText(Restaurant.restaurantType[7]);
         if(String.valueOf(Restaurant.restaurantStatus[7]).equals("true"))
@@ -2910,7 +2910,7 @@ public class HomeController implements Initializable {
     protected  void generateTheMeatHouseProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[8]);
         typeProfileLabel.setText(Restaurant.restaurantType[8]);
         if(String.valueOf(Restaurant.restaurantStatus[8]).equals("true"))
@@ -2971,7 +2971,7 @@ public class HomeController implements Initializable {
     protected  void generateGiroGiroOloiProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[9]);
         typeProfileLabel.setText(Restaurant.restaurantType[9]);
         if(String.valueOf(Restaurant.restaurantStatus[9]).equals("true"))
@@ -3032,7 +3032,7 @@ public class HomeController implements Initializable {
     protected  void generateKennedyEspressoBarRestProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[10]);
         typeProfileLabel.setText(Restaurant.restaurantType[10]);
         if(String.valueOf(Restaurant.restaurantStatus[10]).equals("true"))
@@ -3093,7 +3093,7 @@ public class HomeController implements Initializable {
     protected  void generateTramCafeSerresProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[11]);
         typeProfileLabel.setText(Restaurant.restaurantType[11]);
         if(String.valueOf(Restaurant.restaurantStatus[11]).equals("true"))
@@ -3154,7 +3154,7 @@ public class HomeController implements Initializable {
     protected  void generateOSotosProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[12]);
         typeProfileLabel.setText(Restaurant.restaurantType[12]);
         if(String.valueOf(Restaurant.restaurantStatus[12]).equals("true"))
@@ -3215,7 +3215,7 @@ public class HomeController implements Initializable {
     protected  void generateMpougatsaRekorProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[13]);
         typeProfileLabel.setText(Restaurant.restaurantType[13]);
         if(String.valueOf(Restaurant.restaurantStatus[13]).equals("true"))
@@ -3276,7 +3276,7 @@ public class HomeController implements Initializable {
     protected  void generateKouzinaBarRestProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[14]);
         typeProfileLabel.setText(Restaurant.restaurantType[14]);
         if(String.valueOf(Restaurant.restaurantStatus[14]).equals("true"))
@@ -3337,7 +3337,7 @@ public class HomeController implements Initializable {
     protected  void generatePsitopolioOKostasProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[15]);
         typeProfileLabel.setText(Restaurant.restaurantType[15]);
         if(String.valueOf(Restaurant.restaurantStatus[15]).equals("true"))
@@ -3398,7 +3398,7 @@ public class HomeController implements Initializable {
     protected  void generateTodaysDeliciousRestProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[16]);
         typeProfileLabel.setText(Restaurant.restaurantType[16]);
         if(String.valueOf(Restaurant.restaurantStatus[16]).equals("true"))
@@ -3459,7 +3459,7 @@ public class HomeController implements Initializable {
     protected  void generateKappariProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[17]);
         typeProfileLabel.setText(Restaurant.restaurantType[17]);
         if(String.valueOf(Restaurant.restaurantStatus[17]).equals("true"))
@@ -3519,7 +3519,7 @@ public class HomeController implements Initializable {
     protected  void generateToSpitikoRestProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/voice_espresso/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/restaurants-photos/foodImage.png")));
         nameProfileLabel.setText(Restaurant.restaurantName[18]);
         typeProfileLabel.setText(Restaurant.restaurantType[18]);
         if(String.valueOf(Restaurant.restaurantStatus[18]).equals("true"))
@@ -3584,7 +3584,7 @@ public class HomeController implements Initializable {
     protected  void generateMonumentCaptainMitrousisProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[0]);
         typeProfileLabel.setText(Park.parkType[0]);
         if(String.valueOf(Park.parkStatus[0]).equals("true"))
@@ -3645,7 +3645,7 @@ public class HomeController implements Initializable {
     protected  void generateTRIKALAProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[1]);
         typeProfileLabel.setText(Park.parkType[1]);
         if(String.valueOf(Park.parkStatus[1]).equals("true"))
@@ -3702,7 +3702,7 @@ public class HomeController implements Initializable {
     protected  void generatePlateiaKonstantinouKabafiProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[2]);
         typeProfileLabel.setText(Park.parkType[2]);
         if(String.valueOf(Park.parkStatus[2]).equals("true"))
@@ -3763,7 +3763,7 @@ public class HomeController implements Initializable {
     protected  void generateRodosbeatsProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[3]);
         typeProfileLabel.setText(Park.parkType[3]);
         if(String.valueOf(Park.parkStatus[3]).equals("true"))
@@ -3824,7 +3824,7 @@ public class HomeController implements Initializable {
     protected  void generatePlateiaKroniouProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[4]);
         typeProfileLabel.setText(Park.parkType[4]);
         if(String.valueOf(Park.parkStatus[4]).equals("true"))
@@ -3885,7 +3885,7 @@ public class HomeController implements Initializable {
     protected  void generateAgalmaAnastasiouPolizoidiProfile(MouseEvent event) throws IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[5]);
         typeProfileLabel.setText(Park.parkType[5]);
         if(String.valueOf(Park.parkStatus[5]).equals("true"))
@@ -3946,7 +3946,7 @@ public class HomeController implements Initializable {
     protected  void generateTriaSintribaniaProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[6]);
         typeProfileLabel.setText(Park.parkType[6]);
         if(String.valueOf(Park.parkStatus[6]).equals("true"))
@@ -4007,7 +4007,7 @@ public class HomeController implements Initializable {
     protected  void generateLibertySquareProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[7]);
         typeProfileLabel.setText(Park.parkType[7]);
         if(String.valueOf(Park.parkStatus[7]).equals("true"))
@@ -4068,7 +4068,7 @@ public class HomeController implements Initializable {
     protected  void generateParkFormerProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[8]);
         typeProfileLabel.setText(Park.parkType[8]);
         if(String.valueOf(Park.parkStatus[8]).equals("true"))
@@ -4129,7 +4129,7 @@ public class HomeController implements Initializable {
     protected  void generateParkSerresProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[9]);
         typeProfileLabel.setText(Park.parkType[9]);
         if(String.valueOf(Park.parkStatus[9]).equals("true"))
@@ -4190,7 +4190,7 @@ public class HomeController implements Initializable {
     protected  void generateAnoikto8eatrakiProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[10]);
         typeProfileLabel.setText(Park.parkType[10]);
         if(String.valueOf(Park.parkStatus[10]).equals("true"))
@@ -4251,7 +4251,7 @@ public class HomeController implements Initializable {
     protected  void generateMnimeioE8nikisAntistasisProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[11]);
         typeProfileLabel.setText(Park.parkType[11]);
         if(String.valueOf(Park.parkStatus[11]).equals("true"))
@@ -4312,7 +4312,7 @@ public class HomeController implements Initializable {
     protected  void generatePlateiaEmporeiouProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[12]);
         typeProfileLabel.setText(Park.parkType[12]);
         if(String.valueOf(Park.parkStatus[12]).equals("true"))
@@ -4373,7 +4373,7 @@ public class HomeController implements Initializable {
     protected  void generateAgalmaDoukaProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[13]);
         typeProfileLabel.setText(Park.parkType[13]);
         if(String.valueOf(Park.parkStatus[13]).equals("true"))
@@ -4434,7 +4434,7 @@ public class HomeController implements Initializable {
     protected  void generateProtomiDimitriouMisirliProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[14]);
         typeProfileLabel.setText(Park.parkType[14]);
         if(String.valueOf(Park.parkStatus[14]).equals("true"))
@@ -4495,7 +4495,7 @@ public class HomeController implements Initializable {
     protected  void generatePublicSquareProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[15]);
         typeProfileLabel.setText(Park.parkType[15]);
         if(String.valueOf(Park.parkStatus[15]).equals("true"))
@@ -4556,7 +4556,7 @@ public class HomeController implements Initializable {
     protected  void generateBoreioanatolikiPleuraparkouIKAProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[16]);
         typeProfileLabel.setText(Park.parkType[16]);
         if(String.valueOf(Park.parkStatus[16]).equals("true"))
@@ -4617,7 +4617,7 @@ public class HomeController implements Initializable {
     protected  void generateProtomiPasxaliTsiagkaProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[17]);
         typeProfileLabel.setText(Park.parkType[17]);
         if(String.valueOf(Park.parkStatus[17]).equals("true"))
@@ -4678,7 +4678,7 @@ public class HomeController implements Initializable {
     protected  void generateParkakiSidirokastrouBourlonProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[18]);
         typeProfileLabel.setText(Park.parkType[18]);
         if(String.valueOf(Park.parkStatus[18]).equals("true"))
@@ -4739,7 +4739,7 @@ public class HomeController implements Initializable {
     protected  void generatePlateiaProfitiHliaProfile(MouseEvent event) throws IOException  {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/parks-photos/parkImage.png")));
         nameProfileLabel.setText(Park.parkName[19]);
         typeProfileLabel.setText(Park.parkType[19]);
         if(String.valueOf(Park.parkStatus[19]).equals("true"))
@@ -4804,7 +4804,7 @@ public class HomeController implements Initializable {
     protected  void generateBlueGiakasBarProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/bars-photos/barImage.png")));
         nameProfileLabel.setText(Bar.barName[0]);
         typeProfileLabel.setText(Bar.barType[0]);
         if(String.valueOf(Bar.barStatus[0]).equals("true"))
@@ -4866,7 +4866,7 @@ public class HomeController implements Initializable {
     protected  void generateMprikiBarProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/bars-photos/barImage.png")));
         nameProfileLabel.setText(Bar.barName[1]);
         typeProfileLabel.setText(Bar.barType[1]);
         if(String.valueOf(Bar.barStatus[1]).equals("true"))
@@ -4928,7 +4928,7 @@ public class HomeController implements Initializable {
     protected  void generateHayatRoofBarProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/bars-photos/barImage.png")));
         nameProfileLabel.setText(Bar.barName[2]);
         typeProfileLabel.setText(Bar.barType[2]);
         if(String.valueOf(Bar.barStatus[2]).equals("true"))
@@ -4991,7 +4991,7 @@ public class HomeController implements Initializable {
     protected  void generateCafeBar19BarProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/bars-photos/barImage.png")));
         nameProfileLabel.setText(Bar.barName[3]);
         typeProfileLabel.setText(Bar.barType[3]);
         if(String.valueOf(Bar.barStatus[3]).equals("true"))
@@ -5054,7 +5054,7 @@ public class HomeController implements Initializable {
     protected  void generateKouzinaBarBarProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/bars-photos/barImage.png")));
         nameProfileLabel.setText(Bar.barName[4]);
         typeProfileLabel.setText(Bar.barType[4]);
         if(String.valueOf(Bar.barStatus[4]).equals("true"))
@@ -5116,7 +5116,7 @@ public class HomeController implements Initializable {
     protected  void generateCityZenBarProfile(MouseEvent event) throws IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/bars-photos/barImage.png")));
         nameProfileLabel.setText(Bar.barName[5]);
         typeProfileLabel.setText(Bar.barType[5]);
         if(String.valueOf(Bar.barStatus[5]).equals("true"))
@@ -5184,7 +5184,7 @@ public class HomeController implements Initializable {
     protected  void generateChurchOf40MartyrsProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/church-photos/churchImage.png")));
         nameProfileLabel.setText(Church.churchName[0]);
         typeProfileLabel.setText(Church.churchType[0]);
         if(String.valueOf(Church.churchStatus[0]).equals("true"))
@@ -5245,7 +5245,7 @@ public class HomeController implements Initializable {
     protected  void generateIerosBuzantinosNaosTimiouProdromouProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/church-photos/churchImage.png")));
         nameProfileLabel.setText(Church.churchName[1]);
         typeProfileLabel.setText(Church.churchType[1]);
         if(String.valueOf(Church.churchStatus[1]).equals("true"))
@@ -5306,7 +5306,7 @@ public class HomeController implements Initializable {
     protected  void generateChurchOfTheHolyCrossProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/church-photos/churchImage.png")));
         nameProfileLabel.setText(Church.churchName[2]);
         typeProfileLabel.setText(Church.churchType[2]);
         if(String.valueOf(Church.churchStatus[2]).equals("true"))
@@ -5367,7 +5367,7 @@ public class HomeController implements Initializable {
     protected  void generateChurchOfStAntonyAndStMariaProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/church-photos/churchImage.png")));
         nameProfileLabel.setText(Church.churchName[3]);
         typeProfileLabel.setText(Church.churchType[3]);
         if(String.valueOf(Church.churchStatus[3]).equals("true"))
@@ -5428,7 +5428,7 @@ public class HomeController implements Initializable {
     protected  void generateChurchOfAssumptionOfMaryProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/church-photos/churchImage.png")));
         nameProfileLabel.setText(Church.churchName[4]);
         typeProfileLabel.setText(Church.churchType[4]);
         if(String.valueOf(Church.churchStatus[4]).equals("true"))
@@ -5491,7 +5491,7 @@ public class HomeController implements Initializable {
     protected  void generateGoutasNikolaosProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/church-photos/churchImage.png")));
         nameProfileLabel.setText(Church.churchName[5]);
         typeProfileLabel.setText(Church.churchType[5]);
         if(String.valueOf(Church.churchStatus[5]).equals("true"))
@@ -5535,7 +5535,7 @@ public class HomeController implements Initializable {
     protected  void generateArchaeologicalMuseumOfSerresProfile(MouseEvent event) throws  IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/museums-photos/museumImage.png")));
         nameProfileLabel.setText(Museum.museumName[0]);
         typeProfileLabel.setText(Museum.museumType[0]);
         if(String.valueOf(Museum.museumStatus[0]).equals("true"))
@@ -5596,7 +5596,7 @@ public class HomeController implements Initializable {
     protected  void generateVlachFolkloreMuseumProfile(MouseEvent event)  throws  IOException{
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/museums-photos/museumImage.png")));
         nameProfileLabel.setText(Museum.museumName[1]);
         typeProfileLabel.setText(Museum.museumType[1]);
         if(String.valueOf(Museum.museumStatus[1]).equals("true"))
@@ -5657,7 +5657,7 @@ public class HomeController implements Initializable {
     protected  void generateSarakatsaniFolkloreMuseumProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/museums-photos/museumImage.png")));
         nameProfileLabel.setText(Museum.museumName[2]);
         typeProfileLabel.setText(Museum.museumType[2]);
         if(String.valueOf(Museum.museumStatus[2]).equals("true"))
@@ -5718,7 +5718,7 @@ public class HomeController implements Initializable {
     protected  void generateProtomiEleutheriouBenizelouProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/museums-photos/museumImage.png")));
         nameProfileLabel.setText(Museum.museumName[3]);
         typeProfileLabel.setText(Museum.museumType[3]);
         if(String.valueOf(Museum.museumStatus[3]).equals("true"))
@@ -5779,7 +5779,7 @@ public class HomeController implements Initializable {
     protected  void generateEkklisiastikoMouseioIerasMitropolisSerronProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/museums-photos/museumImage.png")));
         nameProfileLabel.setText(Museum.museumName[4]);
         typeProfileLabel.setText(Museum.museumType[4]);
         if(String.valueOf(Museum.museumStatus[4]).equals("true"))
@@ -5840,7 +5840,7 @@ public class HomeController implements Initializable {
     protected  void generatePinakothikiKonstantinos3enakisProfile(MouseEvent event) throws  IOException {
         profilePane.setVisible(true);
         new FadeIn(profilePane).play();
-        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/cafe/ble_giakas/profile.png")));
+        profileImage.setImage(new Image(getClass().getResourceAsStream("gui/museums-photos/museumImage.png")));
         nameProfileLabel.setText(Museum.museumName[5]);
         typeProfileLabel.setText(Museum.museumType[5]);
         if(String.valueOf(Museum.museumStatus[5]).equals("true"))
